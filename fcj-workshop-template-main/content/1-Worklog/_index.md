@@ -6,34 +6,28 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+My internship worklog is recorded over **12 weeks** (from 12/08/2025 to 12/11/2025) as part of the **Workforce Bootcamp - First Cloud AI Journey** program at Amazon Web Services Vietnam.
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+**Week 1:** [Getting familiar with AWS, EC2 & CLI](1.1-week1/)
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+**Week 2:** [IAM, S3 and Storage Services](1.2-week2/)
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+**Week 3:** [VPC, Networking & Security Groups](1.3-week3/)
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Week 4:** [RDS & Database Services on AWS](1.4-week4/)
 
-**Week 3:** [Doing task B...](1.3-week3/)
+**Week 5:** [Lambda & Serverless Computing](1.5-week5/)
 
-**Week 4:** [Doing task C...](1.4-week4/)
+**Week 6:** [API Gateway & Application Development](1.6-week6/)
 
-**Week 5:** [Doing task D...](1.5-week5/)
+**Week 7:** [AWS IoT Core & MQTT Protocol](1.7-week7/)
 
-**Week 6:** [Doing task E...](1.6-week6/)
+**Week 8:** [AWS Glue & Data Processing](1.8-week8/)
 
-**Week 7:** [Doing task G...](1.7-week7/)
+**Week 9:** [AWS Amplify & Frontend Hosting](1.9-week9/)
 
-**Week 8:** [Doing task H...](1.8-week8/)
+**Week 10:** [Amazon Cognito & Authentication](1.10-week10/)
 
-**Week 9:** [Doing task I...](1.9-week9/)
+**Week 11:** [Project Integration & Testing](1.11-week11/)
 
-**Week 10:** [Doing task L...](1.10-week10/)
-
-**Week 11:** [Doing task M...](1.11-week11/)
-
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 12:** [Final Deployment, Documentation & Report](1.12-week12/)

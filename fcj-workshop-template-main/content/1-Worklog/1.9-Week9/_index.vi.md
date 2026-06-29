@@ -1,59 +1,34 @@
 ---
 title: "Worklog Tuần 9"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Học AWS Amplify: hosting, CI/CD và quản lý environment.
+* Xây dựng và deploy ứng dụng Next.js trên Amplify.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Tổng quan AWS Amplify: hosting, backend và CI/CD pipeline <br> - So sánh Amplify với CloudFront + S3 static hosting | 06/10/2025 | 06/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Cài đặt project Next.js để deploy lên Amplify <br> - Environment variables và build settings trong Amplify | 07/10/2025 | 07/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - **Thực hành:** <br>&emsp; + Kết nối GitHub repo với Amplify <br>&emsp; + Cấu hình build settings cho Next.js <br>&emsp; + Deploy phiên bản đầu tiên của web app | 08/10/2025 | 08/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Thiết kế real-time dashboard: hiển thị dữ liệu cảm biến IoT <br> - Kết nối Next.js frontend với API Gateway endpoints | 09/10/2025 | 09/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:** <br>&emsp; + Implement data fetching từ API Gateway <br>&emsp; + Xây dựng biểu đồ real-time cho dữ liệu thời tiết <br>&emsp; + Deploy và kiểm tra trên Amplify | 10/10/2025 | 10/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Deploy thành công ứng dụng Next.js lên AWS Amplify với CI/CD tự động từ GitHub.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Cấu hình Amplify build settings và environment variables cho các môi trường deployment khác nhau.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Xây dựng giao diện dashboard real-time để hiển thị dữ liệu cảm biến thời tiết lấy từ API Gateway.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Implement biểu đồ động để trực quan hóa nhiệt độ, độ ẩm và các chỉ số cảm biến khác.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu vòng đời Amplify hosting và cách quản lý nhiều environment (dev/prod).

@@ -1,58 +1,38 @@
 ---
 title: "Worklog Tuần 12"
 date: 2024-01-01
-weight: 2
+weight: 12
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 ### Mục tiêu tuần 12:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Deploy cuối cùng IoT Weather Platform lên môi trường production.
+* Hoàn thiện tài liệu kỹ thuật và chuẩn bị báo cáo thực tập.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Review cuối cùng tất cả tài nguyên AWS và chi phí <br> - Xác minh cấu hình AWS budget alerts đúng | 27/10/2025 | 27/10/2025 | |
+| 3   | - Deploy production: CDK stack deploy cuối cùng <br> - Cấu hình CloudWatch alarms và dashboards để giám sát | 28/10/2025 | 28/10/2025 | |
+| 4   | - **Thực hành:** <br>&emsp; + Kiểm thử production end-to-end lần cuối <br>&emsp; + Xác minh tất cả Cognito user accounts đang active <br>&emsp; + Giám sát system health trong 24 giờ | 29/10/2025 | 29/10/2025 | |
+| 5   | - Viết tài liệu kỹ thuật: sơ đồ kiến trúc, API docs, deployment guide <br> - Chuẩn bị demo cho buổi trình bày cuối kỳ thực tập | 30/10/2025 | 30/10/2025 | |
+| 6   | - Hoàn thành báo cáo thực tập <br> - Nộp các deliverable cuối cùng <br> - Dọn dẹp tài nguyên không cần thiết | 31/10/2025 | 12/11/2025 | |
 
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Deploy thành công toàn bộ IoT Weather Platform lên production bằng AWS CDK.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Cấu hình CloudWatch monitoring và alerts cho tất cả các component quan trọng.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Tạo và xác minh 5 tài khoản thành viên lab trong Amazon Cognito.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hoàn thành đầy đủ tài liệu kỹ thuật bao gồm kiến trúc hệ thống, API reference và deployment guide.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Demo thành công platform cho các giám sát viên thực tập.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Dọn dẹp tài nguyên development và xác nhận chi phí AWS nằm trong ngân sách $0.70/tháng.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành và nộp báo cáo thực tập đúng hạn.

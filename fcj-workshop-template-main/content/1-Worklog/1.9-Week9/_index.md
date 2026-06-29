@@ -1,57 +1,34 @@
 ---
 title: "Week 9 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 9 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn AWS Amplify: hosting, CI/CD, and environment management.
+* Build and deploy a Next.js web application on Amplify.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ----------------------------------------- |
+| 2   | - AWS Amplify overview: hosting, backend, and CI/CD pipeline <br> - Amplify vs CloudFront + S3 static hosting comparison | 06/10/2025 | 06/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Next.js project setup for Amplify deployment <br> - Amplify environment variables and build settings | 07/10/2025 | 07/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - **Practice:** <br>&emsp; + Connect GitHub repository to Amplify <br>&emsp; + Configure build settings for Next.js <br>&emsp; + Deploy first version of the web app | 08/10/2025 | 08/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Real-time dashboard design: displaying IoT sensor data <br> - Connecting Next.js frontend to API Gateway endpoints | 09/10/2025 | 09/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br>&emsp; + Implement data fetching from API Gateway <br>&emsp; + Build real-time charts for weather data <br>&emsp; + Deploy and verify on Amplify | 10/10/2025 | 10/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 9 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Successfully deployed a Next.js application on AWS Amplify with automatic CI/CD from GitHub.
 
-* Successfully created and configured an AWS Free Tier account.
+* Configured Amplify build settings and environment variables for different deployment stages.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Built a real-time dashboard UI to display weather sensor data fetched from API Gateway.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Implemented dynamic charts to visualize temperature, humidity, and other sensor readings.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood the Amplify hosting lifecycle and how to manage multiple environments (dev/prod).

@@ -1,59 +1,34 @@
 ---
 title: "Worklog Tuần 11"
 date: 2024-01-01
-weight: 2
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tích hợp toàn bộ các thành phần platform end-to-end: IoT Core → S3 → Glue → API Gateway → Amplify.
+* Thực hiện kiểm thử toàn diện và xử lý các vấn đề tích hợp.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Review toàn bộ kiến trúc hệ thống và xác định các khoảng thiếu hụt <br> - Mapping luồng data: thiết bị → IoT Core → S3 → Glue → API → Dashboard | 20/10/2025 | 20/10/2025 | |
+| 3   | - Kiểm thử tích hợp end-to-end: giả lập dữ liệu cảm biến qua toàn bộ pipeline <br> - Sửa lỗi IoT rule routing và Lambda triggers | 21/10/2025 | 21/10/2025 | |
+| 4   | - **Thực hành:** <br>&emsp; + Chạy test luồng data đầy đủ với 5 thiết bị giả lập <br>&emsp; + Kiểm tra dữ liệu hiển thị đúng trên dashboard <br>&emsp; + Debug latency và vấn đề mất dữ liệu | 22/10/2025 | 22/10/2025 | |
+| 5   | - Kiểm thử hiệu năng và tải của API Gateway và Lambda <br> - Tối ưu thời gian chạy Glue ETL job | 23/10/2025 | 23/10/2025 | |
+| 6   | - **Thực hành:** <br>&emsp; + Sửa tất cả bug đã phát hiện <br>&emsp; + Test tích hợp cuối với tất cả component chạy đồng thời <br>&emsp; + Ghi chép các hạn chế đã biết | 24/10/2025 | 24/10/2025 | |
 
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thành tích hợp end-to-end của toàn bộ IoT Weather Platform.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Xác minh dữ liệu cảm biến chạy đúng từ thiết bị giả lập qua IoT Core, S3, Glue ETL, API Gateway và hiển thị trên Amplify dashboard.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Sửa nhiều lỗi tích hợp bao gồm misconfiguration trong IoT rule và Lambda timeout.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Tối ưu hiệu năng Glue ETL job bằng cách giảm data scan không cần thiết.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Ghi chép tất cả hạn chế đã biết và lên kế hoạch cải thiện cho tuần cuối.

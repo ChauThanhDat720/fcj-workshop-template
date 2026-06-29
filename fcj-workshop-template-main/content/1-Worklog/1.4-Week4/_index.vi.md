@@ -1,59 +1,36 @@
 ---
 title: "Worklog Tuần 4"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Học Amazon RDS: managed relational database, Multi-AZ và read replicas.
+* Tìm hiểu Amazon ElastiCache và DynamoDB cơ bản.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Tìm hiểu RDS: các engine được hỗ trợ (MySQL, PostgreSQL, Aurora) <br> - Multi-AZ deployment và automatic failover | 01/09/2025 | 01/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - RDS Read Replicas để phân tải đọc <br> - Backup và restore: automated backups, snapshots | 02/09/2025 | 02/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - **Thực hành:** <br>&emsp; + Launch RDS MySQL trong private subnet <br>&emsp; + Kết nối từ EC2 <br>&emsp; + Tạo snapshot và restore | 03/09/2025 | 03/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Amazon DynamoDB: table, item, attribute, partition key <br> - DynamoDB streams và global tables | 04/09/2025 | 04/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:** <br>&emsp; + Tạo bảng DynamoDB <br>&emsp; + Thao tác CRUD qua Console và CLI <br>&emsp; + Ôn tập tuần 4 | 05/09/2025 | 05/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu lợi ích của RDS managed service so với tự quản lý database.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Triển khai RDS MySQL trong private subnet với Multi-AZ để đảm bảo tính sẵn sàng cao.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Cấu hình Read Replicas để phân phối tải đọc.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Thực hiện backup và restore bằng snapshot.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Tạo và vận hành bảng DynamoDB với các thao tác CRUD qua Console và CLI.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu sự khác biệt giữa relational (RDS) và NoSQL (DynamoDB) trên AWS.

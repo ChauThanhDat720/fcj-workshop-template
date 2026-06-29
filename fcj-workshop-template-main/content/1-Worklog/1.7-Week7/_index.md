@@ -1,57 +1,34 @@
 ---
 title: "Week 7 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn AWS IoT Core: device connection, MQTT protocol, topics, and rules.
+* Understand how to ingest sensor data from edge devices into the AWS cloud.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ----------------------------------------- |
+| 2   | - AWS IoT Core overview: device registry, message broker, rules engine <br> - MQTT protocol: topics, QoS levels, retain messages | 22/09/2025 | 22/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - IoT Core Thing creation and certificates <br> - Device policies for secure MQTT connection | 23/09/2025 | 23/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - **Practice:** <br>&emsp; + Create IoT Thing with certificate <br>&emsp; + Simulate device publishing MQTT messages <br>&emsp; + Subscribe to topics in MQTT test client | 24/09/2025 | 24/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - IoT Rules Engine: SQL-like rule queries <br> - Route messages to S3, Lambda, DynamoDB | 25/09/2025 | 25/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br>&emsp; + Create IoT rule to forward data to S3 <br>&emsp; + Trigger Lambda from IoT rule <br>&emsp; + End-to-end data ingestion test | 26/09/2025 | 26/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Understood the AWS IoT Core architecture and how edge devices securely communicate with the cloud via MQTT.
 
-* Successfully created and configured an AWS Free Tier account.
+* Created IoT Things with X.509 certificates and configured device policies.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Simulated sensor data publishing to IoT topics using the MQTT test client.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Built IoT Rules to automatically route incoming messages to S3 and Lambda.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed an end-to-end data ingestion pipeline from simulated device to cloud storage.

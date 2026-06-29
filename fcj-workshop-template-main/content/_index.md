@@ -13,13 +13,13 @@ chapter: false
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Chau Thanh Dat
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0355157761
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** chauthanhdat174@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** Hutech University
 
 &emsp; **Major:** Information Technology
 
