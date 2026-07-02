@@ -1,6 +1,6 @@
 ---
 title: "Week 10 Worklog"
-date: 2024-01-01
+date: 2026-04-15
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
@@ -13,12 +13,12 @@ pre: " <b> 1.10. </b> "
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
-| --- | ---- | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Amazon Cognito overview: User Pools vs Identity Pools <br> - Authentication flows: SRP, custom auth, hosted UI | 13/10/2025 | 13/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Cognito User Pool configuration: password policy, MFA, email verification <br> - App clients and OAuth 2.0 scopes | 14/10/2025 | 14/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - **Practice:** <br>&emsp; + Create Cognito User Pool <br>&emsp; + Configure app client with OAuth settings <br>&emsp; + Test sign-up and sign-in flows | 15/10/2025 | 15/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Integrating Cognito with API Gateway authorizer <br> - Protected routes in Next.js using Cognito JWT tokens | 16/10/2025 | 16/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Add Cognito JWT authorizer to API Gateway <br>&emsp; + Implement login/logout in Next.js <br>&emsp; + Restrict dashboard access to authenticated users | 17/10/2025 | 17/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - Amazon Cognito overview: User Pools vs Identity Pools <br> - Authentication flows: SRP, custom auth, hosted UI | 17/06/2026 | 17/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Cognito User Pool configuration: password policy, MFA, email verification <br> - App clients and OAuth 2.0 scopes | 18/06/2026 | 18/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - **Practice:** <br>&emsp; + Create Cognito User Pool <br>&emsp; + Configure app client with OAuth settings <br>&emsp; + Test sign-up and sign-in flows | 19/06/2026 | 19/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Integrating Cognito with API Gateway authorizer <br> - Protected routes in Next.js using Cognito JWT tokens | 20/06/2026 | 20/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Practice:** <br>&emsp; + Add Cognito JWT authorizer to API Gateway <br>&emsp; + Implement login/logout in Next.js <br>&emsp; + Restrict dashboard access to authenticated users | 21/06/2026 | 21/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 10 Achievements:

@@ -1,6 +1,6 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
+date: 2026-04-15
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
@@ -13,12 +13,12 @@ pre: " <b> 1.4. </b> "
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
-| --- | ---- | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Learn RDS concepts: supported engines (MySQL, PostgreSQL, Aurora) <br> - Multi-AZ deployments and automatic failover | 01/09/2025 | 01/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - RDS Read Replicas for read scaling <br> - RDS backup and restore: automated backups, snapshots | 02/09/2025 | 02/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - **Practice:** <br>&emsp; + Launch RDS MySQL instance in private subnet <br>&emsp; + Connect from EC2 <br>&emsp; + Create snapshot and restore | 03/09/2025 | 03/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Amazon DynamoDB: tables, items, attributes, partition key <br> - DynamoDB streams and global tables | 04/09/2025 | 04/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Create DynamoDB table <br>&emsp; + CRUD operations via Console and CLI <br>&emsp; + Review week 4 | 05/09/2025 | 05/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - Learn RDS concepts: supported engines (MySQL, PostgreSQL, Aurora) <br> - Multi-AZ deployments and automatic failover | 06/05/2026 | 06/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - RDS Read Replicas for read scaling <br> - RDS backup and restore: automated backups, snapshots | 07/05/2026 | 07/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - **Practice:** <br>&emsp; + Launch RDS MySQL instance in private subnet <br>&emsp; + Connect from EC2 <br>&emsp; + Create snapshot and restore | 08/05/2026 | 08/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Amazon DynamoDB: tables, items, attributes, partition key <br> - DynamoDB streams and global tables | 09/05/2026 | 09/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Practice:** <br>&emsp; + Create DynamoDB table <br>&emsp; + CRUD operations via Console and CLI <br>&emsp; + Review week 4 | 10/05/2026 | 10/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 4 Achievements:

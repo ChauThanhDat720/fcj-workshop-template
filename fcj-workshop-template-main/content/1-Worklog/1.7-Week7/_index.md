@@ -1,6 +1,6 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
+date: 2026-04-15
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -13,12 +13,12 @@ pre: " <b> 1.7. </b> "
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
-| --- | ---- | ---------- | --------------- | ----------------------------------------- |
-| 2   | - AWS IoT Core overview: device registry, message broker, rules engine <br> - MQTT protocol: topics, QoS levels, retain messages | 22/09/2025 | 22/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - IoT Core Thing creation and certificates <br> - Device policies for secure MQTT connection | 23/09/2025 | 23/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - **Practice:** <br>&emsp; + Create IoT Thing with certificate <br>&emsp; + Simulate device publishing MQTT messages <br>&emsp; + Subscribe to topics in MQTT test client | 24/09/2025 | 24/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - IoT Rules Engine: SQL-like rule queries <br> - Route messages to S3, Lambda, DynamoDB | 25/09/2025 | 25/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Create IoT rule to forward data to S3 <br>&emsp; + Trigger Lambda from IoT rule <br>&emsp; + End-to-end data ingestion test | 26/09/2025 | 26/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - AWS IoT Core overview: device registry, message broker, rules engine <br> - MQTT protocol: topics, QoS levels, retain messages | 27/05/2026 | 27/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - IoT Core Thing creation and certificates <br> - Device policies for secure MQTT connection | 28/05/2026 | 28/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - **Practice:** <br>&emsp; + Create IoT Thing with certificate <br>&emsp; + Simulate device publishing MQTT messages <br>&emsp; + Subscribe to topics in MQTT test client | 29/05/2026 | 29/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - IoT Rules Engine: SQL-like rule queries <br> - Route messages to S3, Lambda, DynamoDB | 30/05/2026 | 30/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Practice:** <br>&emsp; + Create IoT rule to forward data to S3 <br>&emsp; + Trigger Lambda from IoT rule <br>&emsp; + End-to-end data ingestion test | 31/05/2026 | 31/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 7 Achievements:

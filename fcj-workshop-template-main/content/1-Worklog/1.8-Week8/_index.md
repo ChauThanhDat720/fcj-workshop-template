@@ -1,6 +1,6 @@
 ---
 title: "Week 8 Worklog"
-date: 2024-01-01
+date: 2026-04-15
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
@@ -13,12 +13,12 @@ pre: " <b> 1.8. </b> "
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
-| --- | ---- | ---------- | --------------- | ----------------------------------------- |
-| 2   | - AWS Glue overview: Data Catalog, crawlers, databases, tables <br> - Glue vs traditional ETL tools | 29/09/2025 | 29/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Glue Crawlers: scanning S3 to auto-generate schema <br> - Glue Data Catalog as centralized metadata store | 30/09/2025 | 30/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - **Practice:** <br>&emsp; + Create Glue Crawler on raw IoT data S3 bucket <br>&emsp; + Run crawler and verify generated schema | 01/10/2025 | 01/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Glue ETL Jobs: PySpark scripts for data transformation <br> - Job triggers and scheduling | 02/10/2025 | 02/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Create Glue ETL job to transform and clean IoT data <br>&emsp; + Write processed data to output S3 bucket <br>&emsp; + Verify results with Athena | 03/10/2025 | 03/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - AWS Glue overview: Data Catalog, crawlers, databases, tables <br> - Glue vs traditional ETL tools | 03/06/2026 | 03/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Glue Crawlers: scanning S3 to auto-generate schema <br> - Glue Data Catalog as centralized metadata store | 04/06/2026 | 04/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - **Practice:** <br>&emsp; + Create Glue Crawler on raw IoT data S3 bucket <br>&emsp; + Run crawler and verify generated schema | 05/06/2026 | 05/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Glue ETL Jobs: PySpark scripts for data transformation <br> - Job triggers and scheduling | 06/06/2026 | 06/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Practice:** <br>&emsp; + Create Glue ETL job to transform and clean IoT data <br>&emsp; + Write processed data to output S3 bucket <br>&emsp; + Verify results with Athena | 07/06/2026 | 07/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 8 Achievements:

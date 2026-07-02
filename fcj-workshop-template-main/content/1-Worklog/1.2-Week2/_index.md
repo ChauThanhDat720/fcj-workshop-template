@@ -1,6 +1,6 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
+date: 2026-04-15
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -13,12 +13,12 @@ pre: " <b> 1.2. </b> "
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
-| --- | ---- | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Learn IAM concepts: users, groups, roles, policies <br> - Create IAM users and assign permissions | 18/08/2025 | 18/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - **Practice:** <br>&emsp; + Create IAM user with least privilege <br>&emsp; + Create custom IAM policy <br>&emsp; + Assign roles to EC2 instance | 19/08/2025 | 19/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Learn Amazon S3: buckets, objects, versioning <br> - Understand S3 storage classes (Standard, IA, Glacier) <br> - S3 lifecycle policies | 20/08/2025 | 20/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - **Practice:** <br>&emsp; + Create S3 bucket and upload objects <br>&emsp; + Configure bucket policies and ACLs <br>&emsp; + Enable versioning and lifecycle rules | 21/08/2025 | 21/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - S3 static website hosting <br> - Cross-region replication <br> - Review and summarize week 2 | 22/08/2025 | 22/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - Learn IAM concepts: users, groups, roles, policies <br> - Create IAM users and assign permissions | 22/04/2026 | 22/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - **Practice:** <br>&emsp; + Create IAM user with least privilege <br>&emsp; + Create custom IAM policy <br>&emsp; + Assign roles to EC2 instance | 23/04/2026 | 23/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Learn Amazon S3: buckets, objects, versioning <br> - Understand S3 storage classes (Standard, IA, Glacier) <br> - S3 lifecycle policies | 24/04/2026 | 24/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - **Practice:** <br>&emsp; + Create S3 bucket and upload objects <br>&emsp; + Configure bucket policies and ACLs <br>&emsp; + Enable versioning and lifecycle rules | 25/04/2026 | 25/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - S3 static website hosting <br> - Cross-region replication <br> - Review and summarize week 2 | 26/04/2026 | 26/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 2 Achievements:

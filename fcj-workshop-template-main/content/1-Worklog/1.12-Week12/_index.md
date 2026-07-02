@@ -1,6 +1,6 @@
 ---
 title: "Week 12 Worklog"
-date: 2024-01-01
+date: 2026-04-15
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
@@ -13,12 +13,12 @@ pre: " <b> 1.12. </b> "
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
-| --- | ---- | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Final review of all AWS resources and costs <br> - Verify AWS budget alerts are configured correctly | 27/10/2025 | 27/10/2025 | |
-| 3   | - Production deployment: final CDK stack deployment <br> - Configure CloudWatch alarms and dashboards for monitoring | 28/10/2025 | 28/10/2025 | |
-| 4   | - **Practice:** <br>&emsp; + Final end-to-end production test <br>&emsp; + Verify all Cognito user accounts are active <br>&emsp; + Monitor system health for 24 hours | 29/10/2025 | 29/10/2025 | |
-| 5   | - Write technical documentation: architecture diagrams, API docs, deployment guide <br> - Prepare demo for the internship presentation | 30/10/2025 | 30/10/2025 | |
-| 6   | - Complete internship report <br> - Submit final deliverables <br> - Conduct cleanup of unused resources | 31/10/2025 | 12/11/2025 | |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - Final review of all AWS resources and costs <br> - Verify AWS budget alerts are configured correctly | 01/07/2026 | 01/07/2026 |  |
+| 3 | - Production deployment: final CDK stack deployment <br> - Configure CloudWatch alarms and dashboards for monitoring | 02/07/2026 | 02/07/2026 |  |
+| 4 | - **Practice:** <br>&emsp; + Final end-to-end production test <br>&emsp; + Verify all Cognito user accounts are active <br>&emsp; + Monitor system health for 24 hours | 03/07/2026 | 03/07/2026 |  |
+| 5 | - Write technical documentation: architecture diagrams, API docs, deployment guide <br> - Prepare demo for the internship presentation | 04/07/2026 | 04/07/2026 |  |
+| 6 | - Complete internship report <br> - Submit final deliverables <br> - Conduct cleanup of unused resources | 15/07/2026 | 15/07/2026 |  |
 
 
 ### Week 12 Achievements:

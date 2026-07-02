@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
+date: 2026-04-15
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
@@ -13,12 +13,12 @@ pre: " <b> 1.5. </b> "
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-| --- | --------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Lambda: function, handler, runtime, memory, timeout <br> - Tổng quan về kiến trúc event-driven | 08/09/2025 | 08/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Lambda triggers: S3, DynamoDB Streams, API Gateway, EventBridge <br> - Lambda execution roles và phân quyền | 09/09/2025 | 09/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - **Thực hành:** <br>&emsp; + Tạo Lambda function bằng Python <br>&emsp; + Trigger Lambda từ S3 upload event <br>&emsp; + Xem logs trong CloudWatch | 10/09/2025 | 10/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Lambda Layers cho shared dependencies <br> - Environment variables và tích hợp Secrets Manager <br> - Tối ưu cold start | 11/09/2025 | 11/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Lambda trigger từ DynamoDB Stream <br>&emsp; + Thêm Lambda Layer <br>&emsp; + Giám sát với CloudWatch metrics | 12/09/2025 | 12/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2 | - Lambda: function, handler, runtime, memory, timeout <br> - Tổng quan về kiến trúc event-driven | 13/05/2026 | 13/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Lambda triggers: S3, DynamoDB Streams, API Gateway, EventBridge <br> - Lambda execution roles và phân quyền | 14/05/2026 | 14/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - **Thực hành:** <br>&emsp; + Tạo Lambda function bằng Python <br>&emsp; + Trigger Lambda từ S3 upload event <br>&emsp; + Xem logs trong CloudWatch | 15/05/2026 | 15/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Lambda Layers cho shared dependencies <br> - Environment variables và tích hợp Secrets Manager <br> - Tối ưu cold start | 16/05/2026 | 16/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Thực hành:** <br>&emsp; + Lambda trigger từ DynamoDB Stream <br>&emsp; + Thêm Lambda Layer <br>&emsp; + Giám sát với CloudWatch metrics | 17/05/2026 | 17/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 5:

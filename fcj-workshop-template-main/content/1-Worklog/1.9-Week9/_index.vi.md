@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 9"
-date: 2024-01-01
+date: 2026-04-15
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
@@ -13,12 +13,12 @@ pre: " <b> 1.9. </b> "
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-| --- | --------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Tổng quan AWS Amplify: hosting, backend và CI/CD pipeline <br> - So sánh Amplify với CloudFront + S3 static hosting | 06/10/2025 | 06/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Cài đặt project Next.js để deploy lên Amplify <br> - Environment variables và build settings trong Amplify | 07/10/2025 | 07/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - **Thực hành:** <br>&emsp; + Kết nối GitHub repo với Amplify <br>&emsp; + Cấu hình build settings cho Next.js <br>&emsp; + Deploy phiên bản đầu tiên của web app | 08/10/2025 | 08/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Thiết kế real-time dashboard: hiển thị dữ liệu cảm biến IoT <br> - Kết nối Next.js frontend với API Gateway endpoints | 09/10/2025 | 09/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Implement data fetching từ API Gateway <br>&emsp; + Xây dựng biểu đồ real-time cho dữ liệu thời tiết <br>&emsp; + Deploy và kiểm tra trên Amplify | 10/10/2025 | 10/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2 | - Tổng quan AWS Amplify: hosting, backend và CI/CD pipeline <br> - So sánh Amplify với CloudFront + S3 static hosting | 10/06/2026 | 10/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Cài đặt project Next.js để deploy lên Amplify <br> - Environment variables và build settings trong Amplify | 11/06/2026 | 11/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - **Thực hành:** <br>&emsp; + Kết nối GitHub repo với Amplify <br>&emsp; + Cấu hình build settings cho Next.js <br>&emsp; + Deploy phiên bản đầu tiên của web app | 12/06/2026 | 12/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Thiết kế real-time dashboard: hiển thị dữ liệu cảm biến IoT <br> - Kết nối Next.js frontend với API Gateway endpoints | 13/06/2026 | 13/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Thực hành:** <br>&emsp; + Implement data fetching từ API Gateway <br>&emsp; + Xây dựng biểu đồ real-time cho dữ liệu thời tiết <br>&emsp; + Deploy và kiểm tra trên Amplify | 14/06/2026 | 14/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 9:

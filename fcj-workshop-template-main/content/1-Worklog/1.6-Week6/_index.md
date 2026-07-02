@@ -1,6 +1,6 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
+date: 2026-04-15
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
@@ -13,12 +13,12 @@ pre: " <b> 1.6. </b> "
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
-| --- | ---- | ---------- | --------------- | ----------------------------------------- |
-| 2   | - API Gateway types: REST, HTTP, WebSocket <br> - API Gateway stages, deployments, and throttling | 15/09/2025 | 15/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Creating REST API with GET, POST, PUT, DELETE methods <br> - CORS configuration for API Gateway | 16/09/2025 | 16/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - **Practice:** <br>&emsp; + Create REST API backed by Lambda <br>&emsp; + Test endpoints with Postman <br>&emsp; + Enable API key authentication | 17/09/2025 | 17/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - AWS CDK/SDK basics for infrastructure as code <br> - CloudFormation stacks overview | 18/09/2025 | 18/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Deploy API + Lambda stack using AWS CDK <br>&emsp; + Review and test full serverless API flow | 19/09/2025 | 19/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - API Gateway types: REST, HTTP, WebSocket <br> - API Gateway stages, deployments, and throttling | 20/05/2026 | 20/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Creating REST API with GET, POST, PUT, DELETE methods <br> - CORS configuration for API Gateway | 21/05/2026 | 21/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - **Practice:** <br>&emsp; + Create REST API backed by Lambda <br>&emsp; + Test endpoints with Postman <br>&emsp; + Enable API key authentication | 22/05/2026 | 22/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - AWS CDK/SDK basics for infrastructure as code <br> - CloudFormation stacks overview | 23/05/2026 | 23/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Practice:** <br>&emsp; + Deploy API + Lambda stack using AWS CDK <br>&emsp; + Review and test full serverless API flow | 24/05/2026 | 24/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 6 Achievements:
