@@ -1,6 +1,6 @@
 ---
-title: "Kiến Trúc Serverless: Single-Purpose, Lambda-lith hay Read-Write Separation?"
-date: 2024-01-01
+title: "Blog 2"
+date: 2026-07-02
 weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
@@ -9,63 +9,52 @@ pre: " <b> 3.2. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
+# Giới thiệu Dashboard Tổng quan Traffic của AWS WAF
 
-# [SERVERLESS PATTERNS] Đừng mãi chọn Single-Purpose hay Lambda-lith: Lối đi giữa Read-Write Separation (CQRS Prelude) có gì hay?
+Hôm nay mình muốn chia sẻ về một bản cập nhật cực kỳ hữu ích giúp mọi người vận hành hệ thống nhàn hơn rất nhiều: Dashboard tổng quan traffic của AWS WAF.
 
-Hôm nay mình vừa đọc được một bài phân tích rất sâu trên AWS Compute Blog của hai anh Principal Solutions Architect về chiến lược thiết kế Serverless Microservices. Thấy bài viết giải quyết đúng pain point mà anh em làm Serverless hay gặp phải khi phân vân cấu trúc AWS Lambda, mình tóm tắt và mổ xẻ thêm góc nhìn technical ở đây để anh em cùng bàn luận.
+Đối với anh em làm bảo mật mạng, việc bảo vệ uptime cho ứng dụng đòi hỏi phải liên tục theo dõi baseline traffic và điều tra các IP đáng ngờ. Bài toán đặt ra là làm sao mở rộng quy mô ứng dụng mà không cần phải "phình to" đội ngũ SOC (Security Operations Center). Để giải quyết "nỗi đau" này, AWS WAF đã ra mắt dashboard tổng quan về traffic, giúp anh em đưa ra quyết định nhanh chóng và chính xác.
 
-Khi thiết kế RESTful API bằng AWS Lambda và API Gateway, câu hỏi kinh điển nhất luôn là: **Nên chia nhỏ Lambda đến mức nào?**
+## Dashboard này có gì đặc biệt?
 
-Thực tế, anh em thường bị kẹt giữa 2 thái cực:
+Điểm đáng giá nhất là nó hoàn toàn miễn phí và có sẵn mặc định, anh em không cần tốn công setup.
 
-## 1. Single Responsibility Lambda (Mỗi Endpoint 1 Function)
-**Cách làm:** Chia nhỏ đến tận cùng (Fine-grained). Mỗi HTTP route + method (`GET /users`, `POST /users`, `DELETE /users/{id}`) map với một Lambda function riêng biệt.
+Dashboard cung cấp cái nhìn gần như realtime về các metric từ CloudWatch mà WAF thu thập được. Anh em có thể xem tổng request, request bị chặn/được phép, so sánh traffic bot và non-bot, hay top 10 rule đang hoạt động mạnh nhất. Đặc biệt, công cụ Sampled requests giờ đã được tách thành một tab riêng, cho phép xem chi tiết 100 request khớp rule và 100 request áp dụng action mặc định trong 3 giờ gần nhất.
 
-**Điểm cộng:**
-- Tách biệt source code, bundle size cực nhỏ giúp tối ưu thời gian Init Phase (giảm Cold Start).
-- Áp dụng triệt để nguyên tắc đặc quyền tối thiểu (Least Privilege IAM). Hàm GET chỉ có quyền `dynamodb:GetItem`, hàm POST mới có quyền `dynamodb:PutItem`.
-- Cấu hình Memory/Timeout độc lập (hàm tính toán nặng cấp 1024MB RAM, hàm nhẹ chỉ cần 128MB).
+Nó phân loại request với bảng phân tích chi tiết (loại tấn công, loại thiết bị, quốc gia). Ví dụ, nếu ứng dụng của anh em chỉ dành cho Desktop ở Việt Nam, nhưng lại thấy traffic từ Mobile ở Pháp tăng vọt, anh em có thể quyết định chặn ngay lập tức.
 
-**Điểm trừ:** 
-- Quản lý cơ sở hạ tầng (IaC) cực kỳ vất vả. Nếu dùng AWS CloudFormation, bạn rất dễ chạm ngưỡng hard-limit (500 resources/stack). 
-- Các hàm ít được gọi (như DELETE) sẽ liên tục bị thu hồi Execution Context, dẫn đến tỷ lệ dính Cold Start cực cao cho end-user. 
-- Code lặp lại (DRY violation) ở các khâu database connection pooling hay middleware.
+## Use Case 1: Phân tích Pattern và "Bắt bệnh" hệ thống
 
-## 2. The Lambda-lith (Gộp tất cả vào một)
-**Cách làm:** Đẩy toàn bộ API routes của một service vào một function duy nhất (Monolithic Lambda). Thường sử dụng các adapter như `aws-serverless-express` để chạy Express/NestJS (Node.js) hoặc Spring Boot (Java) bên trong Lambda. API Gateway lúc này chỉ đóng vai trò `{proxy+}`.
+Không chỉ để xem cho đẹp, anh em hãy dùng dashboard để săn lùng các đợt tăng vọt (spike) bất thường. Giả sử bình thường hệ thống nhận 2.000 request/phút, nay bỗng nhảy lên 10.000 request/phút kèm theo loại thiết bị không mong muốn, đó là tín hiệu để điều tra ngay.
 
-**Điểm cộng:** 
-- Code tập trung, dễ dàng chia sẻ DTO, Entity, Database Connection. 
-- Tỷ lệ Warm Start tiệm cận 100% vì function liên tục nhận traffic, giữ cho môi trường (container) luôn sống.
+Nếu dashboard hiển thị một rule đang phải chặn một lượng lớn traffic, nó sẽ chỉ ra rõ hệ thống đang bị nhắm mục tiêu bằng một vector tấn công cụ thể.
 
-**Điểm trừ:**
-- **Deployment Package phình to:** Rất dễ chạm mốc 250MB unzipped. Kéo theo Cold Start cực kỳ ám ảnh, đặc biệt khi phải khởi tạo framework context nặng nề (như DI container của NestJS hay khởi động JVM của Spring Boot).
-- **Lãng phí GB-seconds:** Bạn đang dùng compute time của Lambda (trả tiền theo ms) chỉ để làm nhiệm vụ routing – việc mà API Gateway có thể làm miễn phí/rẻ hơn rất nhiều.
-- **IAM Policy phình to:** Function này buộc phải có quyền Read/Write lên tất cả các Table/S3 Bucket mà service đó động tới, tăng rủi ro bảo mật (Blast radius lớn).
+**Hành động tiếp theo sau khi phân tích:**
+- **Tinh chỉnh rule WAF:** Chỉnh sửa regex để giảm nhận diện nhầm (false positives) hoặc bỏ lọt (false negatives).
+- **Chặn IP tự động:** Sử dụng danh sách Amazon IP reputation list để auto-chặn các IP độc hại.
+- **Xử lý DDoS:** Monitor IP nguồn và dùng rate-based rules để cắt đuôi các đợt tăng vọt request.
 
-## Lối đi giữa: Tách biệt luồng Read và Write (The Pragmatic Middle Ground)
-Hai tác giả AWS đã đưa ra một thiết kế thứ 3, trung hòa hoàn hảo hai thái cực trên bằng cách chia theo hành vi (Behavior). Thay vì chia quá nhỏ hay gộp quá lớn, chúng ta chia một Bounded Context thành đúng 2 Lambda Functions:
+## Use Case 2: Theo dõi và Tối ưu Bot Control
 
-1. **Lambda Ghi (Command/Write Operations):** Gom các request thay đổi trạng thái hệ thống (POST, PUT, DELETE, PATCH).
-   - *Technical insight:* Các thao tác ghi thường share chung các thư viện validation phức tạp, ORM mapping, và logic transaction. Việc gom lại giúp bundle size được tối ưu hợp lý, đồng thời các hàm ít dùng (như DELETE) được "ké" Execution Context đang warm từ các hàm POST có traffic cao hơn.
-   
-2. **Lambda Đọc (Query/Read Operations):** Xử lý thuần túy luồng GET.
-   - *Technical insight:* Logic đọc thường rất nhẹ, chủ yếu là query DB và map response. Không cần nạp các thư viện validate body (như Joi, Zod hay class-validator). Bundle size nhỏ, Init phase nhanh, giúp latency của API trả về cho end-user đạt mức tối ưu nhất.
+Nếu anh em đang dùng AWS WAF Bot Control, dashboard này sẽ cho thấy rõ bao nhiêu % traffic đến từ Bot (scraper, scanner, crawler...).
 
-## Khả năng tiến hóa (Evolutionary Architecture) lên CQRS
-Điều giá trị nhất của pattern này là nó tạo ra một bước đệm hoàn hảo để hệ thống tiến hóa lên CQRS (Command Query Responsibility Segregation) và kiến trúc hướng sự kiện (Event-Driven) khi scale:
+- **Giai đoạn đầu (onboarding):** Anh em nên bật các rule group Bot Control ở chế độ Count và dùng dashboard để xem có traffic hợp lệ nào bị gán nhãn nhầm không (từ đó thêm rule exception).
+- **Xử lý bot tinh vi:** AWS WAF sẽ dùng kỹ thuật browser fingerprinting, thử thách ngầm hoặc CAPTCHA và gán Token. Bảng Token status trên dashboard sẽ giúp anh em theo dõi lượng request thiếu Token hoặc Token không hợp lệ. Từ đó, anh em có thể viết rule chạy ngay sau nhóm managed rule để chặn đứng hoặc giới hạn tốc độ (rate limit) các request không vượt qua được bài kiểm tra bot này.
 
-- **Decouple luồng Write:** Thay vì API Gateway gọi thẳng Lambda Ghi (Synchronous), bạn có thể dễ dàng chuyển sang Asynchronous bằng cách kẹp Amazon SQS vào giữa. API Gateway trả ngay `HTTP 202 Accepted`. Lambda Ghi sẽ pull message từ SQS thông qua Event Source Mapping và xử lý dạng Batching, kết hợp với Dead Letter Queue (DLQ) để retry. Điều này giúp database (như RDS hay MongoDB) không bị over-connection khi traffic spike.
-- **Scale luồng Read:** Ở phía Đọc, vì logic đã hoàn toàn tách biệt, bạn có thể tự do cắm thêm ElastiCache (Redis) theo pattern Cache-Aside, hoặc trỏ thẳng Lambda Đọc vào một Read Replica Database mà không lo sợ rủi ro side-effect làm gãy luồng Ghi.
+## So sánh nhanh: WAF Dashboard vs CloudFront Security Dashboard
 
-## Góc nhìn thực tế từ Domain Quản lý học vụ (EdTech System)
-Anh em tưởng tượng khi build một hệ thống quản lý trường học (School Management System), bản chất traffic đọc và ghi hoàn toàn bất đối xứng. Lượng request vào để Đọc (sinh viên xem thời khóa biểu, check điểm, tải thông báo) có thể sinh ra hàng ngàn RPS. Trong khi đó, luồng Ghi (giảng viên điểm danh, phòng đào tạo nhập điểm) lại ít hơn rất nhiều nhưng yêu cầu tính toàn vẹn dữ liệu (ACID) cực cao.
+Nhiều anh em thắc mắc dùng cái nào thì tốt hơn:
+- **AWS WAF Traffic Overview Dashboard:** Dành cho anh em cần phân tích sâu (investigate), tìm hiểu pattern traffic để tinh chỉnh rule bảo mật chi tiết.
+- **CloudFront Security Dashboard:** Dành cho anh em muốn quản lý chung cả phân phối ứng dụng và bảo mật cơ bản trên một màn hình duy nhất mà không cần chuyển console.
 
-Áp dụng pattern Read-Write Separation này giúp chúng ta scale thẳng tay memory và concurrency cho luồng Đọc trong các kỳ thi cao điểm, mà vẫn giữ luồng Ghi hoạt động ổn định, cô lập rủi ro và tối ưu chi phí hạ tầng AWS.
+## Tổng kết
 
-## Kết luận
-Trong Serverless, không có kiến trúc nào là Silver Bullet. Việc chọn pattern nào phụ thuộc vào business context để bạn trade-off giữa: Tốc độ phát triển (DevX), Chi phí (Cost), Bảo mật (IAM), và Hiệu năng (Cold Start).
+Dashboard mới này thực sự giúp anh em bớt đi việc phải "đoán mò" khi phân tích traffic. Về chi phí, dashboard được cung cấp miễn phí, anh em chỉ trả phí lưu trữ log cho CloudWatch nếu bật full logging.
 
-![Image](/images/blog2/image1.png)
+*Nguồn: Introducing the AWS WAF traffic overview dashboard | AWS Security Blog*
 
-![Image](/images/blog2/image2.png)
+*Link bài đăng Facebook: [AWS Study Group VN](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2202070817224545/?rdid=BDhnVySASHqbx6an#)*
+
+![Image 1](/images/blog2/image1.png)
+
+![Image 2](/images/blog2/image2.png)

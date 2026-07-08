@@ -15,8 +15,8 @@ This section will list and introduce the blogs you have posted to [AWS Study Gro
 ###  [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
 This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+###  [Blog 2 - Introducing the AWS WAF Traffic Overview Dashboard](3.2-Blog2/)
+This blog introduces the newly released AWS WAF Traffic Overview Dashboard, a free tool that helps engineers monitor traffic patterns, analyze abnormal spikes, and optimize Bot Control effectively without needing a large SOC team.
 
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+###  [Blog 3 - [SERVERLESS PATTERNS] Stop Choosing Between Single-Purpose and Lambda-lith: What's the Deal with Read-Write Separation (CQRS Prelude)?](3.3-Blog3/)
+This blog discusses the choice between Single Responsibility Lambdas and Monolithic Lambdas (Lambda-lith) in Serverless Microservices, and introduces the pragmatic Read-Write Separation pattern to optimize Developer Experience, Cost, Security, and Performance.
