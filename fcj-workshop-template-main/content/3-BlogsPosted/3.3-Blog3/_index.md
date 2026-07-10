@@ -5,9 +5,6 @@ weight: 1
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
 
 # [SERVERLESS PATTERNS] Stop Choosing Between Single-Purpose and Lambda-lith: What's the Deal with Read-Write Separation (CQRS Prelude)?

@@ -8,9 +8,6 @@ chapter: false
     
 # Internship Report
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
 ### Student Information:
 &emsp; **Full Name:** Chau Thanh Dat
@@ -23,7 +20,7 @@ chapter: false
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** 22DTHE9
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 

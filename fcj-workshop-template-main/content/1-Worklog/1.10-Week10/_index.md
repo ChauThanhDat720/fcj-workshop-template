@@ -22,7 +22,7 @@ pre: " <b> 1.10. </b> "
 
 ---
 
-**🛠️ Rookwork Project — Phase 4: React Frontend Development & Deploy to S3 + CloudFront + WAF**
+**Rookwork Project — Phase 4: React Frontend Development & Deploy to S3 + CloudFront + WAF**
 
 | Day | Rookwork Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |

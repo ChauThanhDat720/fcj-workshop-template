@@ -22,7 +22,7 @@ pre: " <b> 1.12. </b> "
 
 ---
 
-**🛠️ Rookwork Project — Phase 6: End-to-End Testing, Security Review & System Handover**
+**Rookwork Project — Phase 6: End-to-End Testing, Security Review & System Handover**
 
 | Day | Rookwork Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |

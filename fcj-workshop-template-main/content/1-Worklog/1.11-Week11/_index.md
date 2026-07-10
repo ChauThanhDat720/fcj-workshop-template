@@ -22,7 +22,7 @@ pre: " <b> 1.11. </b> "
 
 ---
 
-**🛠️ Rookwork Project — Phase 5: S3 File Storage (VPC Endpoint) & Amazon SES Email Integration**
+**Rookwork Project — Phase 5: S3 File Storage (VPC Endpoint) & Amazon SES Email Integration**
 
 | Day | Rookwork Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |

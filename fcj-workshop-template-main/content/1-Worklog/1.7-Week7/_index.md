@@ -27,7 +27,7 @@ pre: " <b> 1.7. </b> "
 
 ---
 
-**🛠️ Rookwork Project — Phase 1: Architecture Design & AWS Infrastructure Setup**
+**Rookwork Project — Phase 1: Architecture Design & AWS Infrastructure Setup**
 
 | Day | Rookwork Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |

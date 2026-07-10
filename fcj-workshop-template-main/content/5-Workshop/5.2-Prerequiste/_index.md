@@ -1,242 +1,156 @@
 ---
-title : "Prerequiste"
+title : "Prerequisite"
 date : 2024-01-01 
 weight : 2 
 chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
-Add the following IAM permission policy to your user account to deploy and cleanup this workshop.
+Before starting the AWS infrastructure deployment for the **Rookwork** project, ensure all of the following prerequisites are in place.
+
+---
+
+## 1. AWS Account
+
+- An active **AWS account** (AWS Free Tier or a learning account is acceptable).
+- The account must have permissions to create: **VPC, EC2, RDS, S3, SES, CloudFront, WAF, Route 53, IAM, ACM**.
+
+{{% notice tip %}}
+💡 It is recommended to use an **IAM User** rather than the Root Account for deployments. Create an IAM User with **AdministratorAccess** or a custom policy scoped to the required services.
+{{% /notice %}}
+
+---
+
+## 2. Required Tools
+
+Install the following tools on your local machine:
+
+| Tool | Version | Purpose |
+|------|---------|---------|
+| **Java JDK** | 17+ | Build and run Spring Boot backend |
+| **Maven** | 3.8+ | Dependency management and backend build |
+| **Node.js** | 18+ | Build React 19 frontend |
+| **npm** | 9+ | Frontend package management |
+| **Docker** | 24+ | Package the application into containers |
+| **AWS CLI** | v2 | Interact with AWS from the command line |
+| **Git** | 2.x | Source code management |
+
+### Verify Installation
+
+Run the following commands to confirm each tool is installed correctly:
+
+```bash
+java --version        # Java 17+
+mvn --version         # Maven 3.8+
+node --version        # Node.js 18+
+npm --version         # npm 9+
+docker --version      # Docker 24+
+aws --version         # AWS CLI 2.x
+git --version         # Git 2.x
 ```
+
+---
+
+## 3. Configure AWS CLI
+
+Configure the AWS CLI with your IAM User credentials:
+
+```bash
+aws configure
+```
+
+Enter the following when prompted:
+- **AWS Access Key ID** — from IAM Console → Security credentials
+- **AWS Secret Access Key** — from IAM Console → Security credentials
+- **Default region name** — e.g., `ap-southeast-1` (Singapore)
+- **Default output format** — `json`
+
+### Verify Connectivity
+
+```bash
+aws sts get-caller-identity
+```
+
+---
+
+## 4. IAM Permissions
+
+Attach the following **IAM policy** to your IAM User to grant sufficient permissions for deploying Rookwork infrastructure:
+
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-                "cloudformation:*",
-                "cloudwatch:*",
-                "ec2:AcceptTransitGatewayPeeringAttachment",
-                "ec2:AcceptTransitGatewayVpcAttachment",
-                "ec2:AllocateAddress",
-                "ec2:AssociateAddress",
-                "ec2:AssociateIamInstanceProfile",
-                "ec2:AssociateRouteTable",
-                "ec2:AssociateSubnetCidrBlock",
-                "ec2:AssociateTransitGatewayRouteTable",
-                "ec2:AssociateVpcCidrBlock",
-                "ec2:AttachInternetGateway",
-                "ec2:AttachNetworkInterface",
-                "ec2:AttachVolume",
-                "ec2:AttachVpnGateway",
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:CreateClientVpnEndpoint",
-                "ec2:CreateClientVpnRoute",
-                "ec2:CreateCustomerGateway",
-                "ec2:CreateDhcpOptions",
-                "ec2:CreateFlowLogs",
-                "ec2:CreateInternetGateway",
-                "ec2:CreateLaunchTemplate",
-                "ec2:CreateNetworkAcl",
-                "ec2:CreateNetworkInterface",
-                "ec2:CreateNetworkInterfacePermission",
-                "ec2:CreateRoute",
-                "ec2:CreateRouteTable",
-                "ec2:CreateSecurityGroup",
-                "ec2:CreateSubnet",
-                "ec2:CreateSubnetCidrReservation",
-                "ec2:CreateTags",
-                "ec2:CreateTransitGateway",
-                "ec2:CreateTransitGatewayPeeringAttachment",
-                "ec2:CreateTransitGatewayPrefixListReference",
-                "ec2:CreateTransitGatewayRoute",
-                "ec2:CreateTransitGatewayRouteTable",
-                "ec2:CreateTransitGatewayVpcAttachment",
-                "ec2:CreateVpc",
-                "ec2:CreateVpcEndpoint",
-                "ec2:CreateVpcEndpointConnectionNotification",
-                "ec2:CreateVpcEndpointServiceConfiguration",
-                "ec2:CreateVpnConnection",
-                "ec2:CreateVpnConnectionRoute",
-                "ec2:CreateVpnGateway",
-                "ec2:DeleteCustomerGateway",
-                "ec2:DeleteFlowLogs",
-                "ec2:DeleteInternetGateway",
-                "ec2:DeleteNetworkInterface",
-                "ec2:DeleteNetworkInterfacePermission",
-                "ec2:DeleteRoute",
-                "ec2:DeleteRouteTable",
-                "ec2:DeleteSecurityGroup",
-                "ec2:DeleteSubnet",
-                "ec2:DeleteSubnetCidrReservation",
-                "ec2:DeleteTags",
-                "ec2:DeleteTransitGateway",
-                "ec2:DeleteTransitGatewayPeeringAttachment",
-                "ec2:DeleteTransitGatewayPrefixListReference",
-                "ec2:DeleteTransitGatewayRoute",
-                "ec2:DeleteTransitGatewayRouteTable",
-                "ec2:DeleteTransitGatewayVpcAttachment",
-                "ec2:DeleteVpc",
-                "ec2:DeleteVpcEndpoints",
-                "ec2:DeleteVpcEndpointServiceConfigurations",
-                "ec2:DeleteVpnConnection",
-                "ec2:DeleteVpnConnectionRoute",
-                "ec2:Describe*",
-                "ec2:DetachInternetGateway",
-                "ec2:DisassociateAddress",
-                "ec2:DisassociateRouteTable",
-                "ec2:GetLaunchTemplateData",
-                "ec2:GetTransitGatewayAttachmentPropagations",
-                "ec2:ModifyInstanceAttribute",
-                "ec2:ModifySecurityGroupRules",
-                "ec2:ModifyTransitGatewayVpcAttachment",
-                "ec2:ModifyVpcAttribute",
-                "ec2:ModifyVpcEndpoint",
-                "ec2:ReleaseAddress",
-                "ec2:ReplaceRoute",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:RunInstances",
-                "ec2:StartInstances",
-                "ec2:StopInstances",
-                "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
-                "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
-                "iam:AddRoleToInstanceProfile",
-                "iam:AttachRolePolicy",
-                "iam:CreateInstanceProfile",
-                "iam:CreatePolicy",
+                "ec2:*",
+                "rds:*",
+                "s3:*",
+                "cloudfront:*",
+                "wafv2:*",
+                "route53:*",
+                "ses:*",
+                "acm:*",
                 "iam:CreateRole",
-                "iam:DeleteInstanceProfile",
-                "iam:DeletePolicy",
-                "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:DetachRolePolicy",
-                "iam:GetInstanceProfile",
-                "iam:GetPolicy",
-                "iam:GetRole",
-                "iam:GetRolePolicy",
-                "iam:ListPolicyVersions",
-                "iam:ListRoles",
+                "iam:AttachRolePolicy",
                 "iam:PassRole",
-                "iam:PutRolePolicy",
-                "iam:RemoveRoleFromInstanceProfile",
-                "lambda:CreateFunction",
-                "lambda:DeleteFunction",
-                "lambda:DeleteLayerVersion",
-                "lambda:GetFunction",
-                "lambda:GetLayerVersion",
-                "lambda:InvokeFunction",
-                "lambda:PublishLayerVersion",
-                "logs:CreateLogGroup",
-                "logs:DeleteLogGroup",
-                "logs:DescribeLogGroups",
-                "logs:PutRetentionPolicy",
-                "route53:ChangeTagsForResource",
-                "route53:CreateHealthCheck",
-                "route53:CreateHostedZone",
-                "route53:CreateTrafficPolicy",
-                "route53:DeleteHostedZone",
-                "route53:DisassociateVPCFromHostedZone",
-                "route53:GetHostedZone",
-                "route53:ListHostedZones",
-                "route53domains:ListDomains",
-                "route53domains:ListOperations",
-                "route53domains:ListTagsForDomain",
-                "route53resolver:AssociateResolverEndpointIpAddress",
-                "route53resolver:AssociateResolverRule",
-                "route53resolver:CreateResolverEndpoint",
-                "route53resolver:CreateResolverRule",
-                "route53resolver:DeleteResolverEndpoint",
-                "route53resolver:DeleteResolverRule",
-                "route53resolver:DisassociateResolverEndpointIpAddress",
-                "route53resolver:DisassociateResolverRule",
-                "route53resolver:GetResolverEndpoint",
-                "route53resolver:GetResolverRule",
-                "route53resolver:ListResolverEndpointIpAddresses",
-                "route53resolver:ListResolverEndpoints",
-                "route53resolver:ListResolverRuleAssociations",
-                "route53resolver:ListResolverRules",
-                "route53resolver:ListTagsForResource",
-                "route53resolver:UpdateResolverEndpoint",
-                "route53resolver:UpdateResolverRule",
-                "s3:AbortMultipartUpload",
-                "s3:CreateBucket",
-                "s3:DeleteBucket",
-                "s3:DeleteObject",
-                "s3:GetAccountPublicAccessBlock",
-                "s3:GetBucketAcl",
-                "s3:GetBucketOwnershipControls",
-                "s3:GetBucketPolicy",
-                "s3:GetBucketPolicyStatus",
-                "s3:GetBucketPublicAccessBlock",
-                "s3:GetObject",
-                "s3:GetObjectVersion",
-                "s3:GetBucketVersioning",
-                "s3:ListAccessPoints",
-                "s3:ListAccessPointsForObjectLambda",
-                "s3:ListAllMyBuckets",
-                "s3:ListBucket",
-                "s3:ListBucketMultipartUploads",
-                "s3:ListBucketVersions",
-                "s3:ListJobs",
-                "s3:ListMultipartUploadParts",
-                "s3:ListMultiRegionAccessPoints",
-                "s3:ListStorageLensConfigurations",
-                "s3:PutAccountPublicAccessBlock",
-                "s3:PutBucketAcl",
-                "s3:PutBucketPolicy",
-                "s3:PutBucketPublicAccessBlock",
-                "s3:PutObject",
-                "secretsmanager:CreateSecret",
-                "secretsmanager:DeleteSecret",
-                "secretsmanager:DescribeSecret",
-                "secretsmanager:GetSecretValue",
-                "secretsmanager:ListSecrets",
-                "secretsmanager:ListSecretVersionIds",
-                "secretsmanager:PutResourcePolicy",
-                "secretsmanager:TagResource",
-                "secretsmanager:UpdateSecret",
-                "sns:ListTopics",
-                "ssm:DescribeInstanceProperties",
-                "ssm:DescribeSessions",
-                "ssm:GetConnectionStatus",
-                "ssm:GetParameters",
-                "ssm:ListAssociations",
-                "ssm:ResumeSession",
-                "ssm:StartSession",
-                "ssm:TerminateSession"
+                "iam:GetRole",
+                "iam:CreateInstanceProfile",
+                "iam:AddRoleToInstanceProfile",
+                "elasticloadbalancing:*",
+                "autoscaling:*",
+                "ecr:*",
+                "logs:*",
+                "cloudwatch:*"
             ],
             "Resource": "*"
         }
     ]
 }
-
 ```
 
-#### Provision resources using CloudFormation
+---
 
-In this lab, we will use **N.Virginia region (us-east-1)**.
+## 5. Prepare Source Code
 
-To prepare the workshop environment, deploy this **CloudFormation Template** (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Accept all of the defaults when deploying the template. 
+Clone the Rookwork project source code to your local machine:
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack1.png)
+```bash
+# Backend (Spring Boot)
+git clone https://github.com/ChauThanhDat720/rookwork-backend.git
 
-+ Tick 2 acknowledgement boxes
-+ Choose **Create stack**
+# Frontend (React 19)
+git clone https://github.com/ChauThanhDat720/rookwork-frontend.git
+```
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack2.png)
+### Test Backend Build
 
-The **ClouddFormation** deployment requires about 15 minutes to complete.
+```bash
+cd rookwork-backend
+mvn clean package -DskipTests
+```
 
-![complete](/images/5-Workshop/5.2-Prerequisite/complete.png)
+### Test Frontend Build
 
-+ **2 VPCs** have been created
+```bash
+cd rookwork-frontend
+npm install
+npm run build
+```
 
-![vpcs](/images/5-Workshop/5.2-Prerequisite/vpcs.png)
+---
 
-+ **3 EC2s** have been created
+## 6. Verify Docker
 
-![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
+Ensure Docker is running and can pull images:
+
+```bash
+docker info
+docker pull amazoncorretto:17
+```
+
+
+---
+
+Once all prerequisites are complete, you are ready to begin deploying the AWS infrastructure for Rookwork. Proceed to [5.3 — Access S3 from VPC](../5.3-S3-vpc/).

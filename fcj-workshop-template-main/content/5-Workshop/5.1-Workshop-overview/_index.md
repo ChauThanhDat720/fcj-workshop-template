@@ -6,13 +6,25 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### VPC endpoints
-+ **VPC endpoints** are virtual devices. They are horizontally scaled, redundant, and highly available VPC components. They allow communication between your compute resources and AWS services without imposing availability risks.
-+ Compute resources running in VPC can access  **Amazon S3**  using a Gateway endpoint. PrivateLink interface endpoints can be used by compute resources running in VPC or on-premises.
+## System Architecture
 
-#### Workshop overview
-In this workshop, you will use two VPCs. 
-+ **"VPC Cloud"** is for cloud resources such as a  **Gateway endpoint** and an EC2 instance to test with. 
-+ **"VPC On-Prem"** simulates an on-premises environment such as a factory or corporate datacenter. An EC2 instance running strongSwan VPN software has been deployed in "VPC On-prem" and automatically configured to establish a Site-to-Site VPN tunnel with AWS Transit Gateway. This VPN simulates connectivity from an on-premises location to the AWS cloud. To minimize costs, only one VPN instance is provisioned to support this workshop. When planning VPN connectivity for your production workloads, AWS recommends using multiple VPN devices for high availability.
+![Rookwork AWS Architecture](/images/5-Workshop/rookwork_aws_architecture.jpg)
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+The system operates through the following main processing flows:
+
+**① DNS Resolution & CDN:**
+- **Route 53** resolves the domain name and routes users to the system.
+- **CloudFront** distributes the static frontend from **FE Static S3**, combined with **AWS WAF** to protect against web exploits.
+
+**② Routing & Compute Backend:**
+- API traffic flows through the **Internet Gateway** → **ALB (Application Load Balancer)** → load-balanced to **EC2 instances** placed inside *Private Subnets*.
+- EC2 accesses the internet for outbound calls via the **NAT Gateway** (step 6.1 — Route to Internet).
+
+**③ Database & Storage:**
+- Business data is stored on **Amazon RDS PostgreSQL**, deployed in a **Multi-AZ** setup (step 7 — DB Replication) for disaster recovery.
+- File attachments are written by EC2 to **Amazon S3** via the **S3 Gateway Endpoint** using Internal Routing (steps 8 & 9) — bypassing the public internet and reducing internal bandwidth costs to zero.
+- Users download files directly via **Direct File Access** (step 10).
+
+**④ Shared Services:**
+- **Amazon SES** delivers email notifications (e.g., workspace invitations) triggered from EC2 (steps 6.2 & 6.3).
+- **AWS Certificate Manager (ACM)** manages SSL/TLS certificates, and **AWS IAM** controls system-wide permissions.

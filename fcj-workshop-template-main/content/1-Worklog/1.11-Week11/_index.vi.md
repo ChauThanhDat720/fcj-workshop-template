@@ -22,7 +22,7 @@ pre: " <b> 1.11. </b> "
 
 ---
 
-**🛠️ Dự án Rookwork — Phase 5: Tích hợp S3 File Storage (VPC Endpoint) & Amazon SES Email**
+**Dự án Rookwork — Phase 5: Tích hợp S3 File Storage (VPC Endpoint) & Amazon SES Email**
 
 | Thứ | Công việc Rookwork | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |

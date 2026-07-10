@@ -22,7 +22,7 @@ pre: " <b> 1.8. </b> "
 
 ---
 
-**🛠️ Rookwork Project — Phase 2: Spring Boot Backend & PostgreSQL Database**
+**Rookwork Project — Phase 2: Spring Boot Backend & PostgreSQL Database**
 
 | Day | Rookwork Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |

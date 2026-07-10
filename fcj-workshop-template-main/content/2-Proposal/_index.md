@@ -5,9 +5,6 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
 
 # Rookwork - Team Collaboration Management Software
 ## A real-time team collaboration management system on a desktop platform
@@ -64,7 +61,17 @@ The system operates on a distributed model within the AWS Cloud environment. The
 - *Phase 5:* Integrate S3 Endpoint for file storage and Amazon SES for sending emails.
 - *Phase 6:* End-to-end testing, security review, and system handover.
 
-### 6. Risk Assessment
+### 6. Operational Costs
+The Rookwork system is deployed on AWS following a High Availability architecture standard with three layers of security. The platform relies on core services including an EC2 cluster running the Spring Boot backend, an Amazon RDS PostgreSQL database, and Amazon S3 for hosting the React 19 frontend and static assets.
+
+In the current phase, as the system primarily serves internal testing and pre-council acceptance review with limited traffic, the estimated total infrastructure cost is maintained at an optimal level of approximately **$136 USD/month** (equivalent to **3.48 million VND**). This budget includes:
+- A **Multi-AZ** redundancy setup for both the backend and database tiers.
+- A **NAT Gateway** to enforce network security within Private Subnets.
+- An **S3 Gateway Endpoint** that reduces internal bandwidth costs to zero.
+
+If further budget reduction is required during this evaluation phase, the project can flexibly switch to a **Single-AZ** configuration or implement scheduled auto start/stop scripts for non-business hours.
+
+### 7. Risk Assessment
 *Risk Matrix*
 - VPC routing misconfigurations preventing EC2 from accessing the internet or DB: High impact, medium probability.
 - AWS budget overruns due to NAT Gateway uptime or Multi-AZ configurations: Medium impact, high probability (for learning accounts).

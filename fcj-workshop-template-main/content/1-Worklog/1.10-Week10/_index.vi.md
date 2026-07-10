@@ -22,7 +22,7 @@ pre: " <b> 1.10. </b> "
 
 ---
 
-**🛠️ Dự án Rookwork — Phase 4: Phát triển Frontend React & Deploy lên S3 + CloudFront + WAF**
+**Dự án Rookwork — Phase 4: Phát triển Frontend React & Deploy lên S3 + CloudFront + WAF**
 
 | Thứ | Công việc Rookwork | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |

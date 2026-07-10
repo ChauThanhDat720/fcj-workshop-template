@@ -22,7 +22,7 @@ pre: " <b> 1.9. </b> "
 
 ---
 
-**🛠️ Rookwork Project — Phase 3: Deploy Backend to EC2 + ALB + NAT Gateway**
+**Rookwork Project — Phase 3: Deploy Backend to EC2 + ALB + NAT Gateway**
 
 | Day | Rookwork Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |

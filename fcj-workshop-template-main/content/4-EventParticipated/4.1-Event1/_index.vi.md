@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Báo cáo tham gia sự kiện: Khám phá AI, CloudFront và Hệ thống Multi-Agent
+# Báo cáo tham gia sự kiện: GenAI-powered App-DB Modernization workshop
 
 ### 1. Ý nghĩa và mục tiêu của sự kiện
 Sự kiện mang đến góc nhìn thực tiễn về việc ứng dụng Trí tuệ Nhân tạo (AI) sao cho hiệu quả thông qua việc xây dựng đúng ngữ cảnh. Đồng thời, chương trình cũng giới thiệu các bộ công cụ AI giúp tối ưu quá trình phân tích dữ liệu và làm việc nhóm.

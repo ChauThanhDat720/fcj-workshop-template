@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
 
 > In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
 > 
@@ -26,7 +23,7 @@ During my internship, I participated in one event. Each one was a memorable expe
 ### [Event 1](4.1-Event1/)  
 &emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Date & Time:** 09:00, May 23, 2026  
 
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 

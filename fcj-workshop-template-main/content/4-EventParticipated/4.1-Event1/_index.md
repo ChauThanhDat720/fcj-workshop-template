@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Event Report: Exploring AI, CloudFront, and Multi-Agent Systems
+# Event Report: GenAI-powered App-DB Modernization workshop
 
 ### 1. Event Significance and Objectives
 The event provided practical insights into applying Artificial Intelligence (AI) effectively by establishing the correct context. It also introduced AI tools that streamline data analysis and team collaboration.

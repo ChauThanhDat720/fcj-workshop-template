@@ -22,7 +22,7 @@ pre: " <b> 1.8. </b> "
 
 ---
 
-**🛠️ Dự án Rookwork — Phase 2: Xây dựng Backend Spring Boot & Database PostgreSQL**
+**Dự án Rookwork — Phase 2: Xây dựng Backend Spring Boot & Database PostgreSQL**
 
 | Thứ | Công việc Rookwork | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |

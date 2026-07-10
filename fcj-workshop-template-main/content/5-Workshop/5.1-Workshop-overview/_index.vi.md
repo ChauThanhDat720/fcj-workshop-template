@@ -6,14 +6,25 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+## Kiến trúc hệ thống
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+![Rookwork AWS Architecture](/images/5-Workshop/rookwork_aws_architecture.jpg)
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+Hệ thống hoạt động theo các luồng xử lý chính sau:
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+**① DNS Resolution & CDN:**
+- **Route 53** phân giải tên miền, điều hướng người dùng đến hệ thống.
+- **CloudFront** phân phối frontend tĩnh từ **FE Static S3**, kết hợp **AWS WAF** để bảo vệ khỏi các tấn công web.
+
+**② Routing & Compute Backend:**
+- API traffic đi qua **Internet Gateway** → **ALB (Application Load Balancer)** → cân bằng tải đến các **EC2 instances** đặt trong *Private Subnet*.
+- EC2 truy cập internet outbound qua **NAT Gateway** (bước 6.1 — Route to Internet).
+
+**③ Database & Storage:**
+- Dữ liệu nghiệp vụ lưu trên **Amazon RDS PostgreSQL**, triển khai **Multi-AZ** (bước 7 — DB Replication) để dự phòng thảm họa.
+- File đính kèm được EC2 ghi vào **Amazon S3** qua **S3 Gateway Endpoint** theo Internal Routing (bước 8 & 9) — không đi qua internet, giảm chi phí băng thông về 0.
+- Người dùng tải file trực tiếp qua **Direct File Access** (bước 10).
+
+**④ Shared Services:**
+- **Amazon SES** gửi email thông báo (mời thành viên, v.v.) được trigger từ EC2 (bước 6.2 & 6.3).
+- **AWS Certificate Manager (ACM)** quản lý SSL/TLS, **AWS IAM** quản lý phân quyền toàn hệ thống.

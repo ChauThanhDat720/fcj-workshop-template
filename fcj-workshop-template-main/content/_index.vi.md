@@ -17,7 +17,7 @@ chapter: false
 
 &emsp; **Ngành:** Công nghệ thông tin
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Lớp:** 22DTHE9
 
 &emsp; **Công ty thực tập:** Amazon Web Services Viet Nam Company Limited
 
