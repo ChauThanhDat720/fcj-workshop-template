@@ -39,29 +39,29 @@ pre: " <b> 1.7. </b> "
 
 ### Week 7 Achievements:
 
-* **[Rookwork]** AWS IoT Core overview: device registry, message broker, rules engine
+* Successfully completed: AWS IoT Core overview: device registry, message broker, rules engine
 
-* **[Rookwork]** MQTT protocol: topics, QoS levels, retain messages
+* Successfully completed: MQTT protocol: topics, QoS levels, retain messages
 
-* **[Rookwork]** IoT Core Thing creation and certificates
+* Successfully completed: IoT Core Thing creation and certificates
 
-* **[Rookwork]** Device policies for secure MQTT connection
+* Successfully completed: Device policies for secure MQTT connection
 
-* **[Rookwork]** Create IoT Thing with certificate
+* Successfully completed: Create IoT Thing with certificate
 
-* **[Rookwork]** Simulate device publishing MQTT messages
+* Successfully completed: Simulate device publishing MQTT messages
 
-* **[Rookwork]** Subscribe to topics in MQTT test client
+* Successfully completed: Subscribe to topics in MQTT test client
 
-* **[Rookwork]** IoT Rules Engine: SQL-like rule queries
+* Successfully completed: IoT Rules Engine: SQL-like rule queries
 
-* **[Rookwork]** Route messages to S3, Lambda, DynamoDB
+* Successfully completed: Route messages to S3, Lambda, DynamoDB
 
-* **[Rookwork]** Create IoT rule to forward data to S3
+* Successfully completed: Create IoT rule to forward data to S3
 
-* **[Rookwork]** Trigger Lambda from IoT rule
+* Successfully completed: Trigger Lambda from IoT rule
 
-* **[Rookwork]** End-to-end data ingestion test
+* Successfully completed: End-to-end data ingestion test
 
 * **[Rookwork]** Design the overall AWS architecture diagram for Rookwork
 
