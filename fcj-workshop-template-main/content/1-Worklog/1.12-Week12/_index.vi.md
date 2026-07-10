@@ -26,11 +26,11 @@ pre: " <b> 1.12. </b> "
 
 | Thứ | Công việc Rookwork | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Kiểm thử end-to-end toàn bộ hệ thống Rookwork: Đăng nhập → Tạo Workspace → Mời thành viên (SES) → Upload file (S3) → Quản lý Task <br> - Ghi lại tất cả kết quả kiểm thử | 01/07/2026 | 01/07/2026 | |
-| 3 | - Security review: kiểm tra IAM least-privilege, Security Group rules, S3 bucket policies <br> - Xác minh JWT token expiry, CORS policy và WAF rule hoạt động đúng | 02/07/2026 | 02/07/2026 | |
-| 4 | - Cấu hình Amazon CloudWatch: tạo alarms cho EC2 CPU, RDS connections, ALB 5xx errors <br> - Thiết lập AWS Budgets: cảnh báo chi phí vượt ngưỡng | 03/07/2026 | 03/07/2026 | |
-| 5 | - Viết tài liệu kỹ thuật Rookwork: sơ đồ kiến trúc AWS, API reference, hướng dẫn deployment <br> - Chuẩn bị tài liệu bàn giao và demo system cho supervisor | 04/07/2026 | 04/07/2026 | |
-| 6 | - **Hoàn thiện & Bàn giao Phase 6:** <br>&emsp; + Demo hệ thống Rookwork hoàn chỉnh <br>&emsp; + Dọn dẹp tài nguyên AWS không cần thiết (Multi-AZ dev, NAT Gateway test) <br>&emsp; + Xác minh chi phí AWS nằm trong ngân sách | 12/07/2026 | 12/07/2026 | |
+| 2 | - Kiểm thử end-to-end toàn bộ hệ thống Rookwork: Đăng nhập → Tạo Workspace → Mời thành viên (SES) → Upload file (S3) → Quản lý Task <br> - Ghi lại tất cả kết quả kiểm thử | 01/07/2026 | 12/07/2026 | |
+| 3 | - Security review: kiểm tra IAM least-privilege, Security Group rules, S3 bucket policies <br> - Xác minh JWT token expiry, CORS policy và WAF rule hoạt động đúng | 01/07/2026 | 12/07/2026 | |
+| 4 | - Cấu hình Amazon CloudWatch: tạo alarms cho EC2 CPU, RDS connections, ALB 5xx errors <br> - Thiết lập AWS Budgets: cảnh báo chi phí vượt ngưỡng | 01/07/2026 | 12/07/2026 | |
+| 5 | - Viết tài liệu kỹ thuật Rookwork: sơ đồ kiến trúc AWS, API reference, hướng dẫn deployment <br> - Chuẩn bị tài liệu bàn giao và demo system cho supervisor | 01/07/2026 | 12/07/2026 | |
+| 6 | - **Hoàn thiện & Bàn giao Phase 6:** <br>&emsp; + Demo hệ thống Rookwork hoàn chỉnh <br>&emsp; + Dọn dẹp tài nguyên AWS không cần thiết (Multi-AZ dev, NAT Gateway test) <br>&emsp; + Xác minh chi phí AWS nằm trong ngân sách | 01/07/2026 | 12/07/2026 | |
 
 
 ### Kết quả đạt được tuần 12:

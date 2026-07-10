@@ -31,11 +31,11 @@ pre: " <b> 1.7. </b> "
 
 | Thứ | Công việc Rookwork | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Thiết kế sơ đồ kiến trúc AWS tổng thể cho Rookwork <br> - Xác định các dịch vụ cần dùng: EC2, RDS, S3, SES, CloudFront, WAF, Route 53 | 27/05/2026 | 27/05/2026 | |
-| 3 | - Khởi tạo Amazon VPC: cấu hình Public/Private Subnets, Internet Gateway <br> - Thiết lập NAT Gateway cho Private Subnet outbound traffic | 28/05/2026 | 28/05/2026 | |
-| 4 | - Cấu hình AWS IAM: tạo roles và policies cho EC2, RDS, S3 <br> - Thiết lập Security Groups cho từng tầng (ALB, EC2, RDS) | 29/05/2026 | 29/05/2026 | |
-| 5 | - Cấu hình Amazon Route 53: đăng ký hosted zone, tạo DNS records <br> - Thiết lập AWS Certificate Manager (ACM) cho SSL/TLS | 30/05/2026 | 30/05/2026 | |
-| 6 | - **Review & hoàn thiện Phase 1:** <br>&emsp; + Kiểm tra toàn bộ cấu hình VPC, subnet, routing table <br>&emsp; + Verify IAM permissions và Security Groups <br>&emsp; + Lập kế hoạch chi tiết cho Phase 2 | 31/05/2026 | 31/05/2026 | |
+| 2 | - Thiết kế sơ đồ kiến trúc AWS tổng thể cho Rookwork <br> - Xác định các dịch vụ cần dùng: EC2, RDS, S3, SES, CloudFront, WAF, Route 53 | 27/05/2026 | 31/05/2026 | |
+| 3 | - Khởi tạo Amazon VPC: cấu hình Public/Private Subnets, Internet Gateway <br> - Thiết lập NAT Gateway cho Private Subnet outbound traffic | 27/05/2026 | 31/05/2026 | |
+| 4 | - Cấu hình AWS IAM: tạo roles và policies cho EC2, RDS, S3 <br> - Thiết lập Security Groups cho từng tầng (ALB, EC2, RDS) | 27/05/2026 | 31/05/2026 | |
+| 5 | - Cấu hình Amazon Route 53: đăng ký hosted zone, tạo DNS records <br> - Thiết lập AWS Certificate Manager (ACM) cho SSL/TLS | 27/05/2026 | 31/05/2026 | |
+| 6 | - **Review & hoàn thiện Phase 1:** <br>&emsp; + Kiểm tra toàn bộ cấu hình VPC, subnet, routing table <br>&emsp; + Verify IAM permissions và Security Groups <br>&emsp; + Lập kế hoạch chi tiết cho Phase 2 | 27/05/2026 | 31/05/2026 | |
 
 ### Kết quả đạt được tuần 7:
 

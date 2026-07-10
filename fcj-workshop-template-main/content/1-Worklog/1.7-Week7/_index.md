@@ -31,11 +31,11 @@ pre: " <b> 1.7. </b> "
 
 | Day | Rookwork Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2 | - Design the overall AWS architecture diagram for Rookwork <br> - Identify required services: EC2, RDS, S3, SES, CloudFront, WAF, Route 53 | 27/05/2026 | 27/05/2026 | |
-| 3 | - Initialize Amazon VPC: configure Public/Private Subnets, Internet Gateway <br> - Set up NAT Gateway for Private Subnet outbound traffic | 28/05/2026 | 28/05/2026 | |
-| 4 | - Configure AWS IAM: create roles and policies for EC2, RDS, S3 <br> - Set up Security Groups for each tier (ALB, EC2, RDS) | 29/05/2026 | 29/05/2026 | |
-| 5 | - Configure Amazon Route 53: register hosted zone, create DNS records <br> - Set up AWS Certificate Manager (ACM) for SSL/TLS | 30/05/2026 | 30/05/2026 | |
-| 6 | - **Review & finalize Phase 1:** <br>&emsp; + Verify all VPC, subnet, and routing table configurations <br>&emsp; + Validate IAM permissions and Security Groups <br>&emsp; + Plan detailed tasks for Phase 2 | 31/05/2026 | 31/05/2026 | |
+| 2 | - Design the overall AWS architecture diagram for Rookwork <br> - Identify required services: EC2, RDS, S3, SES, CloudFront, WAF, Route 53 | 27/05/2026 | 31/05/2026 | |
+| 3 | - Initialize Amazon VPC: configure Public/Private Subnets, Internet Gateway <br> - Set up NAT Gateway for Private Subnet outbound traffic | 27/05/2026 | 31/05/2026 | |
+| 4 | - Configure AWS IAM: create roles and policies for EC2, RDS, S3 <br> - Set up Security Groups for each tier (ALB, EC2, RDS) | 27/05/2026 | 31/05/2026 | |
+| 5 | - Configure Amazon Route 53: register hosted zone, create DNS records <br> - Set up AWS Certificate Manager (ACM) for SSL/TLS | 27/05/2026 | 31/05/2026 | |
+| 6 | - **Review & finalize Phase 1:** <br>&emsp; + Verify all VPC, subnet, and routing table configurations <br>&emsp; + Validate IAM permissions and Security Groups <br>&emsp; + Plan detailed tasks for Phase 2 | 27/05/2026 | 31/05/2026 | |
 
 ### Week 7 Achievements:
 

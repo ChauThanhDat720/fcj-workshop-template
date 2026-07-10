@@ -26,11 +26,11 @@ pre: " <b> 1.8. </b> "
 
 | Thứ | Công việc Rookwork | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Khởi tạo project Spring Boot: cấu hình Spring Security (JWT + OAuth2) <br> - Thiết kế schema database PostgreSQL cho các entity chính (User, Workspace, Task) | 03/06/2026 | 03/06/2026 | |
-| 3 | - Cấu hình Amazon RDS PostgreSQL Multi-AZ: tạo DB instance, subnet groups <br> - Thiết lập Flyway để quản lý database migration | 04/06/2026 | 04/06/2026 | |
-| 4 | - Implement các API cốt lõi: Authentication (register, login, refresh token) <br> - Viết Flyway migration scripts V1 — khởi tạo schema ban đầu | 05/06/2026 | 05/06/2026 | |
-| 5 | - Implement CRUD API: Workspace, Project, Task management <br> - Cấu hình Spring Data JPA repositories | 06/06/2026 | 06/06/2026 | |
-| 6 | - **Review & kiểm thử Phase 2:** <br>&emsp; + Unit test các API endpoint chính <br>&emsp; + Xác minh kết nối RDS từ local environment <br>&emsp; + Lập kế hoạch deploy lên EC2 (Phase 3) | 07/06/2026 | 07/06/2026 | |
+| 2 | - Khởi tạo project Spring Boot: cấu hình Spring Security (JWT + OAuth2) <br> - Thiết kế schema database PostgreSQL cho các entity chính (User, Workspace, Task) | 03/06/2026 | 07/06/2026 | |
+| 3 | - Cấu hình Amazon RDS PostgreSQL Multi-AZ: tạo DB instance, subnet groups <br> - Thiết lập Flyway để quản lý database migration | 03/06/2026 | 07/06/2026 | |
+| 4 | - Implement các API cốt lõi: Authentication (register, login, refresh token) <br> - Viết Flyway migration scripts V1 — khởi tạo schema ban đầu | 03/06/2026 | 07/06/2026 | |
+| 5 | - Implement CRUD API: Workspace, Project, Task management <br> - Cấu hình Spring Data JPA repositories | 03/06/2026 | 07/06/2026 | |
+| 6 | - **Review & kiểm thử Phase 2:** <br>&emsp; + Unit test các API endpoint chính <br>&emsp; + Xác minh kết nối RDS từ local environment <br>&emsp; + Lập kế hoạch deploy lên EC2 (Phase 3) | 03/06/2026 | 07/06/2026 | |
 
 ### Kết quả đạt được tuần 8:
 

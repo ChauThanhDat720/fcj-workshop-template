@@ -26,11 +26,11 @@ pre: " <b> 1.8. </b> "
 
 | Day | Rookwork Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2 | - Initialize Spring Boot project: configure Spring Security (JWT + OAuth2) <br> - Design PostgreSQL schema for core entities (User, Workspace, Task) | 03/06/2026 | 03/06/2026 | |
-| 3 | - Set up Amazon RDS PostgreSQL Multi-AZ: create DB instance and subnet groups <br> - Configure Flyway for database migration management | 04/06/2026 | 04/06/2026 | |
-| 4 | - Implement core APIs: Authentication (register, login, refresh token) <br> - Write Flyway migration scripts V1 — initial schema setup | 05/06/2026 | 05/06/2026 | |
-| 5 | - Implement CRUD APIs: Workspace, Project, Task management <br> - Configure Spring Data JPA repositories | 06/06/2026 | 06/06/2026 | |
-| 6 | - **Review & test Phase 2:** <br>&emsp; + Unit test main API endpoints <br>&emsp; + Verify RDS connectivity from local environment <br>&emsp; + Plan EC2 deployment tasks (Phase 3) | 07/06/2026 | 07/06/2026 | |
+| 2 | - Initialize Spring Boot project: configure Spring Security (JWT + OAuth2) <br> - Design PostgreSQL schema for core entities (User, Workspace, Task) | 03/06/2026 | 07/06/2026 | |
+| 3 | - Set up Amazon RDS PostgreSQL Multi-AZ: create DB instance and subnet groups <br> - Configure Flyway for database migration management | 03/06/2026 | 07/06/2026 | |
+| 4 | - Implement core APIs: Authentication (register, login, refresh token) <br> - Write Flyway migration scripts V1 — initial schema setup | 03/06/2026 | 07/06/2026 | |
+| 5 | - Implement CRUD APIs: Workspace, Project, Task management <br> - Configure Spring Data JPA repositories | 03/06/2026 | 07/06/2026 | |
+| 6 | - **Review & test Phase 2:** <br>&emsp; + Unit test main API endpoints <br>&emsp; + Verify RDS connectivity from local environment <br>&emsp; + Plan EC2 deployment tasks (Phase 3) | 03/06/2026 | 07/06/2026 | |
 
 ### Week 8 Achievements:
 

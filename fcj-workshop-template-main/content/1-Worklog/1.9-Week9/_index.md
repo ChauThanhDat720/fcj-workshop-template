@@ -26,11 +26,11 @@ pre: " <b> 1.9. </b> "
 
 | Day | Rookwork Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2 | - Launch Amazon EC2 instance (t3.medium) in Private Subnet <br> - Configure Application Load Balancer (ALB): target groups, health checks, listener rules | 10/06/2026 | 10/06/2026 | |
-| 3 | - Package Spring Boot application into a Docker image <br> - Push image to Amazon ECR and configure EC2 to pull and run the container | 11/06/2026 | 11/06/2026 | |
-| 4 | - Configure NAT Gateway for EC2 Private Subnet outbound traffic <br> - Verify EC2 → RDS connectivity within the Private Network | 12/06/2026 | 12/06/2026 | |
-| 5 | - Configure ALB HTTPS Listener with ACM certificate <br> - Set up Auto Scaling Group for EC2 (min: 1, desired: 1) | 13/06/2026 | 13/06/2026 | |
-| 6 | - **Review & test Phase 3:** <br>&emsp; + Test API calls through ALB endpoint <br>&emsp; + Verify EC2 can reach RDS and access internet via NAT <br>&emsp; + Plan Frontend development tasks (Phase 4) | 14/06/2026 | 14/06/2026 | |
+| 2 | - Launch Amazon EC2 instance (t3.medium) in Private Subnet <br> - Configure Application Load Balancer (ALB): target groups, health checks, listener rules | 10/06/2026 | 14/06/2026 | |
+| 3 | - Package Spring Boot application into a Docker image <br> - Push image to Amazon ECR and configure EC2 to pull and run the container | 10/06/2026 | 14/06/2026 | |
+| 4 | - Configure NAT Gateway for EC2 Private Subnet outbound traffic <br> - Verify EC2 → RDS connectivity within the Private Network | 10/06/2026 | 14/06/2026 | |
+| 5 | - Configure ALB HTTPS Listener with ACM certificate <br> - Set up Auto Scaling Group for EC2 (min: 1, desired: 1) | 10/06/2026 | 14/06/2026 | |
+| 6 | - **Review & test Phase 3:** <br>&emsp; + Test API calls through ALB endpoint <br>&emsp; + Verify EC2 can reach RDS and access internet via NAT <br>&emsp; + Plan Frontend development tasks (Phase 4) | 10/06/2026 | 14/06/2026 | |
 
 ### Week 9 Achievements:
 

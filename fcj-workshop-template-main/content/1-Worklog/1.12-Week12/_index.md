@@ -26,11 +26,11 @@ pre: " <b> 1.12. </b> "
 
 | Day | Rookwork Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2 | - End-to-end testing of the entire Rookwork system: Login → Create Workspace → Invite member (SES) → Upload file (S3) → Manage Tasks <br> - Record all test results | 01/07/2026 | 01/07/2026 | |
-| 3 | - Security review: check IAM least-privilege, Security Group rules, and S3 bucket policies <br> - Verify JWT token expiry, CORS policy, and WAF rules are working correctly | 02/07/2026 | 02/07/2026 | |
-| 4 | - Configure Amazon CloudWatch: create alarms for EC2 CPU, RDS connections, ALB 5xx errors <br> - Set up AWS Budgets: configure cost threshold alerts | 03/07/2026 | 03/07/2026 | |
-| 5 | - Write Rookwork technical documentation: AWS architecture diagram, API reference, deployment guide <br> - Prepare handover documentation and system demo for supervisor | 04/07/2026 | 04/07/2026 | |
-| 6 | - **Finalize & Hand over Phase 6:** <br>&emsp; + Demo the complete Rookwork system <br>&emsp; + Clean up unnecessary AWS resources (Multi-AZ dev, NAT Gateway test) <br>&emsp; + Confirm AWS costs are within budget | 12/07/2026 | 12/07/2026 | |
+| 2 | - End-to-end testing of the entire Rookwork system: Login → Create Workspace → Invite member (SES) → Upload file (S3) → Manage Tasks <br> - Record all test results | 01/07/2026 | 12/07/2026 | |
+| 3 | - Security review: check IAM least-privilege, Security Group rules, and S3 bucket policies <br> - Verify JWT token expiry, CORS policy, and WAF rules are working correctly | 01/07/2026 | 12/07/2026 | |
+| 4 | - Configure Amazon CloudWatch: create alarms for EC2 CPU, RDS connections, ALB 5xx errors <br> - Set up AWS Budgets: configure cost threshold alerts | 01/07/2026 | 12/07/2026 | |
+| 5 | - Write Rookwork technical documentation: AWS architecture diagram, API reference, deployment guide <br> - Prepare handover documentation and system demo for supervisor | 01/07/2026 | 12/07/2026 | |
+| 6 | - **Finalize & Hand over Phase 6:** <br>&emsp; + Demo the complete Rookwork system <br>&emsp; + Clean up unnecessary AWS resources (Multi-AZ dev, NAT Gateway test) <br>&emsp; + Confirm AWS costs are within budget | 01/07/2026 | 12/07/2026 | |
 
 
 ### Week 12 Achievements:

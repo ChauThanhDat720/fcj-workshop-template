@@ -26,11 +26,11 @@ pre: " <b> 1.10. </b> "
 
 | Thứ | Công việc Rookwork | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Phát triển giao diện React 19: các trang Login, Dashboard, Workspace, Task Board <br> - Cấu hình React Router và global state management | 17/06/2026 | 17/06/2026 | |
-| 3 | - Build production bundle React app <br> - Tạo Amazon S3 bucket (FE Static): cấu hình static website hosting, upload build files | 18/06/2026 | 18/06/2026 | |
-| 4 | - Cấu hình Amazon CloudFront distribution: origin S3, cache behaviors, HTTPS <br> - Tích hợp AWS WAF với CloudFront để bảo vệ khỏi web exploits | 19/06/2026 | 19/06/2026 | |
-| 5 | - Liên kết CloudFront với Route 53 custom domain <br> - Cấu hình CORS trên Spring Boot Backend để chấp nhận request từ CloudFront domain | 20/06/2026 | 20/06/2026 | |
-| 6 | - **Review & kiểm thử Phase 4:** <br>&emsp; + Test toàn bộ luồng đăng nhập và CRUD từ Frontend → ALB → EC2 → RDS <br>&emsp; + Xác minh WAF block các request độc hại <br>&emsp; + Lập kế hoạch tích hợp File Storage & SES (Phase 5) | 21/06/2026 | 21/06/2026 | |
+| 2 | - Phát triển giao diện React 19: các trang Login, Dashboard, Workspace, Task Board <br> - Cấu hình React Router và global state management | 17/06/2026 | 21/06/2026 | |
+| 3 | - Build production bundle React app <br> - Tạo Amazon S3 bucket (FE Static): cấu hình static website hosting, upload build files | 17/06/2026 | 21/06/2026 | |
+| 4 | - Cấu hình Amazon CloudFront distribution: origin S3, cache behaviors, HTTPS <br> - Tích hợp AWS WAF với CloudFront để bảo vệ khỏi web exploits | 17/06/2026 | 21/06/2026 | |
+| 5 | - Liên kết CloudFront với Route 53 custom domain <br> - Cấu hình CORS trên Spring Boot Backend để chấp nhận request từ CloudFront domain | 17/06/2026 | 21/06/2026 | |
+| 6 | - **Review & kiểm thử Phase 4:** <br>&emsp; + Test toàn bộ luồng đăng nhập và CRUD từ Frontend → ALB → EC2 → RDS <br>&emsp; + Xác minh WAF block các request độc hại <br>&emsp; + Lập kế hoạch tích hợp File Storage & SES (Phase 5) | 17/06/2026 | 21/06/2026 | |
 
 ### Kết quả đạt được tuần 10:
 
