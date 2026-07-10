@@ -1,4 +1,4 @@
-baseURL = "http://chauthanhdat.rookwork.asia/"
+baseURL = "https://chauthanhdat.rookwork.asia/"
 relativeURLs = false
 canonifyURLs = true
 defaultContentLanguage = "en"
