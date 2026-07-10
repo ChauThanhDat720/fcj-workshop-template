@@ -32,7 +32,6 @@ pre: " <b> 1.9. </b> "
 | 5 | - Cấu hình ALB Listener HTTPS với ACM certificate <br> - Thiết lập Auto Scaling Group cho EC2 (min: 1, desired: 1) | 13/06/2026 | 13/06/2026 | |
 | 6 | - **Review & kiểm thử Phase 3:** <br>&emsp; + Test API calls qua ALB endpoint <br>&emsp; + Xác minh EC2 kết nối được RDS và gọi ngoài qua NAT <br>&emsp; + Lập kế hoạch phát triển Frontend (Phase 4) | 14/06/2026 | 14/06/2026 | |
 
-
 ### Kết quả đạt được tuần 9:
 
 * Hoàn thành: Tổng quan AWS Amplify: hosting, backend và CI/CD pipeline
@@ -43,25 +42,21 @@ pre: " <b> 1.9. </b> "
 
 * Hoàn thành: Environment variables và build settings trong Amplify
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Kết nối GitHub repo với Amplify
 
-* Hoàn thành: + Kết nối GitHub repo với Amplify
+* Hoàn thành: Cấu hình build settings cho Next.js
 
-* Hoàn thành: + Cấu hình build settings cho Next.js
-
-* Hoàn thành: + Deploy phiên bản đầu tiên của web app
+* Hoàn thành: Deploy phiên bản đầu tiên của web app
 
 * Hoàn thành: Thiết kế real-time dashboard: hiển thị dữ liệu cảm biến IoT
 
 * Hoàn thành: Kết nối Next.js frontend với API Gateway endpoints
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Implement data fetching từ API Gateway
 
-* Hoàn thành: + Implement data fetching từ API Gateway
+* Hoàn thành: Xây dựng biểu đồ real-time cho dữ liệu thời tiết
 
-* Hoàn thành: + Xây dựng biểu đồ real-time cho dữ liệu thời tiết
-
-* Hoàn thành: + Deploy và kiểm tra trên Amplify
+* Hoàn thành: Deploy và kiểm tra trên Amplify
 
 * **[Rookwork]** Khởi tạo Amazon EC2 instance (t3.medium) trong Private Subnet
 
@@ -79,11 +74,9 @@ pre: " <b> 1.9. </b> "
 
 * **[Rookwork]** Thiết lập Auto Scaling Group cho EC2 (min: 1, desired: 1)
 
-* **[Rookwork]** **Review & kiểm thử Phase 3:**
+* **[Rookwork]** Test API calls qua ALB endpoint
 
-* **[Rookwork]** + Test API calls qua ALB endpoint
+* **[Rookwork]** Xác minh EC2 kết nối được RDS và gọi ngoài qua NAT
 
-* **[Rookwork]** + Xác minh EC2 kết nối được RDS và gọi ngoài qua NAT
-
-* **[Rookwork]** + Lập kế hoạch phát triển Frontend (Phase 4)
+* **[Rookwork]** Lập kế hoạch phát triển Frontend (Phase 4)
 

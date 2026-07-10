@@ -32,7 +32,6 @@ pre: " <b> 1.8. </b> "
 | 5 | - Implement CRUD APIs: Workspace, Project, Task management <br> - Configure Spring Data JPA repositories | 06/06/2026 | 06/06/2026 | |
 | 6 | - **Review & test Phase 2:** <br>&emsp; + Unit test main API endpoints <br>&emsp; + Verify RDS connectivity from local environment <br>&emsp; + Plan EC2 deployment tasks (Phase 3) | 07/06/2026 | 07/06/2026 | |
 
-
 ### Week 8 Achievements:
 
 * Successfully completed: AWS Glue overview: Data Catalog, crawlers, databases, tables
@@ -43,23 +42,19 @@ pre: " <b> 1.8. </b> "
 
 * Successfully completed: Glue Data Catalog as centralized metadata store
 
-* Successfully completed: **Practice:**
+* Successfully completed: Create Glue Crawler on raw IoT data S3 bucket
 
-* Successfully completed: + Create Glue Crawler on raw IoT data S3 bucket
-
-* Successfully completed: + Run crawler and verify generated schema
+* Successfully completed: Run crawler and verify generated schema
 
 * Successfully completed: Glue ETL Jobs: PySpark scripts for data transformation
 
 * Successfully completed: Job triggers and scheduling
 
-* Successfully completed: **Practice:**
+* Successfully completed: Create Glue ETL job to transform and clean IoT data
 
-* Successfully completed: + Create Glue ETL job to transform and clean IoT data
+* Successfully completed: Write processed data to output S3 bucket
 
-* Successfully completed: + Write processed data to output S3 bucket
-
-* Successfully completed: + Verify results with Athena
+* Successfully completed: Verify results with Athena
 
 * **[Rookwork]** Initialize Spring Boot project: configure Spring Security (JWT + OAuth2)
 
@@ -77,11 +72,9 @@ pre: " <b> 1.8. </b> "
 
 * **[Rookwork]** Configure Spring Data JPA repositories
 
-* **[Rookwork]** **Review & test Phase 2:**
+* **[Rookwork]** Unit test main API endpoints
 
-* **[Rookwork]** + Unit test main API endpoints
+* **[Rookwork]** Verify RDS connectivity from local environment
 
-* **[Rookwork]** + Verify RDS connectivity from local environment
-
-* **[Rookwork]** + Plan EC2 deployment tasks (Phase 3)
+* **[Rookwork]** Plan EC2 deployment tasks (Phase 3)
 

@@ -20,7 +20,6 @@ pre: " <b> 1.6. </b> "
 | 5 | - AWS CDK/SDK cơ bản để viết infrastructure as code <br> - Tổng quan về CloudFormation stacks | 23/05/2026 | 23/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Thực hành:** <br>&emsp; + Deploy stack API + Lambda bằng AWS CDK <br>&emsp; + Review và kiểm tra toàn bộ luồng serverless API | 24/05/2026 | 24/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Kết quả đạt được tuần 6:
 
 * Hoàn thành: Các loại API Gateway: REST, HTTP, WebSocket
@@ -31,21 +30,17 @@ pre: " <b> 1.6. </b> "
 
 * Hoàn thành: Cấu hình CORS cho API Gateway
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo REST API gắn với Lambda
 
-* Hoàn thành: + Tạo REST API gắn với Lambda
+* Hoàn thành: Test endpoints bằng Postman
 
-* Hoàn thành: + Test endpoints bằng Postman
-
-* Hoàn thành: + Bật xác thực bằng API key
+* Hoàn thành: Bật xác thực bằng API key
 
 * Hoàn thành: AWS CDK/SDK cơ bản để viết infrastructure as code
 
 * Hoàn thành: Tổng quan về CloudFormation stacks
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Deploy stack API + Lambda bằng AWS CDK
 
-* Hoàn thành: + Deploy stack API + Lambda bằng AWS CDK
-
-* Hoàn thành: + Review và kiểm tra toàn bộ luồng serverless API
+* Hoàn thành: Review và kiểm tra toàn bộ luồng serverless API
 

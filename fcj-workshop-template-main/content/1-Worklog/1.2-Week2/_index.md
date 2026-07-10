@@ -20,20 +20,17 @@ pre: " <b> 1.2. </b> "
 | 5 | - **Practice:** <br>&emsp; + Create S3 bucket and upload objects <br>&emsp; + Configure bucket policies and ACLs <br>&emsp; + Enable versioning and lifecycle rules | 25/04/2026 | 25/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - S3 static website hosting <br> - Cross-region replication <br> - Review and summarize week 2 | 26/04/2026 | 26/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Week 2 Achievements:
 
 * Successfully completed: Learn IAM concepts: users, groups, roles, policies
 
 * Successfully completed: Create IAM users and assign permissions
 
-* Successfully completed: **Practice:**
+* Successfully completed: Create IAM user with least privilege
 
-* Successfully completed: + Create IAM user with least privilege
+* Successfully completed: Create custom IAM policy
 
-* Successfully completed: + Create custom IAM policy
-
-* Successfully completed: + Assign roles to EC2 instance
+* Successfully completed: Assign roles to EC2 instance
 
 * Successfully completed: Learn Amazon S3: buckets, objects, versioning
 
@@ -41,13 +38,11 @@ pre: " <b> 1.2. </b> "
 
 * Successfully completed: S3 lifecycle policies
 
-* Successfully completed: **Practice:**
+* Successfully completed: Create S3 bucket and upload objects
 
-* Successfully completed: + Create S3 bucket and upload objects
+* Successfully completed: Configure bucket policies and ACLs
 
-* Successfully completed: + Configure bucket policies and ACLs
-
-* Successfully completed: + Enable versioning and lifecycle rules
+* Successfully completed: Enable versioning and lifecycle rules
 
 * Successfully completed: S3 static website hosting
 

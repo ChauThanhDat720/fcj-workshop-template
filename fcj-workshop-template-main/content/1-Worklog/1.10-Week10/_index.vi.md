@@ -32,7 +32,6 @@ pre: " <b> 1.10. </b> "
 | 5 | - Liên kết CloudFront với Route 53 custom domain <br> - Cấu hình CORS trên Spring Boot Backend để chấp nhận request từ CloudFront domain | 20/06/2026 | 20/06/2026 | |
 | 6 | - **Review & kiểm thử Phase 4:** <br>&emsp; + Test toàn bộ luồng đăng nhập và CRUD từ Frontend → ALB → EC2 → RDS <br>&emsp; + Xác minh WAF block các request độc hại <br>&emsp; + Lập kế hoạch tích hợp File Storage & SES (Phase 5) | 21/06/2026 | 21/06/2026 | |
 
-
 ### Kết quả đạt được tuần 10:
 
 * Hoàn thành: Tổng quan Amazon Cognito: User Pools vs Identity Pools
@@ -43,25 +42,21 @@ pre: " <b> 1.10. </b> "
 
 * Hoàn thành: App clients và OAuth 2.0 scopes
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo Cognito User Pool
 
-* Hoàn thành: + Tạo Cognito User Pool
+* Hoàn thành: Cấu hình app client với OAuth settings
 
-* Hoàn thành: + Cấu hình app client với OAuth settings
-
-* Hoàn thành: + Kiểm tra luồng đăng ký và đăng nhập
+* Hoàn thành: Kiểm tra luồng đăng ký và đăng nhập
 
 * Hoàn thành: Tích hợp Cognito với API Gateway authorizer
 
 * Hoàn thành: Protected routes trong Next.js dùng Cognito JWT tokens
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Thêm Cognito JWT authorizer vào API Gateway
 
-* Hoàn thành: + Thêm Cognito JWT authorizer vào API Gateway
+* Hoàn thành: Implement login/logout trong Next.js
 
-* Hoàn thành: + Implement login/logout trong Next.js
-
-* Hoàn thành: + Chặn truy cập dashboard với người dùng chưa xác thực
+* Hoàn thành: Chặn truy cập dashboard với người dùng chưa xác thực
 
 * **[Rookwork]** Phát triển giao diện React 19: các trang Login, Dashboard, Workspace, Task Board
 
@@ -79,11 +74,9 @@ pre: " <b> 1.10. </b> "
 
 * **[Rookwork]** Cấu hình CORS trên Spring Boot Backend để chấp nhận request từ CloudFront domain
 
-* **[Rookwork]** **Review & kiểm thử Phase 4:**
+* **[Rookwork]** Test toàn bộ luồng đăng nhập và CRUD từ Frontend → ALB → EC2 → RDS
 
-* **[Rookwork]** + Test toàn bộ luồng đăng nhập và CRUD từ Frontend → ALB → EC2 → RDS
+* **[Rookwork]** Xác minh WAF block các request độc hại
 
-* **[Rookwork]** + Xác minh WAF block các request độc hại
-
-* **[Rookwork]** + Lập kế hoạch tích hợp File Storage & SES (Phase 5)
+* **[Rookwork]** Lập kế hoạch tích hợp File Storage & SES (Phase 5)
 

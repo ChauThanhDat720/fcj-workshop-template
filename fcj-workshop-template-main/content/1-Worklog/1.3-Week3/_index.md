@@ -20,7 +20,6 @@ pre: " <b> 1.3. </b> "
 | 5 | - Security Groups vs Network ACLs <br> - VPC Peering basics <br> - VPC Endpoints | 02/05/2026 | 02/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Practice:** <br>&emsp; + Launch EC2 in private subnet <br>&emsp; + Access via Bastion Host <br>&emsp; + Configure Security Groups | 03/05/2026 | 03/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Week 3 Achievements:
 
 * Successfully completed: Learn VPC concepts: CIDR, subnets (public/private), availability zones
@@ -29,13 +28,11 @@ pre: " <b> 1.3. </b> "
 
 * Successfully completed: Route tables configuration
 
-* Successfully completed: **Practice:**
+* Successfully completed: Create custom VPC with public and private subnets
 
-* Successfully completed: + Create custom VPC with public and private subnets
+* Successfully completed: Attach Internet Gateway
 
-* Successfully completed: + Attach Internet Gateway
-
-* Successfully completed: + Configure route tables
+* Successfully completed: Configure route tables
 
 * Successfully completed: Security Groups vs Network ACLs
 
@@ -43,11 +40,9 @@ pre: " <b> 1.3. </b> "
 
 * Successfully completed: VPC Endpoints
 
-* Successfully completed: **Practice:**
+* Successfully completed: Launch EC2 in private subnet
 
-* Successfully completed: + Launch EC2 in private subnet
+* Successfully completed: Access via Bastion Host
 
-* Successfully completed: + Access via Bastion Host
-
-* Successfully completed: + Configure Security Groups
+* Successfully completed: Configure Security Groups
 

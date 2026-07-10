@@ -37,7 +37,6 @@ pre: " <b> 1.7. </b> "
 | 5 | - Configure Amazon Route 53: register hosted zone, create DNS records <br> - Set up AWS Certificate Manager (ACM) for SSL/TLS | 30/05/2026 | 30/05/2026 | |
 | 6 | - **Review & finalize Phase 1:** <br>&emsp; + Verify all VPC, subnet, and routing table configurations <br>&emsp; + Validate IAM permissions and Security Groups <br>&emsp; + Plan detailed tasks for Phase 2 | 31/05/2026 | 31/05/2026 | |
 
-
 ### Week 7 Achievements:
 
 * **[Rookwork]** AWS IoT Core overview: device registry, message broker, rules engine
@@ -48,25 +47,21 @@ pre: " <b> 1.7. </b> "
 
 * **[Rookwork]** Device policies for secure MQTT connection
 
-* **[Rookwork]** **Practice:**
+* **[Rookwork]** Create IoT Thing with certificate
 
-* **[Rookwork]** + Create IoT Thing with certificate
+* **[Rookwork]** Simulate device publishing MQTT messages
 
-* **[Rookwork]** + Simulate device publishing MQTT messages
-
-* **[Rookwork]** + Subscribe to topics in MQTT test client
+* **[Rookwork]** Subscribe to topics in MQTT test client
 
 * **[Rookwork]** IoT Rules Engine: SQL-like rule queries
 
 * **[Rookwork]** Route messages to S3, Lambda, DynamoDB
 
-* **[Rookwork]** **Practice:**
+* **[Rookwork]** Create IoT rule to forward data to S3
 
-* **[Rookwork]** + Create IoT rule to forward data to S3
+* **[Rookwork]** Trigger Lambda from IoT rule
 
-* **[Rookwork]** + Trigger Lambda from IoT rule
-
-* **[Rookwork]** + End-to-end data ingestion test
+* **[Rookwork]** End-to-end data ingestion test
 
 * **[Rookwork]** Design the overall AWS architecture diagram for Rookwork
 
@@ -84,11 +79,9 @@ pre: " <b> 1.7. </b> "
 
 * **[Rookwork]** Set up AWS Certificate Manager (ACM) for SSL/TLS
 
-* **[Rookwork]** **Review & finalize Phase 1:**
+* **[Rookwork]** Verify all VPC, subnet, and routing table configurations
 
-* **[Rookwork]** + Verify all VPC, subnet, and routing table configurations
+* **[Rookwork]** Validate IAM permissions and Security Groups
 
-* **[Rookwork]** + Validate IAM permissions and Security Groups
-
-* **[Rookwork]** + Plan detailed tasks for Phase 2
+* **[Rookwork]** Plan detailed tasks for Phase 2
 

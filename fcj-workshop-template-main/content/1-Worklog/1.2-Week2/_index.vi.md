@@ -20,20 +20,17 @@ pre: " <b> 1.2. </b> "
 | 5 | - **Thực hành:** <br>&emsp; + Tạo S3 bucket và upload object <br>&emsp; + Cấu hình bucket policy và ACL <br>&emsp; + Bật versioning và lifecycle rules | 25/04/2026 | 25/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - Host static website trên S3 <br> - Cross-region replication <br> - Ôn tập và tổng kết tuần 2 | 26/04/2026 | 26/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Kết quả đạt được tuần 2:
 
 * Hoàn thành: Tìm hiểu IAM: users, groups, roles, policies
 
 * Hoàn thành: Tạo IAM user và gán quyền
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo IAM user với quyền tối thiểu
 
-* Hoàn thành: + Tạo IAM user với quyền tối thiểu
+* Hoàn thành: Tạo custom IAM policy
 
-* Hoàn thành: + Tạo custom IAM policy
-
-* Hoàn thành: + Gán role cho EC2 instance
+* Hoàn thành: Gán role cho EC2 instance
 
 * Hoàn thành: Tìm hiểu Amazon S3: bucket, object, versioning
 
@@ -41,13 +38,11 @@ pre: " <b> 1.2. </b> "
 
 * Hoàn thành: Lifecycle policies
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo S3 bucket và upload object
 
-* Hoàn thành: + Tạo S3 bucket và upload object
+* Hoàn thành: Cấu hình bucket policy và ACL
 
-* Hoàn thành: + Cấu hình bucket policy và ACL
-
-* Hoàn thành: + Bật versioning và lifecycle rules
+* Hoàn thành: Bật versioning và lifecycle rules
 
 * Hoàn thành: Host static website trên S3
 

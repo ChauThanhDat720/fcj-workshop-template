@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-
-
 ### Week 1 Objectives:
 
 * Connect and get acquainted with members of First Cloud AI Journey.
@@ -21,7 +19,6 @@ pre: " <b> 1.1. </b> "
 | 5 | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br> | 18/04/2026 | 18/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume | 19/04/2026 | 19/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Week 1 Achievements:
 
 * Successfully completed: Get acquainted with FCAJ members
@@ -32,33 +29,29 @@ pre: " <b> 1.1. </b> "
 
 * Successfully completed: Learn about AWS Console & AWS CLI
 
-* Successfully completed: **Practice:**
+* Successfully completed: Create AWS account
 
-* Successfully completed: + Create AWS account
+* Successfully completed: Install & configure AWS CLI
 
-* Successfully completed: + Install & configure AWS CLI
-
-* Successfully completed: + How to use AWS CLI
+* Successfully completed: How to use AWS CLI
 
 * Successfully completed: Learn basic EC2:
 
-* Successfully completed: + Instance types
+* Successfully completed: Instance types
 
-* Successfully completed: + AMI
+* Successfully completed: AMI
 
-* Successfully completed: + EBS
+* Successfully completed: EBS
 
-* Successfully completed: + ...
+* Successfully completed: ...
 
 * Successfully completed: SSH connection methods to EC2
 
 * Successfully completed: Learn about Elastic IP
 
-* Successfully completed: **Practice:**
+* Successfully completed: Launch an EC2 instance
 
-* Successfully completed: + Launch an EC2 instance
+* Successfully completed: Connect via SSH
 
-* Successfully completed: + Connect via SSH
-
-* Successfully completed: + Attach an EBS volume
+* Successfully completed: Attach an EBS volume
 

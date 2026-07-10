@@ -20,7 +20,6 @@ pre: " <b> 1.4. </b> "
 | 5 | - Amazon DynamoDB: table, item, attribute, partition key <br> - DynamoDB streams và global tables | 09/05/2026 | 09/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Thực hành:** <br>&emsp; + Tạo bảng DynamoDB <br>&emsp; + Thao tác CRUD qua Console và CLI <br>&emsp; + Ôn tập tuần 4 | 10/05/2026 | 10/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Kết quả đạt được tuần 4:
 
 * Hoàn thành: Tìm hiểu RDS: các engine được hỗ trợ (MySQL, PostgreSQL, Aurora)
@@ -31,23 +30,19 @@ pre: " <b> 1.4. </b> "
 
 * Hoàn thành: Backup và restore: automated backups, snapshots
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Launch RDS MySQL trong private subnet
 
-* Hoàn thành: + Launch RDS MySQL trong private subnet
+* Hoàn thành: Kết nối từ EC2
 
-* Hoàn thành: + Kết nối từ EC2
-
-* Hoàn thành: + Tạo snapshot và restore
+* Hoàn thành: Tạo snapshot và restore
 
 * Hoàn thành: Amazon DynamoDB: table, item, attribute, partition key
 
 * Hoàn thành: DynamoDB streams và global tables
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo bảng DynamoDB
 
-* Hoàn thành: + Tạo bảng DynamoDB
+* Hoàn thành: Thao tác CRUD qua Console và CLI
 
-* Hoàn thành: + Thao tác CRUD qua Console và CLI
-
-* Hoàn thành: + Ôn tập tuần 4
+* Hoàn thành: Ôn tập tuần 4
 

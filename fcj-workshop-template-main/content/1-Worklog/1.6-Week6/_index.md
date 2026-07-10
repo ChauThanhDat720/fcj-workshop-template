@@ -20,7 +20,6 @@ pre: " <b> 1.6. </b> "
 | 5 | - AWS CDK/SDK basics for infrastructure as code <br> - CloudFormation stacks overview | 23/05/2026 | 23/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Practice:** <br>&emsp; + Deploy API + Lambda stack using AWS CDK <br>&emsp; + Review and test full serverless API flow | 24/05/2026 | 24/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Week 6 Achievements:
 
 * Successfully completed: API Gateway types: REST, HTTP, WebSocket
@@ -31,21 +30,17 @@ pre: " <b> 1.6. </b> "
 
 * Successfully completed: CORS configuration for API Gateway
 
-* Successfully completed: **Practice:**
+* Successfully completed: Create REST API backed by Lambda
 
-* Successfully completed: + Create REST API backed by Lambda
+* Successfully completed: Test endpoints with Postman
 
-* Successfully completed: + Test endpoints with Postman
-
-* Successfully completed: + Enable API key authentication
+* Successfully completed: Enable API key authentication
 
 * Successfully completed: AWS CDK/SDK basics for infrastructure as code
 
 * Successfully completed: CloudFormation stacks overview
 
-* Successfully completed: **Practice:**
+* Successfully completed: Deploy API + Lambda stack using AWS CDK
 
-* Successfully completed: + Deploy API + Lambda stack using AWS CDK
-
-* Successfully completed: + Review and test full serverless API flow
+* Successfully completed: Review and test full serverless API flow
 

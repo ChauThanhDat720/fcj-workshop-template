@@ -32,7 +32,6 @@ pre: " <b> 1.8. </b> "
 | 5 | - Implement CRUD API: Workspace, Project, Task management <br> - Cấu hình Spring Data JPA repositories | 06/06/2026 | 06/06/2026 | |
 | 6 | - **Review & kiểm thử Phase 2:** <br>&emsp; + Unit test các API endpoint chính <br>&emsp; + Xác minh kết nối RDS từ local environment <br>&emsp; + Lập kế hoạch deploy lên EC2 (Phase 3) | 07/06/2026 | 07/06/2026 | |
 
-
 ### Kết quả đạt được tuần 8:
 
 * Hoàn thành: Tổng quan AWS Glue: Data Catalog, crawlers, databases, tables
@@ -43,23 +42,19 @@ pre: " <b> 1.8. </b> "
 
 * Hoàn thành: Glue Data Catalog là kho metadata tập trung
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo Glue Crawler trên S3 bucket chứa raw IoT data
 
-* Hoàn thành: + Tạo Glue Crawler trên S3 bucket chứa raw IoT data
-
-* Hoàn thành: + Chạy crawler và kiểm tra schema được tạo
+* Hoàn thành: Chạy crawler và kiểm tra schema được tạo
 
 * Hoàn thành: Glue ETL Jobs: PySpark script để transform dữ liệu
 
 * Hoàn thành: Job triggers và scheduling
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo Glue ETL job để transform và làm sạch IoT data
 
-* Hoàn thành: + Tạo Glue ETL job để transform và làm sạch IoT data
+* Hoàn thành: Ghi dữ liệu đã xử lý vào S3 output bucket
 
-* Hoàn thành: + Ghi dữ liệu đã xử lý vào S3 output bucket
-
-* Hoàn thành: + Xác minh kết quả bằng Athena
+* Hoàn thành: Xác minh kết quả bằng Athena
 
 * **[Rookwork]** Khởi tạo project Spring Boot: cấu hình Spring Security (JWT + OAuth2)
 
@@ -77,11 +72,9 @@ pre: " <b> 1.8. </b> "
 
 * **[Rookwork]** Cấu hình Spring Data JPA repositories
 
-* **[Rookwork]** **Review & kiểm thử Phase 2:**
+* **[Rookwork]** Unit test các API endpoint chính
 
-* **[Rookwork]** + Unit test các API endpoint chính
+* **[Rookwork]** Xác minh kết nối RDS từ local environment
 
-* **[Rookwork]** + Xác minh kết nối RDS từ local environment
-
-* **[Rookwork]** + Lập kế hoạch deploy lên EC2 (Phase 3)
+* **[Rookwork]** Lập kế hoạch deploy lên EC2 (Phase 3)
 

@@ -32,7 +32,6 @@ pre: " <b> 1.9. </b> "
 | 5 | - Configure ALB HTTPS Listener with ACM certificate <br> - Set up Auto Scaling Group for EC2 (min: 1, desired: 1) | 13/06/2026 | 13/06/2026 | |
 | 6 | - **Review & test Phase 3:** <br>&emsp; + Test API calls through ALB endpoint <br>&emsp; + Verify EC2 can reach RDS and access internet via NAT <br>&emsp; + Plan Frontend development tasks (Phase 4) | 14/06/2026 | 14/06/2026 | |
 
-
 ### Week 9 Achievements:
 
 * Successfully completed: AWS Amplify overview: hosting, backend, and CI/CD pipeline
@@ -43,25 +42,21 @@ pre: " <b> 1.9. </b> "
 
 * Successfully completed: Amplify environment variables and build settings
 
-* Successfully completed: **Practice:**
+* Successfully completed: Connect GitHub repository to Amplify
 
-* Successfully completed: + Connect GitHub repository to Amplify
+* Successfully completed: Configure build settings for Next.js
 
-* Successfully completed: + Configure build settings for Next.js
-
-* Successfully completed: + Deploy first version of the web app
+* Successfully completed: Deploy first version of the web app
 
 * Successfully completed: Real-time dashboard design: displaying IoT sensor data
 
 * Successfully completed: Connecting Next.js frontend to API Gateway endpoints
 
-* Successfully completed: **Practice:**
+* Successfully completed: Implement data fetching from API Gateway
 
-* Successfully completed: + Implement data fetching from API Gateway
+* Successfully completed: Build real-time charts for weather data
 
-* Successfully completed: + Build real-time charts for weather data
-
-* Successfully completed: + Deploy and verify on Amplify
+* Successfully completed: Deploy and verify on Amplify
 
 * **[Rookwork]** Launch Amazon EC2 instance (t3.medium) in Private Subnet
 
@@ -79,11 +74,9 @@ pre: " <b> 1.9. </b> "
 
 * **[Rookwork]** Set up Auto Scaling Group for EC2 (min: 1, desired: 1)
 
-* **[Rookwork]** **Review & test Phase 3:**
+* **[Rookwork]** Test API calls through ALB endpoint
 
-* **[Rookwork]** + Test API calls through ALB endpoint
+* **[Rookwork]** Verify EC2 can reach RDS and access internet via NAT
 
-* **[Rookwork]** + Verify EC2 can reach RDS and access internet via NAT
-
-* **[Rookwork]** + Plan Frontend development tasks (Phase 4)
+* **[Rookwork]** Plan Frontend development tasks (Phase 4)
 

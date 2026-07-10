@@ -20,7 +20,6 @@ pre: " <b> 1.5. </b> "
 | 5 | - Lambda Layers cho shared dependencies <br> - Environment variables và tích hợp Secrets Manager <br> - Tối ưu cold start | 16/05/2026 | 16/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Thực hành:** <br>&emsp; + Lambda trigger từ DynamoDB Stream <br>&emsp; + Thêm Lambda Layer <br>&emsp; + Giám sát với CloudWatch metrics | 17/05/2026 | 17/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Kết quả đạt được tuần 5:
 
 * Hoàn thành: Lambda: function, handler, runtime, memory, timeout
@@ -31,13 +30,11 @@ pre: " <b> 1.5. </b> "
 
 * Hoàn thành: Lambda execution roles và phân quyền
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo Lambda function bằng Python
 
-* Hoàn thành: + Tạo Lambda function bằng Python
+* Hoàn thành: Trigger Lambda từ S3 upload event
 
-* Hoàn thành: + Trigger Lambda từ S3 upload event
-
-* Hoàn thành: + Xem logs trong CloudWatch
+* Hoàn thành: Xem logs trong CloudWatch
 
 * Hoàn thành: Lambda Layers cho shared dependencies
 
@@ -45,11 +42,9 @@ pre: " <b> 1.5. </b> "
 
 * Hoàn thành: Tối ưu cold start
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Lambda trigger từ DynamoDB Stream
 
-* Hoàn thành: + Lambda trigger từ DynamoDB Stream
+* Hoàn thành: Thêm Lambda Layer
 
-* Hoàn thành: + Thêm Lambda Layer
-
-* Hoàn thành: + Giám sát với CloudWatch metrics
+* Hoàn thành: Giám sát với CloudWatch metrics
 

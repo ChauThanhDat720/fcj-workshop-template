@@ -32,7 +32,6 @@ pre: " <b> 1.10. </b> "
 | 5 | - Link CloudFront to Route 53 custom domain <br> - Configure CORS on Spring Boot Backend to accept requests from the CloudFront domain | 20/06/2026 | 20/06/2026 | |
 | 6 | - **Review & test Phase 4:** <br>&emsp; + Test full flow: Login & CRUD from Frontend → ALB → EC2 → RDS <br>&emsp; + Verify WAF blocks malicious requests <br>&emsp; + Plan File Storage & SES integration (Phase 5) | 21/06/2026 | 21/06/2026 | |
 
-
 ### Week 10 Achievements:
 
 * Successfully completed: Amazon Cognito overview: User Pools vs Identity Pools
@@ -43,25 +42,21 @@ pre: " <b> 1.10. </b> "
 
 * Successfully completed: App clients and OAuth 2.0 scopes
 
-* Successfully completed: **Practice:**
+* Successfully completed: Create Cognito User Pool
 
-* Successfully completed: + Create Cognito User Pool
+* Successfully completed: Configure app client with OAuth settings
 
-* Successfully completed: + Configure app client with OAuth settings
-
-* Successfully completed: + Test sign-up and sign-in flows
+* Successfully completed: Test sign-up and sign-in flows
 
 * Successfully completed: Integrating Cognito with API Gateway authorizer
 
 * Successfully completed: Protected routes in Next.js using Cognito JWT tokens
 
-* Successfully completed: **Practice:**
+* Successfully completed: Add Cognito JWT authorizer to API Gateway
 
-* Successfully completed: + Add Cognito JWT authorizer to API Gateway
+* Successfully completed: Implement login/logout in Next.js
 
-* Successfully completed: + Implement login/logout in Next.js
-
-* Successfully completed: + Restrict dashboard access to authenticated users
+* Successfully completed: Restrict dashboard access to authenticated users
 
 * **[Rookwork]** Develop React 19 UI: Login, Dashboard, Workspace, and Task Board pages
 
@@ -79,11 +74,9 @@ pre: " <b> 1.10. </b> "
 
 * **[Rookwork]** Configure CORS on Spring Boot Backend to accept requests from the CloudFront domain
 
-* **[Rookwork]** **Review & test Phase 4:**
+* **[Rookwork]** Test full flow: Login & CRUD from Frontend → ALB → EC2 → RDS
 
-* **[Rookwork]** + Test full flow: Login & CRUD from Frontend → ALB → EC2 → RDS
+* **[Rookwork]** Verify WAF blocks malicious requests
 
-* **[Rookwork]** + Verify WAF blocks malicious requests
-
-* **[Rookwork]** + Plan File Storage & SES integration (Phase 5)
+* **[Rookwork]** Plan File Storage & SES integration (Phase 5)
 

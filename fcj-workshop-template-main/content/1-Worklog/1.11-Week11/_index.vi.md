@@ -32,7 +32,6 @@ pre: " <b> 1.11. </b> "
 | 5 | - Test end-to-end tính năng upload file: Frontend → EC2 → S3 Endpoint → S3 <br> - Test email invitation: Backend → SES → người dùng | 27/06/2026 | 27/06/2026 | |
 | 6 | - **Review & kiểm thử Phase 5:** <br>&emsp; + Kiểm tra toàn bộ tính năng file upload/download và email notification <br>&emsp; + Đánh giá bảo mật: S3 bucket policies, SES sending limits <br>&emsp; + Chuẩn bị cho Phase 6: Kiểm thử toàn hệ thống & bàn giao | 28/06/2026 | 28/06/2026 | |
 
-
 ### Kết quả đạt được tuần 11:
 
 * Hoàn thành: Review toàn bộ kiến trúc hệ thống và xác định các khoảng thiếu hụt
@@ -43,25 +42,21 @@ pre: " <b> 1.11. </b> "
 
 * Hoàn thành: Sửa lỗi IoT rule routing và Lambda triggers
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Chạy test luồng data đầy đủ với 5 thiết bị giả lập
 
-* Hoàn thành: + Chạy test luồng data đầy đủ với 5 thiết bị giả lập
+* Hoàn thành: Kiểm tra dữ liệu hiển thị đúng trên dashboard
 
-* Hoàn thành: + Kiểm tra dữ liệu hiển thị đúng trên dashboard
-
-* Hoàn thành: + Debug latency và vấn đề mất dữ liệu
+* Hoàn thành: Debug latency và vấn đề mất dữ liệu
 
 * Hoàn thành: Kiểm thử hiệu năng và tải của API Gateway và Lambda
 
 * Hoàn thành: Tối ưu thời gian chạy Glue ETL job
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Sửa tất cả bug đã phát hiện
 
-* Hoàn thành: + Sửa tất cả bug đã phát hiện
+* Hoàn thành: Test tích hợp cuối với tất cả component chạy đồng thời
 
-* Hoàn thành: + Test tích hợp cuối với tất cả component chạy đồng thời
-
-* Hoàn thành: + Ghi chép các hạn chế đã biết
+* Hoàn thành: Ghi chép các hạn chế đã biết
 
 * **[Rookwork]** Tạo Amazon S3 bucket riêng cho File Storage (attachments)
 
@@ -79,11 +74,9 @@ pre: " <b> 1.11. </b> "
 
 * **[Rookwork]** Test email invitation: Backend → SES → người dùng
 
-* **[Rookwork]** **Review & kiểm thử Phase 5:**
+* **[Rookwork]** Kiểm tra toàn bộ tính năng file upload/download và email notification
 
-* **[Rookwork]** + Kiểm tra toàn bộ tính năng file upload/download và email notification
+* **[Rookwork]** Đánh giá bảo mật: S3 bucket policies, SES sending limits
 
-* **[Rookwork]** + Đánh giá bảo mật: S3 bucket policies, SES sending limits
-
-* **[Rookwork]** + Chuẩn bị cho Phase 6: Kiểm thử toàn hệ thống & bàn giao
+* **[Rookwork]** Chuẩn bị cho Phase 6: Kiểm thử toàn hệ thống & bàn giao
 

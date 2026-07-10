@@ -37,7 +37,6 @@ pre: " <b> 1.7. </b> "
 | 5 | - Cấu hình Amazon Route 53: đăng ký hosted zone, tạo DNS records <br> - Thiết lập AWS Certificate Manager (ACM) cho SSL/TLS | 30/05/2026 | 30/05/2026 | |
 | 6 | - **Review & hoàn thiện Phase 1:** <br>&emsp; + Kiểm tra toàn bộ cấu hình VPC, subnet, routing table <br>&emsp; + Verify IAM permissions và Security Groups <br>&emsp; + Lập kế hoạch chi tiết cho Phase 2 | 31/05/2026 | 31/05/2026 | |
 
-
 ### Kết quả đạt được tuần 7:
 
 * Hoàn thành: Tổng quan AWS IoT Core: device registry, message broker, rules engine
@@ -48,25 +47,21 @@ pre: " <b> 1.7. </b> "
 
 * Hoàn thành: Device policies để kết nối MQTT bảo mật
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo IoT Thing với certificate
 
-* Hoàn thành: + Tạo IoT Thing với certificate
+* Hoàn thành: Giả lập thiết bị gửi MQTT messages
 
-* Hoàn thành: + Giả lập thiết bị gửi MQTT messages
-
-* Hoàn thành: + Subscribe topics trong MQTT test client
+* Hoàn thành: Subscribe topics trong MQTT test client
 
 * Hoàn thành: IoT Rules Engine: câu query kiểu SQL
 
 * Hoàn thành: Định tuyến messages đến S3, Lambda, DynamoDB
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo IoT rule chuyển data đến S3
 
-* Hoàn thành: + Tạo IoT rule chuyển data đến S3
+* Hoàn thành: Trigger Lambda từ IoT rule
 
-* Hoàn thành: + Trigger Lambda từ IoT rule
-
-* Hoàn thành: + Kiểm tra toàn bộ luồng data ingestion
+* Hoàn thành: Kiểm tra toàn bộ luồng data ingestion
 
 * **[Rookwork]** Thiết kế sơ đồ kiến trúc AWS tổng thể cho Rookwork
 
@@ -84,11 +79,9 @@ pre: " <b> 1.7. </b> "
 
 * **[Rookwork]** Thiết lập AWS Certificate Manager (ACM) cho SSL/TLS
 
-* **[Rookwork]** **Review & hoàn thiện Phase 1:**
+* **[Rookwork]** Kiểm tra toàn bộ cấu hình VPC, subnet, routing table
 
-* **[Rookwork]** + Kiểm tra toàn bộ cấu hình VPC, subnet, routing table
+* **[Rookwork]** Verify IAM permissions và Security Groups
 
-* **[Rookwork]** + Verify IAM permissions và Security Groups
-
-* **[Rookwork]** + Lập kế hoạch chi tiết cho Phase 2
+* **[Rookwork]** Lập kế hoạch chi tiết cho Phase 2
 

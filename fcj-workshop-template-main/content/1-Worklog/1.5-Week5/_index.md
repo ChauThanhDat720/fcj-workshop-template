@@ -20,7 +20,6 @@ pre: " <b> 1.5. </b> "
 | 5 | - Lambda Layers for shared dependencies <br> - Environment variables and Secrets Manager integration <br> - Lambda cold start optimization | 16/05/2026 | 16/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Practice:** <br>&emsp; + Lambda triggered by DynamoDB Stream <br>&emsp; + Add Lambda Layer <br>&emsp; + Monitor with CloudWatch metrics | 17/05/2026 | 17/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Week 5 Achievements:
 
 * Successfully completed: Lambda concepts: function, handler, runtime, memory, timeout
@@ -31,13 +30,11 @@ pre: " <b> 1.5. </b> "
 
 * Successfully completed: Lambda execution roles and permissions
 
-* Successfully completed: **Practice:**
+* Successfully completed: Create a Python Lambda function
 
-* Successfully completed: + Create a Python Lambda function
+* Successfully completed: Trigger Lambda from S3 upload event
 
-* Successfully completed: + Trigger Lambda from S3 upload event
-
-* Successfully completed: + View logs in CloudWatch
+* Successfully completed: View logs in CloudWatch
 
 * Successfully completed: Lambda Layers for shared dependencies
 
@@ -45,11 +42,9 @@ pre: " <b> 1.5. </b> "
 
 * Successfully completed: Lambda cold start optimization
 
-* Successfully completed: **Practice:**
+* Successfully completed: Lambda triggered by DynamoDB Stream
 
-* Successfully completed: + Lambda triggered by DynamoDB Stream
+* Successfully completed: Add Lambda Layer
 
-* Successfully completed: + Add Lambda Layer
-
-* Successfully completed: + Monitor with CloudWatch metrics
+* Successfully completed: Monitor with CloudWatch metrics
 

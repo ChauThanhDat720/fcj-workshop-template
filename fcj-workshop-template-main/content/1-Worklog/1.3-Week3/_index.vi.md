@@ -20,7 +20,6 @@ pre: " <b> 1.3. </b> "
 | 5 | - Security Groups vs Network ACL <br> - VPC Peering cơ bản <br> - VPC Endpoints | 02/05/2026 | 02/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Thực hành:** <br>&emsp; + Launch EC2 trong private subnet <br>&emsp; + Truy cập qua Bastion Host <br>&emsp; + Cấu hình Security Groups | 03/05/2026 | 03/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Kết quả đạt được tuần 3:
 
 * Hoàn thành: Tìm hiểu VPC: CIDR, subnet (public/private), availability zones
@@ -29,13 +28,11 @@ pre: " <b> 1.3. </b> "
 
 * Hoàn thành: Cấu hình route table
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo VPC với subnet public và private
 
-* Hoàn thành: + Tạo VPC với subnet public và private
+* Hoàn thành: Gắn Internet Gateway
 
-* Hoàn thành: + Gắn Internet Gateway
-
-* Hoàn thành: + Cấu hình route table
+* Hoàn thành: Cấu hình route table
 
 * Hoàn thành: Security Groups vs Network ACL
 
@@ -43,11 +40,9 @@ pre: " <b> 1.3. </b> "
 
 * Hoàn thành: VPC Endpoints
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Launch EC2 trong private subnet
 
-* Hoàn thành: + Launch EC2 trong private subnet
+* Hoàn thành: Truy cập qua Bastion Host
 
-* Hoàn thành: + Truy cập qua Bastion Host
-
-* Hoàn thành: + Cấu hình Security Groups
+* Hoàn thành: Cấu hình Security Groups
 

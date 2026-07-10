@@ -20,7 +20,6 @@ pre: " <b> 1.4. </b> "
 | 5 | - Amazon DynamoDB: tables, items, attributes, partition key <br> - DynamoDB streams and global tables | 09/05/2026 | 09/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Practice:** <br>&emsp; + Create DynamoDB table <br>&emsp; + CRUD operations via Console and CLI <br>&emsp; + Review week 4 | 10/05/2026 | 10/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Week 4 Achievements:
 
 * Successfully completed: Learn RDS concepts: supported engines (MySQL, PostgreSQL, Aurora)
@@ -31,23 +30,19 @@ pre: " <b> 1.4. </b> "
 
 * Successfully completed: RDS backup and restore: automated backups, snapshots
 
-* Successfully completed: **Practice:**
+* Successfully completed: Launch RDS MySQL instance in private subnet
 
-* Successfully completed: + Launch RDS MySQL instance in private subnet
+* Successfully completed: Connect from EC2
 
-* Successfully completed: + Connect from EC2
-
-* Successfully completed: + Create snapshot and restore
+* Successfully completed: Create snapshot and restore
 
 * Successfully completed: Amazon DynamoDB: tables, items, attributes, partition key
 
 * Successfully completed: DynamoDB streams and global tables
 
-* Successfully completed: **Practice:**
+* Successfully completed: Create DynamoDB table
 
-* Successfully completed: + Create DynamoDB table
+* Successfully completed: CRUD operations via Console and CLI
 
-* Successfully completed: + CRUD operations via Console and CLI
-
-* Successfully completed: + Review week 4
+* Successfully completed: Review week 4
 

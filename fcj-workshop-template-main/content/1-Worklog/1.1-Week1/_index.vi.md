@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-
-
 ### Mục tiêu tuần 1:
 
 * Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
@@ -21,7 +19,6 @@ pre: " <b> 1.1. </b> "
 | 5 | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br> | 18/04/2026 | 18/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume | 19/04/2026 | 19/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-
 ### Kết quả đạt được tuần 1:
 
 * Hoàn thành: Làm quen với các thành viên FCAJ
@@ -32,33 +29,29 @@ pre: " <b> 1.1. </b> "
 
 * Hoàn thành: Tìm hiểu AWS Console & AWS CLI
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo AWS account
 
-* Hoàn thành: + Tạo AWS account
+* Hoàn thành: Cài AWS CLI & cấu hình
 
-* Hoàn thành: + Cài AWS CLI & cấu hình
-
-* Hoàn thành: + Cách sử dụng AWS CLI
+* Hoàn thành: Cách sử dụng AWS CLI
 
 * Hoàn thành: Tìm hiểu EC2 cơ bản:
 
-* Hoàn thành: + Instance types
+* Hoàn thành: Instance types
 
-* Hoàn thành: + AMI
+* Hoàn thành: AMI
 
-* Hoàn thành: + EBS
+* Hoàn thành: EBS
 
-* Hoàn thành: + ...
+* Hoàn thành: ...
 
 * Hoàn thành: Các cách remote SSH vào EC2
 
 * Hoàn thành: Tìm hiểu Elastic IP
 
-* Hoàn thành: **Thực hành:**
+* Hoàn thành: Tạo EC2 instance
 
-* Hoàn thành: + Tạo EC2 instance
+* Hoàn thành: Kết nối SSH
 
-* Hoàn thành: + Kết nối SSH
-
-* Hoàn thành: + Gắn EBS volume
+* Hoàn thành: Gắn EBS volume
 

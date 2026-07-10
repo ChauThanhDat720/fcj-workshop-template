@@ -32,7 +32,6 @@ pre: " <b> 1.11. </b> "
 | 5 | - End-to-end test file upload feature: Frontend → EC2 → S3 Endpoint → S3 <br> - Test email invitation flow: Backend → SES → user inbox | 27/06/2026 | 27/06/2026 | |
 | 6 | - **Review & test Phase 5:** <br>&emsp; + Verify complete file upload/download and email notification features <br>&emsp; + Security assessment: S3 bucket policies, SES sending limits <br>&emsp; + Prepare for Phase 6: Full system testing & handover | 28/06/2026 | 28/06/2026 | |
 
-
 ### Week 11 Achievements:
 
 * Successfully completed: Review full system architecture and identify integration gaps
@@ -43,25 +42,21 @@ pre: " <b> 1.11. </b> "
 
 * Successfully completed: Fix issues with IoT rule routing and Lambda triggers
 
-* Successfully completed: **Practice:**
+* Successfully completed: Run full data flow test with 5 simulated devices
 
-* Successfully completed: + Run full data flow test with 5 simulated devices
+* Successfully completed: Verify data appears correctly on the dashboard
 
-* Successfully completed: + Verify data appears correctly on the dashboard
-
-* Successfully completed: + Debug latency and missing data issues
+* Successfully completed: Debug latency and missing data issues
 
 * Successfully completed: Performance and load testing of API Gateway and Lambda
 
 * Successfully completed: Optimize Glue ETL job execution time
 
-* Successfully completed: **Practice:**
+* Successfully completed: Fix all identified bugs
 
-* Successfully completed: + Fix all identified bugs
+* Successfully completed: Final integration test with all components running
 
-* Successfully completed: + Final integration test with all components running
-
-* Successfully completed: + Document known limitations
+* Successfully completed: Document known limitations
 
 * **[Rookwork]** Create a dedicated Amazon S3 bucket for File Storage (attachments)
 
@@ -79,11 +74,9 @@ pre: " <b> 1.11. </b> "
 
 * **[Rookwork]** Test email invitation flow: Backend → SES → user inbox
 
-* **[Rookwork]** **Review & test Phase 5:**
+* **[Rookwork]** Verify complete file upload/download and email notification features
 
-* **[Rookwork]** + Verify complete file upload/download and email notification features
+* **[Rookwork]** Security assessment: S3 bucket policies, SES sending limits
 
-* **[Rookwork]** + Security assessment: S3 bucket policies, SES sending limits
-
-* **[Rookwork]** + Prepare for Phase 6: Full system testing & handover
+* **[Rookwork]** Prepare for Phase 6: Full system testing & handover
 
