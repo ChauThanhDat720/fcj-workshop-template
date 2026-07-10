@@ -11,31 +11,37 @@ pre: " <b> 7. </b> "
 ### Đánh giá chung
 
 **1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+Môi trường làm việc tại AWS Việt Nam mang đậm tính công nghệ, chuyên nghiệp nhưng cũng rất cởi mở. Các thành viên trong dự án luôn sẵn sàng hỗ trợ khi mình gặp khó khăn với các dịch vụ Cloud. Không gian làm việc thoải mái giúp mình tập trung cao độ khi triển khai hệ thống.
 
 **2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+Các mentor hướng dẫn rất nhiệt tình, đặc biệt là trong những kiến thức khó về thiết kế kiến trúc AWS (VPC, ALB, RDS) hay khi mình kẹt ở khâu cấu hình CloudFront. Các anh chị không chỉ đưa ra giải pháp mà còn hướng dẫn mình cách tư duy tìm lỗi từ log hệ thống.
 
 **3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+Dự án Rookwork kết hợp hoàn hảo giữa những gì mình học ở trường (React, Spring Boot) với các kiến thức thực tiễn trên hạ tầng Cloud của AWS. Nhờ đó, mình đã hiểu rõ hơn cách một phần mềm thực tế được vận hành và mở rộng.
 
 **4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+Trong quá trình thực tập, mình đã học được cách phân quyền IAM, và tư duy thiết kế phần mềm đa nền tảng. Không chỉ vậy, những buổi workshop chuyên sâu của FCAJ cũng giúp mình nâng cấp tư duy về bảo mật và tối ưu chi phí hạ tầng.
 
 **5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+Văn hóa của team rất cởi mở và đề cao sự đổi mới. Khi dự án bước vào giai đoạn chạy nước rút, cả team đều hỗ trợ lẫn nhau không kể ngày đêm. Điều này mang lại cho mình cảm giác gắn kết thực sự.
 
 **6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+Chương trình tạo điều kiện rất tốt về mặt thời gian và tài nguyên (được cấp account thực hành AWS), giúp mình có cơ hội "thực chiến" mà không bị giới hạn.
 
 
 ### Một số câu hỏi khác
 - Điều bạn **hài lòng nhất** trong thời gian thực tập?  
+Được trực tiếp tham gia xây dựng một sản phẩm có tính ứng dụng cao như Rookwork và có cơ hội thao tác với các dịch vụ Cloud thực tế của AWS.
 - Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
+Có thể tổ chức thêm các buổi Mock Interview hoặc định hướng nghề nghiệp chuyên sâu hơn vào cuối khóa.
 - Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+Chắc chắn có. Đây là một môi trường tuyệt vời để thu hẹp khoảng cách giữa lý thuyết ở trường đại học và yêu cầu thực tế của các doanh nghiệp công nghệ lớn.
 
 
 ### Đề xuất & mong muốn
 - Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+Mong muốn team tổ chức thêm các buổi chia sẻ (tech talk) định kỳ giữa các nhóm để mọi người học hỏi chéo kiến thức của nhau.
+- Bạn có muốn tiếp tục chương trình này trong tương lai?  
+Mình rất mong muốn có cơ hội được đồng hành lâu dài cùng AWS Việt Nam sau khi hoàn thành khóa thực tập này.
+- Góp ý khác (tự do chia sẻ):  
+Cảm ơn chương trình FCAJ đã mang đến cho mình một kỳ thực tập đầy ý nghĩa và trưởng thành!
