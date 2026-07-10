@@ -7,7 +7,7 @@ pre: " <b> 6. </b> "
 ---
 
 
-My internship at AWS Vietnam from April 17, 2026 to July 10, 2026, as part of the Workforce Bootcamp - First Cloud AI Journey program, has been an incredibly valuable practical experience. This journey allowed me to consolidate and effectively apply my academic knowledge to real-world tasks.  
+My internship at AWS Vietnam from April 17, 2026 to July 12, 2026, as part of the Workforce Bootcamp - First Cloud AI Journey program, has been an incredibly valuable practical experience. This journey allowed me to consolidate and effectively apply my academic knowledge to real-world tasks.  
 Specifically, by actively participating in the development of Rookwork—a multi-platform team collaboration software—I substantially enhanced my understanding of AWS Cloud infrastructure design (VPC, ALB, EC2, RDS, S3, CloudFront). I also sharpened my programming skills in Backend (Spring Boot) and Frontend (React 19). Furthermore, my teamwork, problem-solving, and technical writing abilities have progressed significantly.  
 
 Beyond technical expertise, I have always prioritized professional discipline, strictly adhered to company regulations, and proactively communicated with my mentors and colleagues to achieve the best possible outcomes in my work.

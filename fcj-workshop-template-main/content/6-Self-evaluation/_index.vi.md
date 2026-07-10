@@ -7,7 +7,7 @@ pre: " <b> 6. </b> "
 ---
 
 
-Kỳ thực tập tại AWS Việt Nam từ ngày 17/04/2026 đến ngày 10/07/2026 thông qua chương trình Workforce Bootcamp - First Cloud AI Journey là một trải nghiệm thực tế vô cùng quý giá đối với tôi. Quá trình này giúp tôi củng cố và vận dụng hiệu quả những kiến thức trên giảng đường vào công việc thực tiễn.  
+Kỳ thực tập tại AWS Việt Nam từ ngày 17/04/2026 đến ngày 12/07/2026 thông qua chương trình Workforce Bootcamp - First Cloud AI Journey là một trải nghiệm thực tế vô cùng quý giá đối với tôi. Quá trình này giúp tôi củng cố và vận dụng hiệu quả những kiến thức trên giảng đường vào công việc thực tiễn.  
 Cụ thể, thông qua việc trực tiếp tham gia xây dựng phần mềm quản lý làm việc nhóm đa nền tảng Rookwork, tôi đã nâng cao rõ rệt tư duy thiết kế hạ tầng Cloud trên AWS (VPC, ALB, EC2, RDS, S3, CloudFront), kỹ năng lập trình Backend (Spring Boot), Frontend (React 19). Ngoài ra, khả năng phối hợp nhóm, giải quyết vấn đề và viết tài liệu kỹ thuật của tôi cũng tiến bộ đáng kể.  
 
 Bên cạnh yếu tố chuyên môn, tôi luôn đề cao tính kỷ luật, chấp hành đúng các quy định chung và không ngừng chủ động giao tiếp với mentor cùng các anh chị đồng nghiệp để đưa ra hướng xử lý công việc tối ưu nhất.
