@@ -17,4 +17,9 @@ pre : " <b> 5.4. </b> "
 ![Interface endpoint architecture](/images/5-Workshop/5.4-S3-onprem/diagram3.png)
 
 
+#### Nội dung
 
+- [Chuẩn bị](5.4.1-prepare/)
+- [Tạo interface endpoint](5.4.2-create-interface-enpoint/)
+- [Test endpoint](5.4.3-test-endpoint/)
+- [Mô phỏng DNS](5.4.4-dns-simulation/)
