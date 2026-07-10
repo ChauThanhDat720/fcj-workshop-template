@@ -23,14 +23,29 @@ pre: " <b> 1.6. </b> "
 
 ### Week 6 Achievements:
 
-* Built a fully serverless REST API using API Gateway + Lambda integration.
+* Successfully completed: API Gateway types: REST, HTTP, WebSocket
 
-* Configured resource paths, HTTP methods, and request/response mappings.
+* Successfully completed: API Gateway stages, deployments, and throttling
 
-* Enabled CORS for cross-origin access from web clients.
+* Successfully completed: Creating REST API with GET, POST, PUT, DELETE methods
 
-* Secured the API with API key authentication and usage plans.
+* Successfully completed: CORS configuration for API Gateway
 
-* Got hands-on experience with AWS CDK to define and deploy infrastructure as code.
+* Successfully completed: **Practice:**
 
-* Successfully tested all API endpoints using Postman.
+* Successfully completed: + Create REST API backed by Lambda
+
+* Successfully completed: + Test endpoints with Postman
+
+* Successfully completed: + Enable API key authentication
+
+* Successfully completed: AWS CDK/SDK basics for infrastructure as code
+
+* Successfully completed: CloudFormation stacks overview
+
+* Successfully completed: **Practice:**
+
+* Successfully completed: + Deploy API + Lambda stack using AWS CDK
+
+* Successfully completed: + Review and test full serverless API flow
+

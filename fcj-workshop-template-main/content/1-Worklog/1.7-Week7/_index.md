@@ -40,14 +40,55 @@ pre: " <b> 1.7. </b> "
 
 ### Week 7 Achievements:
 
-* Understood the AWS IoT Core architecture and how edge devices securely communicate with the cloud via MQTT.
+* **[Rookwork]** AWS IoT Core overview: device registry, message broker, rules engine
 
-* Created IoT Things with X.509 certificates and configured device policies.
+* **[Rookwork]** MQTT protocol: topics, QoS levels, retain messages
 
-* Simulated sensor data publishing to IoT topics using the MQTT test client.
+* **[Rookwork]** IoT Core Thing creation and certificates
 
-* Built IoT Rules to automatically route incoming messages to S3 and Lambda.
+* **[Rookwork]** Device policies for secure MQTT connection
 
-* Completed an end-to-end data ingestion pipeline from simulated device to cloud storage.
+* **[Rookwork]** **Practice:**
 
-* **[Rookwork Phase 1]** Designed the overall AWS Cloud architecture, initialized VPC with Public/Private Subnets, configured IAM roles/policies, Route 53, and ACM for the Rookwork project.
+* **[Rookwork]** + Create IoT Thing with certificate
+
+* **[Rookwork]** + Simulate device publishing MQTT messages
+
+* **[Rookwork]** + Subscribe to topics in MQTT test client
+
+* **[Rookwork]** IoT Rules Engine: SQL-like rule queries
+
+* **[Rookwork]** Route messages to S3, Lambda, DynamoDB
+
+* **[Rookwork]** **Practice:**
+
+* **[Rookwork]** + Create IoT rule to forward data to S3
+
+* **[Rookwork]** + Trigger Lambda from IoT rule
+
+* **[Rookwork]** + End-to-end data ingestion test
+
+* **[Rookwork]** Design the overall AWS architecture diagram for Rookwork
+
+* **[Rookwork]** Identify required services: EC2, RDS, S3, SES, CloudFront, WAF, Route 53
+
+* **[Rookwork]** Initialize Amazon VPC: configure Public/Private Subnets, Internet Gateway
+
+* **[Rookwork]** Set up NAT Gateway for Private Subnet outbound traffic
+
+* **[Rookwork]** Configure AWS IAM: create roles and policies for EC2, RDS, S3
+
+* **[Rookwork]** Set up Security Groups for each tier (ALB, EC2, RDS)
+
+* **[Rookwork]** Configure Amazon Route 53: register hosted zone, create DNS records
+
+* **[Rookwork]** Set up AWS Certificate Manager (ACM) for SSL/TLS
+
+* **[Rookwork]** **Review & finalize Phase 1:**
+
+* **[Rookwork]** + Verify all VPC, subnet, and routing table configurations
+
+* **[Rookwork]** + Validate IAM permissions and Security Groups
+
+* **[Rookwork]** + Plan detailed tasks for Phase 2
+

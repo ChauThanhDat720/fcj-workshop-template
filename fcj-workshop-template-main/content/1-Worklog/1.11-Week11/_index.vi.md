@@ -35,15 +35,55 @@ pre: " <b> 1.11. </b> "
 
 ### Kết quả đạt được tuần 11:
 
-* Hoàn thành tích hợp end-to-end của toàn bộ IoT Weather Platform.
+* Hoàn thành: Review toàn bộ kiến trúc hệ thống và xác định các khoảng thiếu hụt
 
-* Xác minh dữ liệu cảm biến chạy đúng từ thiết bị giả lập qua IoT Core, S3, Glue ETL, API Gateway và hiển thị trên Amplify dashboard.
+* Hoàn thành: Mapping luồng data: thiết bị → IoT Core → S3 → Glue → API → Dashboard
 
-* Sửa nhiều lỗi tích hợp bao gồm misconfiguration trong IoT rule và Lambda timeout.
+* Hoàn thành: Kiểm thử tích hợp end-to-end: giả lập dữ liệu cảm biến qua toàn bộ pipeline
 
-* Tối ưu hiệu năng Glue ETL job bằng cách giảm data scan không cần thiết.
+* Hoàn thành: Sửa lỗi IoT rule routing và Lambda triggers
 
-* Ghi chép tất cả hạn chế đã biết và lên kế hoạch cải thiện cho tuần cuối.
+* Hoàn thành: **Thực hành:**
 
-* **[Rookwork Phase 5]** Tích hợp thành công S3 File Storage qua VPC Gateway Endpoint (EC2 ghi file không qua internet), implement pre-signed URL download và hoàn thiện Amazon SES gửi email thông báo mời tham gia Workspace.
+* Hoàn thành: + Chạy test luồng data đầy đủ với 5 thiết bị giả lập
+
+* Hoàn thành: + Kiểm tra dữ liệu hiển thị đúng trên dashboard
+
+* Hoàn thành: + Debug latency và vấn đề mất dữ liệu
+
+* Hoàn thành: Kiểm thử hiệu năng và tải của API Gateway và Lambda
+
+* Hoàn thành: Tối ưu thời gian chạy Glue ETL job
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Sửa tất cả bug đã phát hiện
+
+* Hoàn thành: + Test tích hợp cuối với tất cả component chạy đồng thời
+
+* Hoàn thành: + Ghi chép các hạn chế đã biết
+
+* **[Rookwork]** Tạo Amazon S3 bucket riêng cho File Storage (attachments)
+
+* **[Rookwork]** Cấu hình VPC S3 Gateway Endpoint để EC2 ghi file lên S3 qua internal routing (không qua internet)
+
+* **[Rookwork]** Implement upload/download file trong Spring Boot Backend (AWS SDK S3)
+
+* **[Rookwork]** Tạo pre-signed URLs cho người dùng download file an toàn qua CloudFront
+
+* **[Rookwork]** Cấu hình Amazon SES: verify domain, tạo email identity
+
+* **[Rookwork]** Implement email notification service trong Spring Boot: gửi email mời tham gia Workspace
+
+* **[Rookwork]** Test end-to-end tính năng upload file: Frontend → EC2 → S3 Endpoint → S3
+
+* **[Rookwork]** Test email invitation: Backend → SES → người dùng
+
+* **[Rookwork]** **Review & kiểm thử Phase 5:**
+
+* **[Rookwork]** + Kiểm tra toàn bộ tính năng file upload/download và email notification
+
+* **[Rookwork]** + Đánh giá bảo mật: S3 bucket policies, SES sending limits
+
+* **[Rookwork]** + Chuẩn bị cho Phase 6: Kiểm thử toàn hệ thống & bàn giao
 

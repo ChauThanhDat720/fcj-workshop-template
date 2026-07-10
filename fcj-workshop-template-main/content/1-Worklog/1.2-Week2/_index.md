@@ -23,17 +23,35 @@ pre: " <b> 1.2. </b> "
 
 ### Week 2 Achievements:
 
-* Understood IAM core concepts and configured users, groups, and roles with least-privilege principles.
+* Successfully completed: Learn IAM concepts: users, groups, roles, policies
 
-* Created custom IAM policies and attached them to appropriate identities.
+* Successfully completed: Create IAM users and assign permissions
 
-* Assigned IAM roles to EC2 instances for secure service access without hardcoded credentials.
+* Successfully completed: **Practice:**
 
-* Created and configured S3 buckets with:
-  * Versioning
-  * Lifecycle rules
-  * Bucket policies and ACLs
+* Successfully completed: + Create IAM user with least privilege
 
-* Hosted a static website on S3.
+* Successfully completed: + Create custom IAM policy
 
-* Understood S3 storage classes and when to use each one.
+* Successfully completed: + Assign roles to EC2 instance
+
+* Successfully completed: Learn Amazon S3: buckets, objects, versioning
+
+* Successfully completed: Understand S3 storage classes (Standard, IA, Glacier)
+
+* Successfully completed: S3 lifecycle policies
+
+* Successfully completed: **Practice:**
+
+* Successfully completed: + Create S3 bucket and upload objects
+
+* Successfully completed: + Configure bucket policies and ACLs
+
+* Successfully completed: + Enable versioning and lifecycle rules
+
+* Successfully completed: S3 static website hosting
+
+* Successfully completed: Cross-region replication
+
+* Successfully completed: Review and summarize week 2
+

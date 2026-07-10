@@ -35,14 +35,55 @@ pre: " <b> 1.9. </b> "
 
 ### Week 9 Achievements:
 
-* Successfully deployed a Next.js application on AWS Amplify with automatic CI/CD from GitHub.
+* Successfully completed: AWS Amplify overview: hosting, backend, and CI/CD pipeline
 
-* Configured Amplify build settings and environment variables for different deployment stages.
+* Successfully completed: Amplify vs CloudFront + S3 static hosting comparison
 
-* Built a real-time dashboard UI to display weather sensor data fetched from API Gateway.
+* Successfully completed: Next.js project setup for Amplify deployment
 
-* Implemented dynamic charts to visualize temperature, humidity, and other sensor readings.
+* Successfully completed: Amplify environment variables and build settings
 
-* Understood the Amplify hosting lifecycle and how to manage multiple environments (dev/prod).
+* Successfully completed: **Practice:**
 
-* **[Rookwork Phase 3]** Deployed Spring Boot Backend to Amazon EC2 via Docker container, configured HTTPS ALB, NAT Gateway, and verified internal EC2 ↔ RDS connectivity successfully.
+* Successfully completed: + Connect GitHub repository to Amplify
+
+* Successfully completed: + Configure build settings for Next.js
+
+* Successfully completed: + Deploy first version of the web app
+
+* Successfully completed: Real-time dashboard design: displaying IoT sensor data
+
+* Successfully completed: Connecting Next.js frontend to API Gateway endpoints
+
+* Successfully completed: **Practice:**
+
+* Successfully completed: + Implement data fetching from API Gateway
+
+* Successfully completed: + Build real-time charts for weather data
+
+* Successfully completed: + Deploy and verify on Amplify
+
+* **[Rookwork]** Launch Amazon EC2 instance (t3.medium) in Private Subnet
+
+* **[Rookwork]** Configure Application Load Balancer (ALB): target groups, health checks, listener rules
+
+* **[Rookwork]** Package Spring Boot application into a Docker image
+
+* **[Rookwork]** Push image to Amazon ECR and configure EC2 to pull and run the container
+
+* **[Rookwork]** Configure NAT Gateway for EC2 Private Subnet outbound traffic
+
+* **[Rookwork]** Verify EC2 → RDS connectivity within the Private Network
+
+* **[Rookwork]** Configure ALB HTTPS Listener with ACM certificate
+
+* **[Rookwork]** Set up Auto Scaling Group for EC2 (min: 1, desired: 1)
+
+* **[Rookwork]** **Review & test Phase 3:**
+
+* **[Rookwork]** + Test API calls through ALB endpoint
+
+* **[Rookwork]** + Verify EC2 can reach RDS and access internet via NAT
+
+* **[Rookwork]** + Plan Frontend development tasks (Phase 4)
+

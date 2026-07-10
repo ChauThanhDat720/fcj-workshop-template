@@ -23,15 +23,29 @@ pre: " <b> 1.6. </b> "
 
 ### Kết quả đạt được tuần 6:
 
-* Xây dựng REST API hoàn toàn serverless sử dụng API Gateway + Lambda integration.
+* Hoàn thành: Các loại API Gateway: REST, HTTP, WebSocket
 
-* Cấu hình resource paths, HTTP methods và request/response mappings.
+* Hoàn thành: Stages, deployments và throttling
 
-* Bật CORS để web client truy cập từ nhiều origin khác nhau.
+* Hoàn thành: Tạo REST API với các method GET, POST, PUT, DELETE
 
-* Bảo mật API bằng API key và usage plans.
+* Hoàn thành: Cấu hình CORS cho API Gateway
 
-* Thực hành với AWS CDK để định nghĩa và deploy infrastructure bằng code.
+* Hoàn thành: **Thực hành:**
 
-* Kiểm tra thành công tất cả API endpoints bằng Postman.
-    
+* Hoàn thành: + Tạo REST API gắn với Lambda
+
+* Hoàn thành: + Test endpoints bằng Postman
+
+* Hoàn thành: + Bật xác thực bằng API key
+
+* Hoàn thành: AWS CDK/SDK cơ bản để viết infrastructure as code
+
+* Hoàn thành: Tổng quan về CloudFormation stacks
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Deploy stack API + Lambda bằng AWS CDK
+
+* Hoàn thành: + Review và kiểm tra toàn bộ luồng serverless API
+

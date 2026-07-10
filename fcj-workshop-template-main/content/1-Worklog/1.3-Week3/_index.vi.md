@@ -23,14 +23,31 @@ pre: " <b> 1.3. </b> "
 
 ### Kết quả đạt được tuần 3:
 
-* Thiết kế và triển khai VPC tùy chỉnh với public và private subnet trên nhiều availability zone.
+* Hoàn thành: Tìm hiểu VPC: CIDR, subnet (public/private), availability zones
 
-* Cấu hình Internet Gateway và NAT Gateway để định tuyến traffic đúng hướng.
+* Hoàn thành: Internet Gateway, NAT Gateway
 
-* Thiết lập route table cho cả subnet public và private.
+* Hoàn thành: Cấu hình route table
 
-* Áp dụng Security Groups và Network ACL để kiểm soát traffic vào/ra.
+* Hoàn thành: **Thực hành:**
 
-* Truy cập thành công EC2 trong private subnet qua Bastion Host.
+* Hoàn thành: + Tạo VPC với subnet public và private
 
-* Hiểu về VPC Peering và VPC Endpoints để giao tiếp nội bộ an toàn.
+* Hoàn thành: + Gắn Internet Gateway
+
+* Hoàn thành: + Cấu hình route table
+
+* Hoàn thành: Security Groups vs Network ACL
+
+* Hoàn thành: VPC Peering cơ bản
+
+* Hoàn thành: VPC Endpoints
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Launch EC2 trong private subnet
+
+* Hoàn thành: + Truy cập qua Bastion Host
+
+* Hoàn thành: + Cấu hình Security Groups
+

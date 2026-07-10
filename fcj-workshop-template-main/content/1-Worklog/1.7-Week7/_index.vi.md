@@ -40,15 +40,55 @@ pre: " <b> 1.7. </b> "
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu kiến trúc AWS IoT Core và cách edge device giao tiếp bảo mật với cloud qua MQTT.
+* Hoàn thành: Tổng quan AWS IoT Core: device registry, message broker, rules engine
 
-* Tạo IoT Thing với chứng chỉ X.509 và cấu hình device policy.
+* Hoàn thành: Giao thức MQTT: topics, QoS levels, retain messages
 
-* Giả lập gửi dữ liệu cảm biến lên IoT topics qua MQTT test client.
+* Hoàn thành: Tạo IoT Thing và certificates
 
-* Xây dựng IoT Rules tự động định tuyến messages đến S3 và Lambda.
+* Hoàn thành: Device policies để kết nối MQTT bảo mật
 
-* Hoàn thành luồng data ingestion end-to-end từ thiết bị giả lập đến cloud storage.
+* Hoàn thành: **Thực hành:**
 
-* **[Rookwork Phase 1]** Thiết kế kiến trúc AWS Cloud tổng thể, khởi tạo VPC với Public/Private Subnets, cấu hình IAM roles/policies, Route 53 và ACM cho dự án Rookwork.
+* Hoàn thành: + Tạo IoT Thing với certificate
+
+* Hoàn thành: + Giả lập thiết bị gửi MQTT messages
+
+* Hoàn thành: + Subscribe topics trong MQTT test client
+
+* Hoàn thành: IoT Rules Engine: câu query kiểu SQL
+
+* Hoàn thành: Định tuyến messages đến S3, Lambda, DynamoDB
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Tạo IoT rule chuyển data đến S3
+
+* Hoàn thành: + Trigger Lambda từ IoT rule
+
+* Hoàn thành: + Kiểm tra toàn bộ luồng data ingestion
+
+* **[Rookwork]** Thiết kế sơ đồ kiến trúc AWS tổng thể cho Rookwork
+
+* **[Rookwork]** Xác định các dịch vụ cần dùng: EC2, RDS, S3, SES, CloudFront, WAF, Route 53
+
+* **[Rookwork]** Khởi tạo Amazon VPC: cấu hình Public/Private Subnets, Internet Gateway
+
+* **[Rookwork]** Thiết lập NAT Gateway cho Private Subnet outbound traffic
+
+* **[Rookwork]** Cấu hình AWS IAM: tạo roles và policies cho EC2, RDS, S3
+
+* **[Rookwork]** Thiết lập Security Groups cho từng tầng (ALB, EC2, RDS)
+
+* **[Rookwork]** Cấu hình Amazon Route 53: đăng ký hosted zone, tạo DNS records
+
+* **[Rookwork]** Thiết lập AWS Certificate Manager (ACM) cho SSL/TLS
+
+* **[Rookwork]** **Review & hoàn thiện Phase 1:**
+
+* **[Rookwork]** + Kiểm tra toàn bộ cấu hình VPC, subnet, routing table
+
+* **[Rookwork]** + Verify IAM permissions và Security Groups
+
+* **[Rookwork]** + Lập kế hoạch chi tiết cho Phase 2
 

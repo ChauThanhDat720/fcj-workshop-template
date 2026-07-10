@@ -35,15 +35,55 @@ pre: " <b> 1.9. </b> "
 
 ### Kết quả đạt được tuần 9:
 
-* Deploy thành công ứng dụng Next.js lên AWS Amplify với CI/CD tự động từ GitHub.
+* Hoàn thành: Tổng quan AWS Amplify: hosting, backend và CI/CD pipeline
 
-* Cấu hình Amplify build settings và environment variables cho các môi trường deployment khác nhau.
+* Hoàn thành: So sánh Amplify với CloudFront + S3 static hosting
 
-* Xây dựng giao diện dashboard real-time để hiển thị dữ liệu cảm biến thời tiết lấy từ API Gateway.
+* Hoàn thành: Cài đặt project Next.js để deploy lên Amplify
 
-* Implement biểu đồ động để trực quan hóa nhiệt độ, độ ẩm và các chỉ số cảm biến khác.
+* Hoàn thành: Environment variables và build settings trong Amplify
 
-* Hiểu vòng đời Amplify hosting và cách quản lý nhiều environment (dev/prod).
+* Hoàn thành: **Thực hành:**
 
-* **[Rookwork Phase 3]** Deploy Spring Boot Backend lên Amazon EC2 qua Docker container, cấu hình ALB HTTPS, NAT Gateway và xác minh kết nối nội bộ EC2 ↔ RDS thành công.
+* Hoàn thành: + Kết nối GitHub repo với Amplify
+
+* Hoàn thành: + Cấu hình build settings cho Next.js
+
+* Hoàn thành: + Deploy phiên bản đầu tiên của web app
+
+* Hoàn thành: Thiết kế real-time dashboard: hiển thị dữ liệu cảm biến IoT
+
+* Hoàn thành: Kết nối Next.js frontend với API Gateway endpoints
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Implement data fetching từ API Gateway
+
+* Hoàn thành: + Xây dựng biểu đồ real-time cho dữ liệu thời tiết
+
+* Hoàn thành: + Deploy và kiểm tra trên Amplify
+
+* **[Rookwork]** Khởi tạo Amazon EC2 instance (t3.medium) trong Private Subnet
+
+* **[Rookwork]** Cấu hình Application Load Balancer (ALB): target groups, health checks, listener rules
+
+* **[Rookwork]** Đóng gói Spring Boot application thành Docker image
+
+* **[Rookwork]** Push image lên Amazon ECR, cấu hình EC2 pull và chạy container
+
+* **[Rookwork]** Cấu hình NAT Gateway cho EC2 Private Subnet outbound traffic
+
+* **[Rookwork]** Kiểm tra kết nối EC2 → RDS trong Private Network
+
+* **[Rookwork]** Cấu hình ALB Listener HTTPS với ACM certificate
+
+* **[Rookwork]** Thiết lập Auto Scaling Group cho EC2 (min: 1, desired: 1)
+
+* **[Rookwork]** **Review & kiểm thử Phase 3:**
+
+* **[Rookwork]** + Test API calls qua ALB endpoint
+
+* **[Rookwork]** + Xác minh EC2 kết nối được RDS và gọi ngoài qua NAT
+
+* **[Rookwork]** + Lập kế hoạch phát triển Frontend (Phase 4)
 

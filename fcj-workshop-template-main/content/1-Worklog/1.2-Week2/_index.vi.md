@@ -23,17 +23,35 @@ pre: " <b> 1.2. </b> "
 
 ### Kết quả đạt được tuần 2:
 
-* Nắm vững các khái niệm IAM và cấu hình users, groups, roles theo nguyên tắc least privilege.
+* Hoàn thành: Tìm hiểu IAM: users, groups, roles, policies
 
-* Tạo custom IAM policy và gán cho đúng đối tượng.
+* Hoàn thành: Tạo IAM user và gán quyền
 
-* Gán IAM role cho EC2 instance để truy cập dịch vụ an toàn mà không cần hardcode credentials.
+* Hoàn thành: **Thực hành:**
 
-* Tạo và cấu hình S3 bucket bao gồm:
-  * Versioning
-  * Lifecycle rules
-  * Bucket policy và ACL
+* Hoàn thành: + Tạo IAM user với quyền tối thiểu
 
-* Host thành công một static website trên S3.
+* Hoàn thành: + Tạo custom IAM policy
 
-* Hiểu các loại storage class của S3 và biết khi nào nên dùng loại nào.
+* Hoàn thành: + Gán role cho EC2 instance
+
+* Hoàn thành: Tìm hiểu Amazon S3: bucket, object, versioning
+
+* Hoàn thành: Các loại storage class (Standard, IA, Glacier)
+
+* Hoàn thành: Lifecycle policies
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Tạo S3 bucket và upload object
+
+* Hoàn thành: + Cấu hình bucket policy và ACL
+
+* Hoàn thành: + Bật versioning và lifecycle rules
+
+* Hoàn thành: Host static website trên S3
+
+* Hoàn thành: Cross-region replication
+
+* Hoàn thành: Ôn tập và tổng kết tuần 2
+

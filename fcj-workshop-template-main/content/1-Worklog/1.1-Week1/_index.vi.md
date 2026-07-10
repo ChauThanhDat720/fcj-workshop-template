@@ -24,33 +24,41 @@ pre: " <b> 1.1. </b> "
 
 ### Kết quả đạt được tuần 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thành: Làm quen với các thành viên FCAJ
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hoàn thành: Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hoàn thành: Tạo AWS Free Tier account
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hoàn thành: Tìm hiểu AWS Console & AWS CLI
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Hoàn thành: **Thực hành:**
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Hoàn thành: + Tạo AWS account
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Hoàn thành: + Cài AWS CLI & cấu hình
 
+* Hoàn thành: + Cách sử dụng AWS CLI
+
+* Hoàn thành: Tìm hiểu EC2 cơ bản:
+
+* Hoàn thành: + Instance types
+
+* Hoàn thành: + AMI
+
+* Hoàn thành: + EBS
+
+* Hoàn thành: + ...
+
+* Hoàn thành: Các cách remote SSH vào EC2
+
+* Hoàn thành: Tìm hiểu Elastic IP
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Tạo EC2 instance
+
+* Hoàn thành: + Kết nối SSH
+
+* Hoàn thành: + Gắn EBS volume
 

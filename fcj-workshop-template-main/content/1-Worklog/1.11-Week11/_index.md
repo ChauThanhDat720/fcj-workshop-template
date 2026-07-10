@@ -35,14 +35,55 @@ pre: " <b> 1.11. </b> "
 
 ### Week 11 Achievements:
 
-* Successfully completed end-to-end integration of the entire IoT Weather Platform.
+* Successfully completed: Review full system architecture and identify integration gaps
 
-* Verified that sensor data flows correctly from simulated devices through IoT Core, S3, Glue ETL, API Gateway, and finally appears on the Amplify-hosted dashboard.
+* Successfully completed: Map data flow: device → IoT Core → S3 → Glue → API → Dashboard
 
-* Fixed several integration bugs including IoT rule misconfiguration and Lambda timeout issues.
+* Successfully completed: End-to-end integration testing: simulate sensor data through the full pipeline
 
-* Optimized Glue ETL job performance by reducing unnecessary data scans.
+* Successfully completed: Fix issues with IoT rule routing and Lambda triggers
 
-* Documented all known limitations and planned improvements for the final week.
+* Successfully completed: **Practice:**
 
-* **[Rookwork Phase 5]** Successfully integrated S3 File Storage via VPC Gateway Endpoint (EC2 writes files without going through the internet), implemented pre-signed URL downloads, and completed Amazon SES email notifications for Workspace invitations.
+* Successfully completed: + Run full data flow test with 5 simulated devices
+
+* Successfully completed: + Verify data appears correctly on the dashboard
+
+* Successfully completed: + Debug latency and missing data issues
+
+* Successfully completed: Performance and load testing of API Gateway and Lambda
+
+* Successfully completed: Optimize Glue ETL job execution time
+
+* Successfully completed: **Practice:**
+
+* Successfully completed: + Fix all identified bugs
+
+* Successfully completed: + Final integration test with all components running
+
+* Successfully completed: + Document known limitations
+
+* **[Rookwork]** Create a dedicated Amazon S3 bucket for File Storage (attachments)
+
+* **[Rookwork]** Configure VPC S3 Gateway Endpoint so EC2 writes files to S3 via internal routing (no internet)
+
+* **[Rookwork]** Implement file upload/download in Spring Boot Backend (AWS SDK for S3)
+
+* **[Rookwork]** Generate pre-signed URLs for users to securely download files via CloudFront
+
+* **[Rookwork]** Configure Amazon SES: verify domain and create email identity
+
+* **[Rookwork]** Implement email notification service in Spring Boot: send Workspace invitation emails
+
+* **[Rookwork]** End-to-end test file upload feature: Frontend → EC2 → S3 Endpoint → S3
+
+* **[Rookwork]** Test email invitation flow: Backend → SES → user inbox
+
+* **[Rookwork]** **Review & test Phase 5:**
+
+* **[Rookwork]** + Verify complete file upload/download and email notification features
+
+* **[Rookwork]** + Security assessment: S3 bucket policies, SES sending limits
+
+* **[Rookwork]** + Prepare for Phase 6: Full system testing & handover
+

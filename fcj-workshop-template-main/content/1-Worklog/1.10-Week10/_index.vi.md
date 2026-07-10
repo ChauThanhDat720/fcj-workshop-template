@@ -35,17 +35,55 @@ pre: " <b> 1.10. </b> "
 
 ### Kết quả đạt được tuần 10:
 
-* Cài đặt Amazon Cognito User Pool với password policy tùy chỉnh và email verification.
+* Hoàn thành: Tổng quan Amazon Cognito: User Pools vs Identity Pools
 
-* Cấu hình OAuth 2.0 app client cho Next.js frontend.
+* Hoàn thành: Authentication flows: SRP, custom auth, hosted UI
 
-* Implement luồng đăng ký, đăng nhập và đăng xuất trong web app.
+* Hoàn thành: Cấu hình Cognito User Pool: password policy, MFA, email verification
 
-* Bảo mật API Gateway endpoints bằng Cognito JWT authorizer.
+* Hoàn thành: App clients và OAuth 2.0 scopes
 
-* Giới hạn quyền truy cập dashboard chỉ cho các thành viên lab đã xác thực.
+* Hoàn thành: **Thực hành:**
 
-* Hiểu sự khác biệt giữa User Pools (authentication) và Identity Pools (authorization).
+* Hoàn thành: + Tạo Cognito User Pool
 
-* **[Rookwork Phase 4]** Build và deploy React 19 Frontend lên S3, cấu hình CloudFront HTTPS với WAF bảo vệ và liên kết Route 53 custom domain, xác minh luồng Frontend → Backend hoạt động end-to-end.
+* Hoàn thành: + Cấu hình app client với OAuth settings
+
+* Hoàn thành: + Kiểm tra luồng đăng ký và đăng nhập
+
+* Hoàn thành: Tích hợp Cognito với API Gateway authorizer
+
+* Hoàn thành: Protected routes trong Next.js dùng Cognito JWT tokens
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Thêm Cognito JWT authorizer vào API Gateway
+
+* Hoàn thành: + Implement login/logout trong Next.js
+
+* Hoàn thành: + Chặn truy cập dashboard với người dùng chưa xác thực
+
+* **[Rookwork]** Phát triển giao diện React 19: các trang Login, Dashboard, Workspace, Task Board
+
+* **[Rookwork]** Cấu hình React Router và global state management
+
+* **[Rookwork]** Build production bundle React app
+
+* **[Rookwork]** Tạo Amazon S3 bucket (FE Static): cấu hình static website hosting, upload build files
+
+* **[Rookwork]** Cấu hình Amazon CloudFront distribution: origin S3, cache behaviors, HTTPS
+
+* **[Rookwork]** Tích hợp AWS WAF với CloudFront để bảo vệ khỏi web exploits
+
+* **[Rookwork]** Liên kết CloudFront với Route 53 custom domain
+
+* **[Rookwork]** Cấu hình CORS trên Spring Boot Backend để chấp nhận request từ CloudFront domain
+
+* **[Rookwork]** **Review & kiểm thử Phase 4:**
+
+* **[Rookwork]** + Test toàn bộ luồng đăng nhập và CRUD từ Frontend → ALB → EC2 → RDS
+
+* **[Rookwork]** + Xác minh WAF block các request độc hại
+
+* **[Rookwork]** + Lập kế hoạch tích hợp File Storage & SES (Phase 5)
 

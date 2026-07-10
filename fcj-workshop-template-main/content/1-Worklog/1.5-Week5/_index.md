@@ -23,14 +23,33 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Achievements:
 
-* Understood the serverless model and how Lambda fits into event-driven architectures.
+* Successfully completed: Lambda concepts: function, handler, runtime, memory, timeout
 
-* Created Lambda functions in Python and connected them to multiple triggers (S3, DynamoDB Streams).
+* Successfully completed: Event-driven architecture overview
 
-* Configured proper IAM execution roles for Lambda functions.
+* Successfully completed: Lambda triggers: S3, DynamoDB Streams, API Gateway, EventBridge
 
-* Used CloudWatch Logs to monitor and debug Lambda execution.
+* Successfully completed: Lambda execution roles and permissions
 
-* Implemented Lambda Layers to share common dependencies across multiple functions.
+* Successfully completed: **Practice:**
 
-* Optimized function performance by tuning memory and timeout settings.
+* Successfully completed: + Create a Python Lambda function
+
+* Successfully completed: + Trigger Lambda from S3 upload event
+
+* Successfully completed: + View logs in CloudWatch
+
+* Successfully completed: Lambda Layers for shared dependencies
+
+* Successfully completed: Environment variables and Secrets Manager integration
+
+* Successfully completed: Lambda cold start optimization
+
+* Successfully completed: **Practice:**
+
+* Successfully completed: + Lambda triggered by DynamoDB Stream
+
+* Successfully completed: + Add Lambda Layer
+
+* Successfully completed: + Monitor with CloudWatch metrics
+

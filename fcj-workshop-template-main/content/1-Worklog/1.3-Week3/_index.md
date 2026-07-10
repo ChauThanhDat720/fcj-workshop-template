@@ -23,14 +23,31 @@ pre: " <b> 1.3. </b> "
 
 ### Week 3 Achievements:
 
-* Designed and deployed a custom VPC with public and private subnets across multiple availability zones.
+* Successfully completed: Learn VPC concepts: CIDR, subnets (public/private), availability zones
 
-* Configured Internet Gateway and NAT Gateway for proper traffic routing.
+* Successfully completed: Internet Gateway, NAT Gateway
 
-* Set up route tables for both public and private subnets.
+* Successfully completed: Route tables configuration
 
-* Applied Security Groups and Network ACLs to control inbound and outbound traffic.
+* Successfully completed: **Practice:**
 
-* Successfully accessed EC2 instances in private subnets via a Bastion Host.
+* Successfully completed: + Create custom VPC with public and private subnets
 
-* Understood VPC Peering and VPC Endpoints for secure internal communication.
+* Successfully completed: + Attach Internet Gateway
+
+* Successfully completed: + Configure route tables
+
+* Successfully completed: Security Groups vs Network ACLs
+
+* Successfully completed: VPC Peering basics
+
+* Successfully completed: VPC Endpoints
+
+* Successfully completed: **Practice:**
+
+* Successfully completed: + Launch EC2 in private subnet
+
+* Successfully completed: + Access via Bastion Host
+
+* Successfully completed: + Configure Security Groups
+

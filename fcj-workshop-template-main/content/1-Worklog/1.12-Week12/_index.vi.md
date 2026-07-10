@@ -18,7 +18,7 @@ pre: " <b> 1.12. </b> "
 | 3 | - Deploy production: CDK stack deploy cuối cùng <br> - Cấu hình CloudWatch alarms và dashboards để giám sát | 02/07/2026 | 02/07/2026 |  |
 | 4 | - **Thực hành:** <br>&emsp; + Kiểm thử production end-to-end lần cuối <br>&emsp; + Xác minh tất cả Cognito user accounts đang active <br>&emsp; + Giám sát system health trong 24 giờ | 03/07/2026 | 03/07/2026 |  |
 | 5 | - Viết tài liệu kỹ thuật: sơ đồ kiến trúc, API docs, deployment guide <br> - Chuẩn bị demo cho buổi trình bày cuối kỳ thực tập | 04/07/2026 | 04/07/2026 |  |
-| 6 | - Hoàn thành báo cáo thực tập <br> - Nộp các deliverable cuối cùng <br> - Dọn dẹp tài nguyên không cần thiết | 15/07/2026 | 15/07/2026 |  |
+| 6 | - Hoàn thành báo cáo thực tập <br> - Nộp các deliverable cuối cùng <br> - Dọn dẹp tài nguyên không cần thiết | 12/07/2026 | 12/07/2026 |  |
 
 ---
 
@@ -30,24 +30,24 @@ pre: " <b> 1.12. </b> "
 | 3 | - Security review: kiểm tra IAM least-privilege, Security Group rules, S3 bucket policies <br> - Xác minh JWT token expiry, CORS policy và WAF rule hoạt động đúng | 02/07/2026 | 02/07/2026 | |
 | 4 | - Cấu hình Amazon CloudWatch: tạo alarms cho EC2 CPU, RDS connections, ALB 5xx errors <br> - Thiết lập AWS Budgets: cảnh báo chi phí vượt ngưỡng | 03/07/2026 | 03/07/2026 | |
 | 5 | - Viết tài liệu kỹ thuật Rookwork: sơ đồ kiến trúc AWS, API reference, hướng dẫn deployment <br> - Chuẩn bị tài liệu bàn giao và demo system cho supervisor | 04/07/2026 | 04/07/2026 | |
-| 6 | - **Hoàn thiện & Bàn giao Phase 6:** <br>&emsp; + Demo hệ thống Rookwork hoàn chỉnh <br>&emsp; + Dọn dẹp tài nguyên AWS không cần thiết (Multi-AZ dev, NAT Gateway test) <br>&emsp; + Xác minh chi phí AWS nằm trong ngân sách | 15/07/2026 | 15/07/2026 | |
+| 6 | - **Hoàn thiện & Bàn giao Phase 6:** <br>&emsp; + Demo hệ thống Rookwork hoàn chỉnh <br>&emsp; + Dọn dẹp tài nguyên AWS không cần thiết (Multi-AZ dev, NAT Gateway test) <br>&emsp; + Xác minh chi phí AWS nằm trong ngân sách | 12/07/2026 | 12/07/2026 | |
 
 
 ### Kết quả đạt được tuần 12:
 
-* Deploy thành công toàn bộ IoT Weather Platform lên production bằng AWS CDK.
+* Triển khai thành công môi trường production thông qua AWS CDK.
 
-* Cấu hình CloudWatch monitoring và alerts cho tất cả các component quan trọng.
+* Cấu hình toàn diện giám sát bằng CloudWatch, bao gồm alarms và dashboards.
 
-* Tạo và xác minh 5 tài khoản thành viên lab trong Amazon Cognito.
+* Xác minh thành công tất cả tài khoản Cognito và giám sát tính ổn định của hệ thống trong 24 giờ.
 
-* Hoàn thành đầy đủ tài liệu kỹ thuật bao gồm kiến trúc hệ thống, API reference và deployment guide.
+* Hoàn thành đầy đủ tài liệu kỹ thuật bao gồm sơ đồ kiến trúc, API docs và hướng dẫn deployment.
 
-* Demo thành công platform cho các giám sát viên thực tập.
+* Chuẩn bị và thực hiện thành công buổi demo hệ thống cho đợt báo cáo thực tập.
 
-* Dọn dẹp tài nguyên development và xác nhận chi phí AWS nằm trong ngân sách $0.70/tháng.
+* Review lại toàn bộ tài nguyên AWS, thiết lập budget alerts và dọn dẹp các tài nguyên không sử dụng.
 
-* Hoàn thành và nộp báo cáo thực tập đúng hạn.
+* Hoàn thành và nộp báo cáo thực tập cùng các sản phẩm bàn giao đúng hạn vào ngày 12/07/2026.
 
-* **[Rookwork Phase 6]** Hoàn thành kiểm thử end-to-end toàn hệ thống Rookwork, thực hiện security review đầy đủ, cấu hình CloudWatch monitoring, hoàn thiện tài liệu kỹ thuật và demo bàn giao thành công cho supervisor.
+* **[Rookwork Phase 6]** Hoàn thành kiểm thử end-to-end toàn hệ thống Rookwork, thực hiện security review khắt khe (IAM, CORS, WAF), hoàn thiện tài liệu kỹ thuật riêng cho dự án và chính thức bàn giao hệ thống với chi phí AWS được duy trì trong ngân sách.
 

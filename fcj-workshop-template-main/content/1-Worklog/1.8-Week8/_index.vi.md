@@ -35,15 +35,53 @@ pre: " <b> 1.8. </b> "
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu hệ sinh thái AWS Glue và vai trò của nó trong kiến trúc data lake.
+* Hoàn thành: Tổng quan AWS Glue: Data Catalog, crawlers, databases, tables
 
-* Tạo và chạy Glue Crawlers để tự động catalog raw IoT data từ S3.
+* Hoàn thành: So sánh Glue với các ETL tool truyền thống
 
-* Viết ETL job bằng PySpark để làm sạch, transform và tổng hợp dữ liệu cảm biến IoT.
+* Hoàn thành: Glue Crawlers: quét S3 để tự động tạo schema
 
-* Lưu dữ liệu đã xử lý vào S3 output bucket dưới định dạng Parquet.
+* Hoàn thành: Glue Data Catalog là kho metadata tập trung
 
-* Truy vấn và kiểm tra dữ liệu đã transform bằng Amazon Athena.
+* Hoàn thành: **Thực hành:**
 
-* **[Rookwork Phase 2]** Khởi tạo Spring Boot project, cấu hình Amazon RDS PostgreSQL Multi-AZ, thiết lập Flyway migration và implement các API Authentication cùng CRUD cốt lõi.
+* Hoàn thành: + Tạo Glue Crawler trên S3 bucket chứa raw IoT data
+
+* Hoàn thành: + Chạy crawler và kiểm tra schema được tạo
+
+* Hoàn thành: Glue ETL Jobs: PySpark script để transform dữ liệu
+
+* Hoàn thành: Job triggers và scheduling
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Tạo Glue ETL job để transform và làm sạch IoT data
+
+* Hoàn thành: + Ghi dữ liệu đã xử lý vào S3 output bucket
+
+* Hoàn thành: + Xác minh kết quả bằng Athena
+
+* **[Rookwork]** Khởi tạo project Spring Boot: cấu hình Spring Security (JWT + OAuth2)
+
+* **[Rookwork]** Thiết kế schema database PostgreSQL cho các entity chính (User, Workspace, Task)
+
+* **[Rookwork]** Cấu hình Amazon RDS PostgreSQL Multi-AZ: tạo DB instance, subnet groups
+
+* **[Rookwork]** Thiết lập Flyway để quản lý database migration
+
+* **[Rookwork]** Implement các API cốt lõi: Authentication (register, login, refresh token)
+
+* **[Rookwork]** Viết Flyway migration scripts V1 — khởi tạo schema ban đầu
+
+* **[Rookwork]** Implement CRUD API: Workspace, Project, Task management
+
+* **[Rookwork]** Cấu hình Spring Data JPA repositories
+
+* **[Rookwork]** **Review & kiểm thử Phase 2:**
+
+* **[Rookwork]** + Unit test các API endpoint chính
+
+* **[Rookwork]** + Xác minh kết nối RDS từ local environment
+
+* **[Rookwork]** + Lập kế hoạch deploy lên EC2 (Phase 3)
 

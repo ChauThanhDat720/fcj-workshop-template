@@ -23,14 +23,31 @@ pre: " <b> 1.4. </b> "
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu lợi ích của RDS managed service so với tự quản lý database.
+* Hoàn thành: Tìm hiểu RDS: các engine được hỗ trợ (MySQL, PostgreSQL, Aurora)
 
-* Triển khai RDS MySQL trong private subnet với Multi-AZ để đảm bảo tính sẵn sàng cao.
+* Hoàn thành: Multi-AZ deployment và automatic failover
 
-* Cấu hình Read Replicas để phân phối tải đọc.
+* Hoàn thành: RDS Read Replicas để phân tải đọc
 
-* Thực hiện backup và restore bằng snapshot.
+* Hoàn thành: Backup và restore: automated backups, snapshots
 
-* Tạo và vận hành bảng DynamoDB với các thao tác CRUD qua Console và CLI.
+* Hoàn thành: **Thực hành:**
 
-* Hiểu sự khác biệt giữa relational (RDS) và NoSQL (DynamoDB) trên AWS.
+* Hoàn thành: + Launch RDS MySQL trong private subnet
+
+* Hoàn thành: + Kết nối từ EC2
+
+* Hoàn thành: + Tạo snapshot và restore
+
+* Hoàn thành: Amazon DynamoDB: table, item, attribute, partition key
+
+* Hoàn thành: DynamoDB streams và global tables
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Tạo bảng DynamoDB
+
+* Hoàn thành: + Thao tác CRUD qua Console và CLI
+
+* Hoàn thành: + Ôn tập tuần 4
+

@@ -35,14 +35,53 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Achievements:
 
-* Understood the AWS Glue ecosystem and its role in the data lake architecture.
+* Successfully completed: AWS Glue overview: Data Catalog, crawlers, databases, tables
 
-* Created and ran Glue Crawlers to automatically catalog raw IoT data from S3.
+* Successfully completed: Glue vs traditional ETL tools
 
-* Wrote a PySpark ETL job to clean, transform, and aggregate IoT sensor readings.
+* Successfully completed: Glue Crawlers: scanning S3 to auto-generate schema
 
-* Stored processed data in a separate S3 output bucket in Parquet format.
+* Successfully completed: Glue Data Catalog as centralized metadata store
 
-* Queried and verified transformed data using Amazon Athena.
+* Successfully completed: **Practice:**
 
-* **[Rookwork Phase 2]** Initialized Spring Boot project, set up Amazon RDS PostgreSQL Multi-AZ, configured Flyway migration, and implemented Authentication APIs along with core CRUD endpoints.
+* Successfully completed: + Create Glue Crawler on raw IoT data S3 bucket
+
+* Successfully completed: + Run crawler and verify generated schema
+
+* Successfully completed: Glue ETL Jobs: PySpark scripts for data transformation
+
+* Successfully completed: Job triggers and scheduling
+
+* Successfully completed: **Practice:**
+
+* Successfully completed: + Create Glue ETL job to transform and clean IoT data
+
+* Successfully completed: + Write processed data to output S3 bucket
+
+* Successfully completed: + Verify results with Athena
+
+* **[Rookwork]** Initialize Spring Boot project: configure Spring Security (JWT + OAuth2)
+
+* **[Rookwork]** Design PostgreSQL schema for core entities (User, Workspace, Task)
+
+* **[Rookwork]** Set up Amazon RDS PostgreSQL Multi-AZ: create DB instance and subnet groups
+
+* **[Rookwork]** Configure Flyway for database migration management
+
+* **[Rookwork]** Implement core APIs: Authentication (register, login, refresh token)
+
+* **[Rookwork]** Write Flyway migration scripts V1 — initial schema setup
+
+* **[Rookwork]** Implement CRUD APIs: Workspace, Project, Task management
+
+* **[Rookwork]** Configure Spring Data JPA repositories
+
+* **[Rookwork]** **Review & test Phase 2:**
+
+* **[Rookwork]** + Unit test main API endpoints
+
+* **[Rookwork]** + Verify RDS connectivity from local environment
+
+* **[Rookwork]** + Plan EC2 deployment tasks (Phase 3)
+

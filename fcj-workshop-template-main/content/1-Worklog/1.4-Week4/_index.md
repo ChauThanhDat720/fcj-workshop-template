@@ -23,14 +23,31 @@ pre: " <b> 1.4. </b> "
 
 ### Week 4 Achievements:
 
-* Understood RDS managed service benefits vs self-managed databases.
+* Successfully completed: Learn RDS concepts: supported engines (MySQL, PostgreSQL, Aurora)
 
-* Deployed RDS MySQL in a private subnet with Multi-AZ for high availability.
+* Successfully completed: Multi-AZ deployments and automatic failover
 
-* Configured Read Replicas to distribute read traffic.
+* Successfully completed: RDS Read Replicas for read scaling
 
-* Performed backup and restore using snapshots.
+* Successfully completed: RDS backup and restore: automated backups, snapshots
 
-* Created and operated a DynamoDB table with CRUD operations using both Console and CLI.
+* Successfully completed: **Practice:**
 
-* Understood the difference between relational (RDS) and NoSQL (DynamoDB) approaches on AWS.
+* Successfully completed: + Launch RDS MySQL instance in private subnet
+
+* Successfully completed: + Connect from EC2
+
+* Successfully completed: + Create snapshot and restore
+
+* Successfully completed: Amazon DynamoDB: tables, items, attributes, partition key
+
+* Successfully completed: DynamoDB streams and global tables
+
+* Successfully completed: **Practice:**
+
+* Successfully completed: + Create DynamoDB table
+
+* Successfully completed: + CRUD operations via Console and CLI
+
+* Successfully completed: + Review week 4
+

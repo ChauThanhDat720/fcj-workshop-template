@@ -35,16 +35,55 @@ pre: " <b> 1.10. </b> "
 
 ### Week 10 Achievements:
 
-* Set up Amazon Cognito User Pool with custom password policy and email verification.
+* Successfully completed: Amazon Cognito overview: User Pools vs Identity Pools
 
-* Configured OAuth 2.0 app client for the Next.js frontend.
+* Successfully completed: Authentication flows: SRP, custom auth, hosted UI
 
-* Implemented sign-up, sign-in, and sign-out flows in the web application.
+* Successfully completed: Cognito User Pool configuration: password policy, MFA, email verification
 
-* Secured API Gateway endpoints using Cognito JWT authorizer.
+* Successfully completed: App clients and OAuth 2.0 scopes
 
-* Restricted dashboard access so only authenticated lab members can view sensor data.
+* Successfully completed: **Practice:**
 
-* Understood the difference between User Pools (authentication) and Identity Pools (authorization).
+* Successfully completed: + Create Cognito User Pool
 
-* **[Rookwork Phase 4]** Built and deployed React 19 Frontend to S3, configured CloudFront HTTPS with WAF protection and Route 53 custom domain, and verified the end-to-end Frontend → Backend flow.
+* Successfully completed: + Configure app client with OAuth settings
+
+* Successfully completed: + Test sign-up and sign-in flows
+
+* Successfully completed: Integrating Cognito with API Gateway authorizer
+
+* Successfully completed: Protected routes in Next.js using Cognito JWT tokens
+
+* Successfully completed: **Practice:**
+
+* Successfully completed: + Add Cognito JWT authorizer to API Gateway
+
+* Successfully completed: + Implement login/logout in Next.js
+
+* Successfully completed: + Restrict dashboard access to authenticated users
+
+* **[Rookwork]** Develop React 19 UI: Login, Dashboard, Workspace, and Task Board pages
+
+* **[Rookwork]** Configure React Router and global state management
+
+* **[Rookwork]** Build production bundle of the React app
+
+* **[Rookwork]** Create Amazon S3 bucket (FE Static): configure static website hosting and upload build files
+
+* **[Rookwork]** Configure Amazon CloudFront distribution: S3 origin, cache behaviors, HTTPS
+
+* **[Rookwork]** Integrate AWS WAF with CloudFront to protect against web exploits
+
+* **[Rookwork]** Link CloudFront to Route 53 custom domain
+
+* **[Rookwork]** Configure CORS on Spring Boot Backend to accept requests from the CloudFront domain
+
+* **[Rookwork]** **Review & test Phase 4:**
+
+* **[Rookwork]** + Test full flow: Login & CRUD from Frontend → ALB → EC2 → RDS
+
+* **[Rookwork]** + Verify WAF blocks malicious requests
+
+* **[Rookwork]** + Plan File Storage & SES integration (Phase 5)
+

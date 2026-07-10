@@ -24,31 +24,41 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Successfully completed: Get acquainted with FCAJ members
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully completed: Read and take note of internship unit rules and regulations
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully completed: Create AWS Free Tier account
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully completed: Learn about AWS Console & AWS CLI
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully completed: **Practice:**
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Successfully completed: + Create AWS account
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully completed: + Install & configure AWS CLI
+
+* Successfully completed: + How to use AWS CLI
+
+* Successfully completed: Learn basic EC2:
+
+* Successfully completed: + Instance types
+
+* Successfully completed: + AMI
+
+* Successfully completed: + EBS
+
+* Successfully completed: + ...
+
+* Successfully completed: SSH connection methods to EC2
+
+* Successfully completed: Learn about Elastic IP
+
+* Successfully completed: **Practice:**
+
+* Successfully completed: + Launch an EC2 instance
+
+* Successfully completed: + Connect via SSH
+
+* Successfully completed: + Attach an EBS volume
+

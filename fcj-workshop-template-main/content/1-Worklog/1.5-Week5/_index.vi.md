@@ -23,14 +23,33 @@ pre: " <b> 1.5. </b> "
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu mô hình serverless và cách Lambda hoạt động trong kiến trúc event-driven.
+* Hoàn thành: Lambda: function, handler, runtime, memory, timeout
 
-* Tạo Lambda function bằng Python và kết nối với nhiều trigger (S3, DynamoDB Streams).
+* Hoàn thành: Tổng quan về kiến trúc event-driven
 
-* Cấu hình IAM execution role phù hợp cho Lambda.
+* Hoàn thành: Lambda triggers: S3, DynamoDB Streams, API Gateway, EventBridge
 
-* Sử dụng CloudWatch Logs để giám sát và debug Lambda.
+* Hoàn thành: Lambda execution roles và phân quyền
 
-* Triển khai Lambda Layers để chia sẻ dependencies chung giữa nhiều function.
+* Hoàn thành: **Thực hành:**
 
-* Tối ưu hiệu năng bằng cách điều chỉnh memory và timeout.
+* Hoàn thành: + Tạo Lambda function bằng Python
+
+* Hoàn thành: + Trigger Lambda từ S3 upload event
+
+* Hoàn thành: + Xem logs trong CloudWatch
+
+* Hoàn thành: Lambda Layers cho shared dependencies
+
+* Hoàn thành: Environment variables và tích hợp Secrets Manager
+
+* Hoàn thành: Tối ưu cold start
+
+* Hoàn thành: **Thực hành:**
+
+* Hoàn thành: + Lambda trigger từ DynamoDB Stream
+
+* Hoàn thành: + Thêm Lambda Layer
+
+* Hoàn thành: + Giám sát với CloudWatch metrics
+
