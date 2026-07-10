@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-## Kiến trúc hệ thống
+#### Kiến trúc hệ thống
 
 ![Rookwork AWS Architecture](/images/5-Workshop/rookwork_aws_architecture.jpg)
 

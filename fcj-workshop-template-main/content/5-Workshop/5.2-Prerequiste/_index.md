@@ -10,7 +10,7 @@ Before starting the AWS infrastructure deployment for the **Rookwork** project, 
 
 ---
 
-## 1. AWS Account
+#### 1. AWS Account
 
 - An active **AWS account** (AWS Free Tier or a learning account is acceptable).
 - The account must have permissions to create: **VPC, EC2, RDS, S3, SES, CloudFront, WAF, Route 53, IAM, ACM**.
@@ -21,7 +21,7 @@ Before starting the AWS infrastructure deployment for the **Rookwork** project, 
 
 ---
 
-## 2. Required Tools
+#### 2. Required Tools
 
 Install the following tools on your local machine:
 
@@ -35,7 +35,7 @@ Install the following tools on your local machine:
 | **AWS CLI** | v2 | Interact with AWS from the command line |
 | **Git** | 2.x | Source code management |
 
-### Verify Installation
+##### Verify Installation
 
 Run the following commands to confirm each tool is installed correctly:
 
@@ -51,7 +51,7 @@ git --version         # Git 2.x
 
 ---
 
-## 3. Configure AWS CLI
+#### 3. Configure AWS CLI
 
 Configure the AWS CLI with your IAM User credentials:
 
@@ -65,7 +65,7 @@ Enter the following when prompted:
 - **Default region name** — e.g., `ap-southeast-1` (Singapore)
 - **Default output format** — `json`
 
-### Verify Connectivity
+##### Verify Connectivity
 
 ```bash
 aws sts get-caller-identity
@@ -73,7 +73,7 @@ aws sts get-caller-identity
 
 ---
 
-## 4. IAM Permissions
+#### 4. IAM Permissions
 
 Attach the following **IAM policy** to your IAM User to grant sufficient permissions for deploying Rookwork infrastructure:
 
@@ -112,7 +112,7 @@ Attach the following **IAM policy** to your IAM User to grant sufficient permiss
 
 ---
 
-## 5. Prepare Source Code
+#### 5. Prepare Source Code
 
 Clone the Rookwork project source code to your local machine:
 
@@ -124,14 +124,14 @@ git clone https://github.com/ChauThanhDat720/rookwork-backend.git
 git clone https://github.com/ChauThanhDat720/rookwork-frontend.git
 ```
 
-### Test Backend Build
+##### Test Backend Build
 
 ```bash
 cd rookwork-backend
 mvn clean package -DskipTests
 ```
 
-### Test Frontend Build
+##### Test Frontend Build
 
 ```bash
 cd rookwork-frontend
@@ -141,7 +141,7 @@ npm run build
 
 ---
 
-## 6. Verify Docker
+#### 6. Verify Docker
 
 Ensure Docker is running and can pull images:
 
