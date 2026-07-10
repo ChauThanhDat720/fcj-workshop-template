@@ -43,7 +43,6 @@ Definitely. It's an excellent environment to bridge the gap between university t
 
 ### Suggestions & Expectations
 - Do you have any suggestions to improve the internship experience?  
-I hope the team organizes regular tech talks between different groups so interns can cross-learn from each other.
 - Would you like to continue this program in the future?  
 I strongly desire the opportunity to work long-term at AWS Vietnam after completing this internship.
 - Any other comments (free sharing):  

@@ -40,7 +40,6 @@ Chắc chắn có. Đây là một môi trường tuyệt vời để thu hẹp 
 
 ### Đề xuất & mong muốn
 - Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-Mong muốn team tổ chức thêm các buổi chia sẻ (tech talk) định kỳ giữa các nhóm để mọi người học hỏi chéo kiến thức của nhau.
 - Bạn có muốn tiếp tục chương trình này trong tương lai?  
 Mình rất mong muốn có cơ hội được đồng hành lâu dài cùng AWS Việt Nam sau khi hoàn thành khóa thực tập này.
 - Góp ý khác (tự do chia sẻ):  
