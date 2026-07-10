@@ -20,6 +20,18 @@ pre: " <b> 1.10. </b> "
 | 5 | - Integrating Cognito with API Gateway authorizer <br> - Protected routes in Next.js using Cognito JWT tokens | 20/06/2026 | 20/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Practice:** <br>&emsp; + Add Cognito JWT authorizer to API Gateway <br>&emsp; + Implement login/logout in Next.js <br>&emsp; + Restrict dashboard access to authenticated users | 21/06/2026 | 21/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
+---
+
+**🛠️ Rookwork Project — Phase 4: React Frontend Development & Deploy to S3 + CloudFront + WAF**
+
+| Day | Rookwork Task | Start Date | Completion Date | Reference Material |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - Develop React 19 UI: Login, Dashboard, Workspace, and Task Board pages <br> - Configure React Router and global state management | 17/06/2026 | 17/06/2026 | |
+| 3 | - Build production bundle of the React app <br> - Create Amazon S3 bucket (FE Static): configure static website hosting and upload build files | 18/06/2026 | 18/06/2026 | |
+| 4 | - Configure Amazon CloudFront distribution: S3 origin, cache behaviors, HTTPS <br> - Integrate AWS WAF with CloudFront to protect against web exploits | 19/06/2026 | 19/06/2026 | |
+| 5 | - Link CloudFront to Route 53 custom domain <br> - Configure CORS on Spring Boot Backend to accept requests from the CloudFront domain | 20/06/2026 | 20/06/2026 | |
+| 6 | - **Review & test Phase 4:** <br>&emsp; + Test full flow: Login & CRUD from Frontend → ALB → EC2 → RDS <br>&emsp; + Verify WAF blocks malicious requests <br>&emsp; + Plan File Storage & SES integration (Phase 5) | 21/06/2026 | 21/06/2026 | |
+
 
 ### Week 10 Achievements:
 
@@ -34,3 +46,5 @@ pre: " <b> 1.10. </b> "
 * Restricted dashboard access so only authenticated lab members can view sensor data.
 
 * Understood the difference between User Pools (authentication) and Identity Pools (authorization).
+
+* **[Rookwork Phase 4]** Built and deployed React 19 Frontend to S3, configured CloudFront HTTPS with WAF protection and Route 53 custom domain, and verified the end-to-end Frontend → Backend flow.

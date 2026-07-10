@@ -20,6 +20,18 @@ pre: " <b> 1.8. </b> "
 | 5 | - Glue ETL Jobs: PySpark scripts for data transformation <br> - Job triggers and scheduling | 06/06/2026 | 06/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Practice:** <br>&emsp; + Create Glue ETL job to transform and clean IoT data <br>&emsp; + Write processed data to output S3 bucket <br>&emsp; + Verify results with Athena | 07/06/2026 | 07/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
+---
+
+**🛠️ Rookwork Project — Phase 2: Spring Boot Backend & PostgreSQL Database**
+
+| Day | Rookwork Task | Start Date | Completion Date | Reference Material |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - Initialize Spring Boot project: configure Spring Security (JWT + OAuth2) <br> - Design PostgreSQL schema for core entities (User, Workspace, Task) | 03/06/2026 | 03/06/2026 | |
+| 3 | - Set up Amazon RDS PostgreSQL Multi-AZ: create DB instance and subnet groups <br> - Configure Flyway for database migration management | 04/06/2026 | 04/06/2026 | |
+| 4 | - Implement core APIs: Authentication (register, login, refresh token) <br> - Write Flyway migration scripts V1 — initial schema setup | 05/06/2026 | 05/06/2026 | |
+| 5 | - Implement CRUD APIs: Workspace, Project, Task management <br> - Configure Spring Data JPA repositories | 06/06/2026 | 06/06/2026 | |
+| 6 | - **Review & test Phase 2:** <br>&emsp; + Unit test main API endpoints <br>&emsp; + Verify RDS connectivity from local environment <br>&emsp; + Plan EC2 deployment tasks (Phase 3) | 07/06/2026 | 07/06/2026 | |
+
 
 ### Week 8 Achievements:
 
@@ -32,3 +44,5 @@ pre: " <b> 1.8. </b> "
 * Stored processed data in a separate S3 output bucket in Parquet format.
 
 * Queried and verified transformed data using Amazon Athena.
+
+* **[Rookwork Phase 2]** Initialized Spring Boot project, set up Amazon RDS PostgreSQL Multi-AZ, configured Flyway migration, and implemented Authentication APIs along with core CRUD endpoints.

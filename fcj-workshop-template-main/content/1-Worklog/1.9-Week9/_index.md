@@ -20,6 +20,18 @@ pre: " <b> 1.9. </b> "
 | 5 | - Real-time dashboard design: displaying IoT sensor data <br> - Connecting Next.js frontend to API Gateway endpoints | 13/06/2026 | 13/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Practice:** <br>&emsp; + Implement data fetching from API Gateway <br>&emsp; + Build real-time charts for weather data <br>&emsp; + Deploy and verify on Amplify | 14/06/2026 | 14/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
+---
+
+**🛠️ Rookwork Project — Phase 3: Deploy Backend to EC2 + ALB + NAT Gateway**
+
+| Day | Rookwork Task | Start Date | Completion Date | Reference Material |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2 | - Launch Amazon EC2 instance (t3.medium) in Private Subnet <br> - Configure Application Load Balancer (ALB): target groups, health checks, listener rules | 10/06/2026 | 10/06/2026 | |
+| 3 | - Package Spring Boot application into a Docker image <br> - Push image to Amazon ECR and configure EC2 to pull and run the container | 11/06/2026 | 11/06/2026 | |
+| 4 | - Configure NAT Gateway for EC2 Private Subnet outbound traffic <br> - Verify EC2 → RDS connectivity within the Private Network | 12/06/2026 | 12/06/2026 | |
+| 5 | - Configure ALB HTTPS Listener with ACM certificate <br> - Set up Auto Scaling Group for EC2 (min: 1, desired: 1) | 13/06/2026 | 13/06/2026 | |
+| 6 | - **Review & test Phase 3:** <br>&emsp; + Test API calls through ALB endpoint <br>&emsp; + Verify EC2 can reach RDS and access internet via NAT <br>&emsp; + Plan Frontend development tasks (Phase 4) | 14/06/2026 | 14/06/2026 | |
+
 
 ### Week 9 Achievements:
 
@@ -32,3 +44,5 @@ pre: " <b> 1.9. </b> "
 * Implemented dynamic charts to visualize temperature, humidity, and other sensor readings.
 
 * Understood the Amplify hosting lifecycle and how to manage multiple environments (dev/prod).
+
+* **[Rookwork Phase 3]** Deployed Spring Boot Backend to Amazon EC2 via Docker container, configured HTTPS ALB, NAT Gateway, and verified internal EC2 ↔ RDS connectivity successfully.

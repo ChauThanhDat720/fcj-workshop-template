@@ -9,100 +9,170 @@ pre: " <b> 2. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
+# Rookwork - Phần mềm quản lý làm việc nhóm  
+## Hệ thống quản lý làm việc nhóm hỗ trợ cộng tác thời gian thực trên nền tảng desktop  
 
-# IoT Weather Platform for Lab Research  
-## Giải pháp AWS Serverless hợp nhất cho giám sát thời tiết thời gian thực  
+### 1. Tổng quan dự án  
+Trong bối cảnh cách mạng công nghiệp 4.0 và xu hướng làm việc từ xa (remote working) cũng như làm việc lai (hybrid) ngày càng phổ biến, việc quản lý làm việc nhóm hiệu quả là một yếu tố sống còn đối với các cá nhân, nhóm dự án và doanh nghiệp. **Rookwork** là phần mềm quản lý làm việc nhóm tích hợp, hiện đại, được thiết kế để hoạt động dưới dạng ứng dụng đa nền tảng (browser và desktop app). Hệ thống sử dụng kiến trúc Client-Server với frontend phát triển bằng **React 19**, có thể đóng gói thành ứng dụng desktop bằng **Electron** để tạo trải nghiệm mượt mà, cùng backend vững chắc xây dựng trên nền tảng **Spring Boot** kết hợp cùng các dịch vụ của AWS.
 
-### 1. Tóm tắt điều hành  
-IoT Weather Platform được thiết kế dành cho nhóm *ITea Lab* tại TP. Hồ Chí Minh nhằm nâng cao khả năng thu thập và phân tích dữ liệu thời tiết. Nền tảng hỗ trợ tối đa 5 trạm thời tiết, có khả năng mở rộng lên 10–15 trạm, sử dụng thiết bị biên Raspberry Pi kết hợp cảm biến ESP32 để truyền dữ liệu qua MQTT. Nền tảng tận dụng các dịch vụ AWS Serverless để cung cấp giám sát thời gian thực, phân tích dự đoán và tiết kiệm chi phí, với quyền truy cập giới hạn cho 5 thành viên phòng lab thông qua Amazon Cognito.  
+> **Lưu ý về trạng thái hiện tại:** Ở giai đoạn hiện tại, nền tảng chính đang được người dùng sử dụng là phiên bản **web browser** (chạy trực tiếp trên trình duyệt, không cần cài đặt). Phiên bản **desktop (đóng gói bằng Electron)** đã được phát triển nhưng **chưa được cập nhật đồng bộ** với bản web mới nhất, do đó có thể còn thiếu một số tính năng hoặc bản vá so với phiên bản web hiện hành. Mục tiêu dài hạn của dự án vẫn là hoàn thiện và đồng bộ ứng dụng desktop đa nền tảng như định hướng kiến trúc ban đầu.
 
-### 2. Tuyên bố vấn đề  
-*Vấn đề hiện tại*  
-Các trạm thời tiết hiện tại yêu cầu thu thập dữ liệu thủ công, khó quản lý khi có nhiều trạm. Không có hệ thống tập trung cho dữ liệu hoặc phân tích thời gian thực, và các nền tảng bên thứ ba thường tốn kém và quá phức tạp.  
+### 2. Vấn đề cần giải quyết  
+Hiện nay, nhiều đội ngũ vẫn đối mặt với các khó khăn lớn trong việc cộng tác và quản lý dự án:
+- **Sử dụng công cụ rời rạc:** Nhiều nhóm vẫn đang quản lý công việc thủ công qua các kênh không đồng bộ như Excel, Google Sheets, Messenger/Zalo và email. Điều này dẫn đến việc khó theo dõi tiến độ, dễ xảy ra nhầm lẫn, thiếu tính minh bạch và tiêu tốn nhiều thời gian trao đổi thông tin không cần thiết.
+- **Cách thức sử dụng phức tạp:** Các nền tảng quản lý dự án hiện có (như Trello, Jira, Asana, Monday.com) thường có giao diện và luồng thao tác phức tạp, nhiều tầng cấu hình, đòi hỏi người dùng mất thời gian tìm hiểu và làm quen trước khi có thể sử dụng hiệu quả. Điều này gây khó khăn đặc biệt cho các nhóm nhỏ, sinh viên hoặc người mới bắt đầu, những đối tượng cần một công cụ đơn giản trực quan, dễ tiếp cận ngay từ lần sử dụng đầu tiên.
+### 3. Kiến trúc giải pháp (Workflow)
+Hệ thống hoạt động dựa trên mô hình phân tán trong môi trường AWS Cloud. Luồng xử lý được chia làm các hướng chính như sau:
 
-*Giải pháp*  
-Nền tảng sử dụng AWS IoT Core để tiếp nhận dữ liệu MQTT, AWS Lambda và API Gateway để xử lý, Amazon S3 để lưu trữ (bao gồm data lake), và AWS Glue Crawlers cùng các tác vụ ETL để trích xuất, chuyển đổi, tải dữ liệu từ S3 data lake sang một S3 bucket khác để phân tích. AWS Amplify với Next.js cung cấp giao diện web, và Amazon Cognito đảm bảo quyền truy cập an toàn. Tương tự như Thingsboard và CoreIoT, người dùng có thể đăng ký thiết bị mới và quản lý kết nối, nhưng nền tảng này hoạt động ở quy mô nhỏ hơn và phục vụ mục đích sử dụng nội bộ. Các tính năng chính bao gồm bảng điều khiển thời gian thực, phân tích xu hướng và chi phí vận hành thấp.  
+![Rookwork Architecture](/images/2-Proposal/rookwork_architecture.jpg)
 
-*Lợi ích và hoàn vốn đầu tư (ROI)*  
-Giải pháp tạo nền tảng cơ bản để các thành viên phòng lab phát triển một nền tảng IoT lớn hơn, đồng thời cung cấp nguồn dữ liệu cho những người nghiên cứu AI phục vụ huấn luyện mô hình hoặc phân tích. Nền tảng giảm bớt báo cáo thủ công cho từng trạm thông qua hệ thống tập trung, đơn giản hóa quản lý và bảo trì, đồng thời cải thiện độ tin cậy dữ liệu. Chi phí hàng tháng ước tính 0,66 USD (theo AWS Pricing Calculator), tổng cộng 7,92 USD cho 12 tháng. Tất cả thiết bị IoT đã được trang bị từ hệ thống trạm thời tiết hiện tại, không phát sinh chi phí phát triển thêm. Thời gian hoàn vốn 6–12 tháng nhờ tiết kiệm đáng kể thời gian thao tác thủ công.  
+**1. Luồng Mạng và Phân phối Nội dung (Networking & Content Delivery):**
+- Mọi yêu cầu từ người dùng (Users) đều được phân giải tên miền qua **Amazon Route 53**.
+- Giao diện Frontend tĩnh được lưu trữ hoàn toàn trên bucket **Amazon S3 (FE Static)**.
+- Để tăng tốc độ tải trang và bảo mật, nội dung Frontend được phân phối qua **Amazon CloudFront** kết hợp với hệ thống tường lửa **AWS WAF** giúp ngăn chặn các cuộc tấn công web.
 
-### 3. Kiến trúc giải pháp  
-Nền tảng áp dụng kiến trúc AWS Serverless để quản lý dữ liệu từ 5 trạm dựa trên Raspberry Pi, có thể mở rộng lên 15 trạm. Dữ liệu được tiếp nhận qua AWS IoT Core, lưu trữ trong S3 data lake và xử lý bởi AWS Glue Crawlers và ETL jobs để chuyển đổi và tải vào một S3 bucket khác cho mục đích phân tích. Lambda và API Gateway xử lý bổ sung, trong khi Amplify với Next.js cung cấp bảng điều khiển được bảo mật bởi Cognito.  
+**2. Luồng Định tuyến và Tính toán Backend (Routing & Compute):**
+- Các API traffic đi qua **Internet Gateway** vào mạng **Amazon VPC**, sau đó được phân tải bởi **Application Load Balancer (ALB)**.
+- Backend xây dựng bằng Java Spring Boot được triển khai trên các máy ảo **Amazon EC2**. Các máy chủ này được đặt an toàn trong *Private Subnets*.
+- Để EC2 trong mạng nội bộ có thể gọi các dịch vụ bên ngoài, hệ thống định tuyến Outbound Traffic thông qua **NAT Gateway**.
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+**3. Luồng Cơ sở dữ liệu và Lưu trữ (Database & Storage):**
+- Mọi dữ liệu nghiệp vụ lõi được lưu trữ trên **Amazon RDS (PostgreSQL)**, triển khai theo mô hình **Multi-AZ (DB Replication)** trên nhiều Availability Zones để dự phòng thảm họa.
+- Quá trình quản lý thay đổi cấu trúc DB được thực hiện bởi Flyway.
+- Các file đính kèm được EC2 ghi vào S3 thông qua một đường dẫn nội bộ bảo mật (Internal Routing) bằng **VPC S3 Gateway Endpoint**. Người dùng sau đó có thể tải file thông qua Direct File Access hoặc CloudFront một cách an toàn.
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+**4. Luồng Thông báo và Quản lý dùng chung (Notifications & Shared Services):**
+- Mọi sự kiện kích hoạt email (như mời tham gia nhóm) được EC2 gọi trực tiếp đến **Amazon SES** để gửi cho Users.
+- Chứng chỉ SSL/TLS được quản lý bởi **AWS Certificate Manager (ACM)** kết hợp chặt chẽ việc phân quyền hệ thống qua **AWS IAM**.
 
-*Dịch vụ AWS sử dụng*  
-- *AWS IoT Core*: Tiếp nhận dữ liệu MQTT từ 5 trạm, mở rộng lên 15.  
-- *AWS Lambda*: Xử lý dữ liệu và kích hoạt Glue jobs (2 hàm).  
-- *Amazon API Gateway*: Giao tiếp với ứng dụng web.  
-- *Amazon S3*: Lưu trữ dữ liệu thô (data lake) và dữ liệu đã xử lý (2 bucket).  
-- *AWS Glue*: Crawlers lập chỉ mục dữ liệu, ETL jobs chuyển đổi và tải dữ liệu.  
-- *AWS Amplify*: Lưu trữ giao diện web Next.js.  
-- *Amazon Cognito*: Quản lý quyền truy cập cho người dùng phòng lab.  
+### 4. Triển khai kỹ thuật
+*Yêu cầu kỹ thuật*
+- **Backend:** Java Spring Boot, Spring Security (JWT/OAuth2), Spring Data JPA.
+- **Database:** PostgreSQL, Flyway (Database Migration).
+- **Frontend:** ReactJS / TypeScript.
+- **Các dịch vụ AWS sử dụng:** 
+  - *Mạng & Bảo mật:* Amazon Route 53, Amazon CloudFront, AWS WAF, Amazon VPC (IGW, NAT Gateway, ALB, S3 Gateway Endpoint), AWS ACM, AWS IAM.
+  - *Tính toán & Lưu trữ:* Amazon EC2, Amazon RDS (PostgreSQL Multi-AZ), Amazon S3 (FE Static & File Storage).
+  - *Khác:* Amazon SES (Email Notification).
 
-*Thiết kế thành phần*  
-- *Thiết bị biên*: Raspberry Pi thu thập và lọc dữ liệu cảm biến, gửi tới IoT Core.  
-- *Tiếp nhận dữ liệu*: AWS IoT Core nhận tin nhắn MQTT từ thiết bị biên.  
-- *Lưu trữ dữ liệu*: Dữ liệu thô lưu trong S3 data lake; dữ liệu đã xử lý lưu ở một S3 bucket khác.  
-- *Xử lý dữ liệu*: AWS Glue Crawlers lập chỉ mục dữ liệu; ETL jobs chuyển đổi để phân tích.  
-- *Giao diện web*: AWS Amplify lưu trữ ứng dụng Next.js cho bảng điều khiển và phân tích thời gian thực.  
-- *Quản lý người dùng*: Amazon Cognito giới hạn 5 tài khoản hoạt động.  
+### 7. Quá trình triển khai thực tế (từ Tuần 7)
 
-### 4. Triển khai kỹ thuật  
-*Các giai đoạn triển khai*  
-Dự án gồm 2 phần — thiết lập trạm thời tiết biên và xây dựng nền tảng thời tiết — mỗi phần trải qua 4 giai đoạn:  
-1. *Nghiên cứu và vẽ kiến trúc*: Nghiên cứu Raspberry Pi với cảm biến ESP32 và thiết kế kiến trúc AWS Serverless (1 tháng trước kỳ thực tập).  
-2. *Tính toán chi phí và kiểm tra tính khả thi*: Sử dụng AWS Pricing Calculator để ước tính và điều chỉnh (Tháng 1).  
-3. *Điều chỉnh kiến trúc để tối ưu chi phí/giải pháp*: Tinh chỉnh (ví dụ tối ưu Lambda với Next.js) để đảm bảo hiệu quả (Tháng 2).  
-4. *Phát triển, kiểm thử, triển khai*: Lập trình Raspberry Pi, AWS services với CDK/SDK và ứng dụng Next.js, sau đó kiểm thử và đưa vào vận hành (Tháng 2–3).  
+Từ tuần 7 trở đi, song song với việc phát triển dự án **Rookwork**, quá trình học tập và ứng dụng các dịch vụ AWS chuyên sâu được đẩy mạnh. Các tuần này tập trung chủ yếu vào việc tìm hiểu, thực hành các dịch vụ AWS, đồng thời áp dụng kiến thức vào triển khai hạ tầng thực tế cho dự án.
 
-*Yêu cầu kỹ thuật*  
-- *Trạm thời tiết biên*: Cảm biến (nhiệt độ, độ ẩm, lượng mưa, tốc độ gió), vi điều khiển ESP32, Raspberry Pi làm thiết bị biên. Raspberry Pi chạy Raspbian, sử dụng Docker để lọc dữ liệu và gửi 1 MB/ngày/trạm qua MQTT qua Wi-Fi.  
-- *Nền tảng thời tiết*: Kiến thức thực tế về AWS Amplify (lưu trữ Next.js), Lambda (giảm thiểu do Next.js xử lý), AWS Glue (ETL), S3 (2 bucket), IoT Core (gateway và rules), và Cognito (5 người dùng). Sử dụng AWS CDK/SDK để lập trình (ví dụ IoT Core rules tới S3). Next.js giúp giảm tải Lambda cho ứng dụng web fullstack.  
+---
 
-### 5. Lộ trình & Mốc triển khai  
-- *Trước thực tập (Tháng 0)*: 1 tháng lên kế hoạch và đánh giá trạm cũ.  
-- *Thực tập (Tháng 1–3)*:  
-    - Tháng 1: Học AWS và nâng cấp phần cứng.  
-    - Tháng 2: Thiết kế và điều chỉnh kiến trúc.  
-    - Tháng 3: Triển khai, kiểm thử, đưa vào sử dụng.  
-- *Sau triển khai*: Nghiên cứu thêm trong vòng 1 năm.  
+#### 📅 Tuần 7 — AWS IoT Core & Giao thức MQTT
+**Mục tiêu:** Học AWS IoT Core, kết nối thiết bị, giao thức MQTT, topics và rules.
 
-### 6. Ước tính ngân sách  
-Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)  
-Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.pdf).  
+**Các công việc AWS trọng tâm:**
 
-*Chi phí hạ tầng*  
-- AWS Lambda: 0,00 USD/tháng (1.000 request, 512 MB lưu trữ).  
-- S3 Standard: 0,15 USD/tháng (6 GB, 2.100 request, 1 GB quét).  
-- Truyền dữ liệu: 0,02 USD/tháng (1 GB vào, 1 GB ra).  
-- AWS Amplify: 0,35 USD/tháng (256 MB, request 500 ms).  
-- Amazon API Gateway: 0,01 USD/tháng (2.000 request).  
-- AWS Glue ETL Jobs: 0,02 USD/tháng (2 DPU).  
-- AWS Glue Crawlers: 0,07 USD/tháng (1 crawler).  
-- MQTT (IoT Core): 0,08 USD/tháng (5 thiết bị, 45.000 tin nhắn).  
+| Dịch vụ AWS | Nội dung thực hiện | Kết quả |
+|---|---|---|
+| **AWS IoT Core** | Tìm hiểu tổng quan: device registry, message broker, rules engine | Nắm vững kiến trúc IoT Core và vai trò từng thành phần |
+| **AWS IoT Core** | Tạo IoT Thing với chứng chỉ **X.509**, cấu hình device policy để kết nối MQTT bảo mật | IoT Thing hoạt động, device xác thực thành công qua cert |
+| **AWS IoT Core** | Thực hành: giả lập thiết bị gửi MQTT messages, subscribe topics trong MQTT test client | Luồng publish/subscribe hoạt động ổn định |
+| **IoT Rules Engine + Amazon S3 + AWS Lambda** | Tạo IoT rule dùng câu query SQL để định tuyến messages đến **S3** và trigger **Lambda** | Data ingestion end-to-end từ thiết bị giả lập đến cloud storage thành công |
 
-*Tổng*: 0,7 USD/tháng, 8,40 USD/12 tháng  
-- *Phần cứng*: 265 USD một lần (Raspberry Pi 5 và cảm biến).  
+*Ngoài AWS:* Tìm hiểu lý thuyết giao thức MQTT (QoS levels, retain messages) để phục vụ kết nối thiết bị.
 
-### 7. Đánh giá rủi ro  
-*Ma trận rủi ro*  
-- Mất mạng: Ảnh hưởng trung bình, xác suất trung bình.  
-- Hỏng cảm biến: Ảnh hưởng cao, xác suất thấp.  
-- Vượt ngân sách: Ảnh hưởng trung bình, xác suất thấp.  
+**Kết quả tuần 7:** Hiểu kiến trúc AWS IoT Core, tạo và xác thực IoT Thing, xây dựng IoT Rules tự động định tuyến data đến S3 và Lambda, hoàn thành luồng data ingestion end-to-end.
 
-*Chiến lược giảm thiểu*  
-- Mạng: Lưu trữ cục bộ trên Raspberry Pi với Docker.  
-- Cảm biến: Kiểm tra định kỳ, dự phòng linh kiện.  
-- Chi phí: Cảnh báo ngân sách AWS, tối ưu dịch vụ.  
+---
 
-*Kế hoạch dự phòng*  
-- Quay lại thu thập thủ công nếu AWS gặp sự cố.  
-- Sử dụng CloudFormation để khôi phục cấu hình liên quan đến chi phí.  
+#### 📅 Tuần 8 — AWS Glue & ETL Pipeline
+**Mục tiêu:** Học AWS Glue, xây dựng pipeline xử lý và transform raw IoT data lưu trên S3.
 
-### 8. Kết quả kỳ vọng  
-*Cải tiến kỹ thuật*: Dữ liệu và phân tích thời gian thực thay thế quy trình thủ công. Có thể mở rộng tới 10–15 trạm.  
-*Giá trị dài hạn*: Nền tảng dữ liệu 1 năm cho nghiên cứu AI, có thể tái sử dụng cho các dự án tương lai.
+**Các công việc AWS trọng tâm:**
+
+| Dịch vụ AWS | Nội dung thực hiện | Kết quả |
+|---|---|---|
+| **AWS Glue Data Catalog** | Tìm hiểu tổng quan Glue: Data Catalog, crawlers, databases, tables | Hiểu vai trò Glue là kho metadata tập trung cho data lake |
+| **AWS Glue Crawlers** | Tạo và chạy Glue Crawler trên S3 bucket chứa raw IoT data để tự động tạo schema | Schema được tạo tự động, catalog đúng cấu trúc dữ liệu |
+| **AWS Glue ETL Jobs** | Viết ETL job bằng **PySpark** để transform, làm sạch và tổng hợp dữ liệu cảm biến IoT | Dữ liệu được làm sạch và ghi ra S3 output dưới định dạng **Parquet** |
+| **Amazon Athena** | Truy vấn và xác minh dữ liệu đã transform bằng Athena | Kiểm tra kết quả ETL chính xác qua SQL query |
+
+*Ngoài AWS:* Tìm hiểu cú pháp PySpark cơ bản để viết ETL script, so sánh Glue với các ETL tool truyền thống.
+
+**Kết quả tuần 8:** Tạo và chạy Glue Crawler thành công, viết ETL job làm sạch data IoT, lưu kết quả Parquet lên S3, xác minh bằng Athena.
+
+---
+
+#### 📅 Tuần 9 — AWS Amplify & Triển khai Frontend
+**Mục tiêu:** Học AWS Amplify, xây dựng và deploy ứng dụng Next.js với CI/CD tự động.
+
+**Các công việc AWS trọng tâm:**
+
+| Dịch vụ AWS | Nội dung thực hiện | Kết quả |
+|---|---|---|
+| **AWS Amplify Hosting** | Kết nối GitHub repo với Amplify, cấu hình build settings for Next.js | Deploy phiên bản đầu tiên của web app thành công |
+| **AWS Amplify (CI/CD)** | Thiết lập pipeline tự động build và deploy khi push code lên GitHub | Mỗi commit tự động trigger build và deploy lên Amplify |
+| **Amazon API Gateway** | Kết nối Next.js frontend với API Gateway endpoints để lấy dữ liệu IoT | Frontend fetch dữ liệu cảm biến thời gian thực từ API |
+| **AWS Amplify (Environments)** | Cấu hình environment variables cho các môi trường dev/prod khác nhau | Quản lý config linh hoạt giữa các môi trường deployment |
+
+*Ngoài AWS:* Thiết kế và implement dashboard hiển thị biểu đồ real-time nhiệt độ, độ ẩm bằng Next.js.
+
+**Kết quả tuần 9:** Deploy thành công Next.js lên Amplify với CI/CD từ GitHub, xây dựng dashboard real-time hiển thị dữ liệu cảm biến từ API Gateway, hiểu vòng đời Amplify hosting và quản lý multi-environment.
+
+---
+
+#### 📅 Tuần 10 — Amazon Cognito & Xác thực người dùng
+**Mục tiêu:** Học Amazon Cognito, tích hợp xác thực bảo mật vào ứng dụng Next.js.
+
+**Các công việc AWS trọng tâm:**
+
+| Dịch vụ AWS | Nội dung thực hiện | Kết quả |
+|---|---|---|
+| **Amazon Cognito User Pool** | Tạo User Pool với password policy tùy chỉnh, MFA, email verification | User Pool hoàn chỉnh, luồng đăng ký/đăng nhập hoạt động |
+| **Amazon Cognito App Client** | Cấu hình OAuth 2.0 app client, scopes và Hosted UI cho Next.js | Frontend tích hợp đăng nhập qua Cognito Hosted UI |
+| **Amazon API Gateway + Cognito Authorizer** | Thêm **Cognito JWT Authorizer** vào API Gateway để bảo vệ các endpoint | Chỉ user đã xác thực mới gọi được API, trả 401 với request không có token |
+| **Amazon Cognito Identity Pools** | Tìm hiểu sự khác biệt giữa User Pools (authentication) và Identity Pools (authorization) | Hiểu mô hình phân quyền AWS cấp độ resource |
+
+*Ngoài AWS:* Implement luồng login/logout và protected routes trong Next.js dùng Cognito JWT tokens.
+
+**Kết quả tuần 10:** Cài đặt Cognito User Pool, bảo mật API Gateway bằng JWT Authorizer, giới hạn truy cập dashboard chỉ cho thành viên đã xác thực.
+
+---
+
+#### 📅 Tuần 11 — Kiểm thử tích hợp End-to-End toàn hệ thống
+**Mục tiêu:** Tích hợp và kiểm thử toàn bộ pipeline: IoT Core → S3 → Glue → API Gateway → Amplify.
+
+**Các công việc AWS trọng tâm:**
+
+| Dịch vụ AWS | Nội dung thực hiện | Kết quả |
+|---|---|---|
+| **AWS IoT Core + S3 + Glue + API Gateway + Amplify** | Chạy test luồng data đầy đủ với 5 thiết bị giả lập đồng thời | Dữ liệu chạy xuyên suốt pipeline, hiển thị đúng trên dashboard |
+| **AWS IoT Core (Rules)** | Sửa lỗi misconfiguration trong IoT rule routing làm data không đến đúng đích | IoT rule hoạt động ổn định, data routing chính xác |
+| **AWS Lambda** | Debug và fix Lambda timeout trong bước xử lý trigger từ IoT rule | Lambda xử lý trong giới hạn timeout, không còn lỗi |
+| **AWS Glue ETL** | Tối ưu Glue ETL job bằng cách giảm data scan không cần thiết | Thời gian chạy ETL job giảm đáng kể |
+| **Amazon API Gateway + Amplify** | Kiểm thử hiệu năng và tải của API Gateway và Lambda dưới tải đồng thời | Xác định bottleneck và điều chỉnh concurrency limit |
+
+*Ngoài AWS:* Mapping lại luồng data toàn hệ thống, ghi chép các hạn chế đã biết.
+
+**Kết quả tuần 11:** Hoàn thành tích hợp end-to-end toàn bộ platform, sửa nhiều lỗi tích hợp, tối ưu hiệu năng Glue ETL, xác minh data chạy đúng từ thiết bị giả lập đến dashboard.
+
+---
+
+#### 📅 Tuần 12 — Deploy Production & Hoàn thiện tài liệu
+**Mục tiêu:** Deploy cuối cùng lên môi trường production, hoàn thiện tài liệu và chuẩn bị báo cáo thực tập.
+
+**Các công việc AWS trọng tâm:**
+
+| Dịch vụ AWS | Nội dung thực hiện | Kết quả |
+|---|---|---|
+| **AWS CDK** | Deploy toàn bộ stack lên production bằng CDK (Infrastructure as Code) | Hạ tầng production được khởi tạo nhất quán, có thể tái tạo |
+| **Amazon CloudWatch** | Cấu hình CloudWatch alarms và dashboards để giám sát tất cả component quan trọng | Hệ thống có monitoring và alerting tự động |
+| **Amazon Cognito** | Tạo và xác minh 5 tài khoản thành viên lab trong Cognito User Pool | Tất cả thành viên truy cập hệ thống thành công |
+| **AWS Budgets + Cost Management** | Review toàn bộ tài nguyên AWS và chi phí, xác minh budget alerts | Chi phí nằm trong ngân sách **$0.70/tháng**, tài nguyên dev đã dọn dẹp |
+
+*Ngoài AWS:* Viết tài liệu kỹ thuật (sơ đồ kiến trúc, API docs, deployment guide), hoàn thành và nộp báo cáo thực tập, demo platform cho giám sát viên.
+
+**Kết quả tuần 12:** Deploy thành công toàn bộ platform lên production, CloudWatch monitoring đầy đủ, hoàn thành tài liệu kỹ thuật, demo thành công, dọn dẹp tài nguyên, chi phí AWS $0.70/tháng.
+
+### 6. Đánh giá rủi ro
+*Ma trận rủi ro*
+- Lỗi thiết lập định tuyến (Routing) trong VPC khiến EC2 không kết nối được Internet hoặc DB: Ảnh hưởng cao, xác suất trung bình.
+- Ngân sách AWS vượt quá mức do thiết lập NAT Gateway hoặc cấu hình Multi-AZ: Ảnh hưởng trung bình, xác suất cao (với tài khoản học tập).
+
+*Chiến lược giảm thiểu*
+- Cấu hình hạ tầng dưới dạng Code (IaC) để dễ bề kiểm soát.
+- Đặt giới hạn chi phí (AWS Budgets) và cấu hình CloudWatch theo dõi lưu lượng mạng chặt chẽ. Đóng bớt DB Replication (Multi-AZ) trên môi trường Dev để tiết kiệm chi phí.

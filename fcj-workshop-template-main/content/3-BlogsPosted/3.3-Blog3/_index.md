@@ -68,6 +68,6 @@ In Serverless, no architecture is a Silver Bullet. Choosing which pattern depend
 
 *Facebook Post: [Link to AWS Study Group FB](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2203819477049679/?rdid=ZuOE5xSl9R071zJb#)*
 
-![Image](/images/blog3/image1.png)
+![Image](/images/blog3/739187887_1668487010933498_9055711739010635588_n.jpg)
 
-![Image](/images/blog3/image2.png)
+![Image](/images/blog3/737370278_1668486787600187_5890450146561052876_n.jpg)

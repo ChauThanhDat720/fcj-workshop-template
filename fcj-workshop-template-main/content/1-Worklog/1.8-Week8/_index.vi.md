@@ -20,6 +20,18 @@ pre: " <b> 1.8. </b> "
 | 5 | - Glue ETL Jobs: PySpark script để transform dữ liệu <br> - Job triggers và scheduling | 06/06/2026 | 06/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - **Thực hành:** <br>&emsp; + Tạo Glue ETL job để transform và làm sạch IoT data <br>&emsp; + Ghi dữ liệu đã xử lý vào S3 output bucket <br>&emsp; + Xác minh kết quả bằng Athena | 07/06/2026 | 07/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
+---
+
+**🛠️ Dự án Rookwork — Phase 2: Xây dựng Backend Spring Boot & Database PostgreSQL**
+
+| Thứ | Công việc Rookwork | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2 | - Khởi tạo project Spring Boot: cấu hình Spring Security (JWT + OAuth2) <br> - Thiết kế schema database PostgreSQL cho các entity chính (User, Workspace, Task) | 03/06/2026 | 03/06/2026 | |
+| 3 | - Cấu hình Amazon RDS PostgreSQL Multi-AZ: tạo DB instance, subnet groups <br> - Thiết lập Flyway để quản lý database migration | 04/06/2026 | 04/06/2026 | |
+| 4 | - Implement các API cốt lõi: Authentication (register, login, refresh token) <br> - Viết Flyway migration scripts V1 — khởi tạo schema ban đầu | 05/06/2026 | 05/06/2026 | |
+| 5 | - Implement CRUD API: Workspace, Project, Task management <br> - Cấu hình Spring Data JPA repositories | 06/06/2026 | 06/06/2026 | |
+| 6 | - **Review & kiểm thử Phase 2:** <br>&emsp; + Unit test các API endpoint chính <br>&emsp; + Xác minh kết nối RDS từ local environment <br>&emsp; + Lập kế hoạch deploy lên EC2 (Phase 3) | 07/06/2026 | 07/06/2026 | |
+
 
 ### Kết quả đạt được tuần 8:
 
@@ -32,3 +44,6 @@ pre: " <b> 1.8. </b> "
 * Lưu dữ liệu đã xử lý vào S3 output bucket dưới định dạng Parquet.
 
 * Truy vấn và kiểm tra dữ liệu đã transform bằng Amazon Athena.
+
+* **[Rookwork Phase 2]** Khởi tạo Spring Boot project, cấu hình Amazon RDS PostgreSQL Multi-AZ, thiết lập Flyway migration và implement các API Authentication cùng CRUD cốt lõi.
+
