@@ -54,19 +54,21 @@ Additionally, the practical knowledge about CloudFront infrastructure and the in
 
 #### Real Photos From the Event
 
-![Virtual credit committee architecture](virtual-credit-committee.png)
+![Virtual credit committee architecture](/images/4.1-Event1/virtual-credit-committee.png)
 _Multi-Agent architecture diagram for credit scoring_
 
-![Proposed Deployment Approach](deployment-approach.png)
+![Proposed Deployment Approach](/images/4.1-Event1/deployment-approach.png)
 _AgentCore platform deployment model on AWS_
 
-![Why CloudFront is better equipped for volumetric attack](cloudfront-ddos.png)
+![Why CloudFront is better equipped for volumetric attack](/images/4.1-Event1/cloudfront-ddos.png)
 _CloudFront's effective DDoS mitigation mechanism_
 
-![Architecture](utmorpho-architecture.png)
+![Architecture](/images/4.1-Event1/utmorpho-architecture.png)
 _Infrastructure structure of the UTMorpho project_
 
-![The role of Temperature, Top-P, and Top-K](llm-temperature.png)
+![The role of Temperature, Top-P, and Top-K](/images/4.1-Event1/llm-temperature.png)
 _Impact of the Temperature parameter on LLM outputs_
 
-> Overall, this was a highly valuable learning experience, providing a comprehensive picture of how to combine AI technology, Cloud infrastructure, and business mindset to solve complex real-world problems.
+{{% notice info %}}
+Overall, this was a highly valuable learning experience, providing a comprehensive picture of how to combine AI technology, Cloud infrastructure, and business mindset to solve complex real-world problems.
+{{% /notice %}}

@@ -53,19 +53,21 @@ Sự kiện đã giúp tôi thay đổi hoàn toàn tư duy về cách sử dụ
 Bên cạnh đó, những kiến thức thực tiễn về hạ tầng CloudFront cũng như câu chuyện truyền cảm hứng từ team phát triển UTMorpho trong 36 giờ đã tiếp thêm động lực để tôi theo đuổi và tìm hiểu sâu hơn về kiến trúc Cloud, Multi-Agent System và phát triển sản phẩm trong tương lai.
 
 #### Hình ảnh thực tế từ chương trình
-![Virtual credit committee architecture](virtual-credit-committee.png)
+![Virtual credit committee architecture](/images/4.1-Event1/virtual-credit-committee.png)
 _Sơ đồ kiến trúc hệ thống Multi-Agent trong việc đánh giá tín dụng_
 
-![Proposed Deployment Approach](deployment-approach.png)
+![Proposed Deployment Approach](/images/4.1-Event1/deployment-approach.png)
 _Mô hình triển khai nền tảng AgentCore trên AWS_
 
-![Why CloudFront is better equipped for volumetric attack](cloudfront-ddos.png)
+![Why CloudFront is better equipped for volumetric attack](/images/4.1-Event1/cloudfront-ddos.png)
 _Cơ chế chống tấn công DDoS hiệu quả của CloudFront_
 
-![Architecture](utmorpho-architecture.png)
+![Architecture](/images/4.1-Event1/utmorpho-architecture.png)
 _Cấu trúc hạ tầng của dự án UTMorpho_
 
-![The role of Temperature, Top-P, and Top-K](llm-temperature.png)
+![The role of Temperature, Top-P, and Top-K](/images/4.1-Event1/llm-temperature.png)
 _Sự ảnh hưởng của tham số Temperature đối với kết quả của LLM_
 
-> Tổng kết lại, đây là một trải nghiệm học hỏi vô cùng giá trị, cung cấp cho tôi bức tranh toàn cảnh về cách kết hợp giữa công nghệ AI, hạ tầng Cloud và tư duy kinh doanh để giải quyết các bài toán khó trong thực tế.
+{{% notice info %}}
+Tổng kết lại, đây là một trải nghiệm học hỏi vô cùng giá trị, cung cấp cho tôi bức tranh toàn cảnh về cách kết hợp giữa công nghệ AI, hạ tầng Cloud và tư duy kinh doanh để giải quyết các bài toán khó trong thực tế.
+{{% /notice %}}
