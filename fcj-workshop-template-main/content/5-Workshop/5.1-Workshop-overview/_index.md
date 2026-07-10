@@ -12,7 +12,7 @@ pre : " <b> 5.1. </b> "
 
 #### System Architecture
 
-![Rookwork AWS Architecture](/images/5-Workshop/rookwork_aws_architecture.jpg)
+![Rookwork AWS Architecture](/images/5-Workshop/5.1/rookwork_aws_architecture.jpg)
 
 The system operates through the following main processing flows:
 
@@ -32,3 +32,7 @@ The system operates through the following main processing flows:
 **4 Shared Services:**
 - **Amazon SES** delivers email notifications (e.g., workspace invitations) triggered from EC2 (steps 6.2 & 6.3).
 - **AWS Certificate Manager (ACM)** manages SSL/TLS certificates, and **AWS IAM** controls system-wide permissions.
+
+---
+
+After understanding the system architecture, proceed to [5.2 — Prerequisite](../5.2-prerequiste/) to configure the required tools.

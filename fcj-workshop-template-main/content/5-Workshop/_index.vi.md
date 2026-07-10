@@ -1,25 +1,21 @@
 ---
 title: "Workshop"
-date: 2024-01-01
+date: 2026-07-08
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
 
-# Rookwork — Hệ thống quản lý làm việc nhóm trên nền tảng AWS Cloud
+Trang này tổng hợp các bài thực hành (Workshop) trong quá trình thực tập.
 
-## Tổng quan dự án
+### Nội dung
 
-**Rookwork** là phần mềm quản lý làm việc nhóm tích hợp, được thiết kế để vận hành trên nền tảng đa môi trường (browser và desktop app). Hệ thống sử dụng kiến trúc **Client-Server** với frontend xây dựng bằng **React 19**, backend trên **Spring Boot**, và toàn bộ hạ tầng được triển khai trên **AWS Cloud** theo tiêu chuẩn **High Availability (HA)** với bảo mật nhiều lớp.
-
-Workshop này hướng dẫn cách triển khai và vận hành hạ tầng AWS thực tế cho dự án Rookwork, bao gồm cấu hình mạng VPC, phân phối nội dung qua CloudFront, bảo mật với WAF, cùng tích hợp các dịch vụ lưu trữ S3 và gửi email SES.
-
-## Nội dung workshop
-
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+* **[5.1. Giới thiệu](5.1-Workshop-overview/)** - Tổng quan kiến trúc hệ thống và luồng xử lý chính của dự án.
+* **[5.2. Các bước chuẩn bị](5.2-Prerequiste/)** - Các điều kiện tiên quyết và công cụ cần thiết để triển khai hạ tầng AWS.
+* **[5.3. Khởi tạo VPC, NAT Gateway và Security Groups](5.3-S3-vpc/)** - Hướng dẫn thiết lập hạ tầng mạng cơ bản gồm VPC, NAT Gateway, VPC Endpoint cho S3 và các Security Groups phân tầng.
+* **[5.4. Tạo EC2 & Kiểm tra môi trường Private](5.4-Create-EC2-Private-Env/)** - Hướng dẫn khởi tạo máy chủ EC2 trong subnet riêng tư, cấu hình cài đặt mạng và kiểm tra kết nối, môi trường mạng nội bộ.
+* **[5.5. Khởi tạo Cơ sở dữ liệu RDS](5.5-Create-RDS/)** - Hướng dẫn khởi tạo cơ sở dữ liệu Amazon RDS PostgreSQL kết nối với EC2 và cấu hình Spring Boot.
+* **[5.6. Triển khai CI/CD Backend với GitHub Actions](5.6-Backend-CICD/)** - Hướng dẫn xây dựng đường ống tự động hóa CI/CD bằng GitHub Actions để triển khai ứng dụng Spring Boot lên các máy chủ EC2.
+* **[5.7. Tích hợp Route 53, S3, CloudFront, ACM và SES](5.7-Route53-S3-CloudFront-SES/)** - Hướng dẫn cấu hình AWS Route 53, lưu trữ và phân phối frontend tĩnh bằng S3 và CloudFront, dịch vụ lưu trữ S3 Storage và dịch vụ email SES.
+* **[5.8. Triển khai CI/CD Frontend với GitHub Actions](5.8-CICD-frontend/)** - Hướng dẫn xây dựng đường ống tự động hóa CI/CD bằng GitHub Actions cho ứng dụng React Frontend.

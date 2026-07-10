@@ -30,7 +30,7 @@ Install the following tools on your local machine:
 | **Java JDK** | 17+ | Build and run Spring Boot backend |
 | **Maven** | 3.8+ | Dependency management and backend build |
 | **Node.js** | 18+ | Build React 19 frontend |
-| **npm** | 9+ | Frontend package management |
+| **Yarn** | 1.22+ | Frontend package management |
 | **Docker** | 24+ | Package the application into containers |
 | **AWS CLI** | v2 | Interact with AWS from the command line |
 | **Git** | 2.x | Source code management |
@@ -43,7 +43,7 @@ Run the following commands to confirm each tool is installed correctly:
 java --version        # Java 17+
 mvn --version         # Maven 3.8+
 node --version        # Node.js 18+
-npm --version         # npm 9+
+yarn --version        # Yarn 1.22+
 docker --version      # Docker 24+
 aws --version         # AWS CLI 2.x
 git --version         # Git 2.x
@@ -131,12 +131,13 @@ cd rookwork-backend
 mvn clean package -DskipTests
 ```
 
-##### Test Frontend Build
+##### Test Frontend Run
 
 ```bash
 cd rookwork-frontend
-npm install
-npm run build
+yarn install
+yarn build:browser
+yarn start:browser
 ```
 
 ---
@@ -153,4 +154,4 @@ docker pull amazoncorretto:17
 
 ---
 
-Once all prerequisites are complete, you are ready to begin deploying the AWS infrastructure for Rookwork. Proceed to [5.3 — Access S3 from VPC](../5.3-S3-vpc/).
+Once all prerequisites are complete, you are ready to begin deploying the AWS infrastructure for Rookwork. Proceed to [5.3 — Initialize VPC, NAT Gateway and Security Groups](../5.3-S3-vpc/).

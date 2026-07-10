@@ -30,7 +30,7 @@ Cài đặt các công cụ sau trên máy tính của bạn:
 | **Java JDK** | 17+ | Build và chạy Spring Boot backend |
 | **Maven** | 3.8+ | Quản lý dependency và build backend |
 | **Node.js** | 18+ | Build React 19 frontend |
-| **npm** | 9+ | Quản lý package frontend |
+| **Yarn** | 1.22+ | Quản lý package frontend |
 | **Docker** | 24+ | Đóng gói ứng dụng thành container |
 | **AWS CLI** | v2 | Tương tác với AWS từ command line |
 | **Git** | 2.x | Quản lý source code |
@@ -43,7 +43,7 @@ Chạy các lệnh sau để xác nhận các công cụ đã được cài đú
 java --version        # Java 17+
 mvn --version         # Maven 3.8+
 node --version        # Node.js 18+
-npm --version         # npm 9+
+yarn --version        # Yarn 1.22+
 docker --version      # Docker 24+
 aws --version         # AWS CLI 2.x
 git --version         # Git 2.x
@@ -131,12 +131,13 @@ cd rookwork-backend
 mvn clean package -DskipTests
 ```
 
-##### Build thử Frontend
+##### Chạy thử Frontend
 
 ```bash
 cd rookwork-frontend
-npm install
-npm run build
+yarn install
+yarn build:browser
+yarn start:browser
 ```
 
 ---
@@ -153,4 +154,4 @@ docker pull amazoncorretto:17
 
 ---
 
-Sau khi hoàn thành tất cả các bước chuẩn bị, bạn đã sẵn sàng để bắt đầu triển khai hạ tầng AWS cho Rookwork từ phần [5.3 — Truy cập đến S3 từ VPC](../5.3-S3-vpc/).
+Sau khi hoàn thành tất cả các bước chuẩn bị, bạn đã sẵn sàng để bắt đầu triển khai hạ tầng AWS cho Rookwork từ phần [5.3 — Khởi tạo VPC, NAT Gateway và Security Groups](../5.3-S3-vpc/).
